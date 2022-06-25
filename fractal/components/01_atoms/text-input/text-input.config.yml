@@ -1,4 +1,5 @@
 name: Text Input
+status: "wip"
 preview: "@page"
 context:
   label: Label
