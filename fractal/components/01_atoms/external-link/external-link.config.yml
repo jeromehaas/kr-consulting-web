@@ -1,5 +1,6 @@
 name: External Link
 preview: "@page"
-status: "wip"
+status: "ready"
 context: 
+  color: "blue"
   content: "External Link"

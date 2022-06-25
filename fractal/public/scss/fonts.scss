@@ -53,6 +53,16 @@
 	font-style: normal;
 }
 
+@font-face {
+  font-family: "Open-Sans";
+  src:
+    local('fonts/open-sans'), url("/fonts/open-sans/open-sans-semibold.ttf") format("ttf"),
+    local('fonts/open-sans'), url("/fonts/open-sans/open-sans-semibold.woff") format("woff"),
+    local('fonts/open-sans'), url("/fonts/open-sans/open-sans-semibold.woff2") format("woff2");
+  font-display: block;
+	font-weight: 600;
+	font-style: normal;
+}
 
 @font-face {
   font-family: "Open-Sans";
