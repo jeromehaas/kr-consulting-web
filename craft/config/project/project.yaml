@@ -1,0 +1,22 @@
+dateModified: 1656175891
+email:
+  fromEmail: tools@haaswebsolutions.io
+  fromName: kr-consulting
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0e8b9745-1a76-4aa6-b2f1-f72225252c2c: Common
+    ac664f09-a9af-40d3-a60f-889403d18d91: kr-consulting
+    ba58fc37-be30-4b99-a88d-7f4d9e94e73d: kr-consulting
+system:
+  edition: solo
+  live: true
+  name: kr-consulting
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
