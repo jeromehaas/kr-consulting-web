@@ -7,30 +7,30 @@
 
 .heading, h1, h2, h3, h4, h5 {
 	font-family: 'Playfair-Display', serif;
-	font-weight: 400;
-  	color: $blue-100;
+	font-weight: 600;
 }
 
 .heading--h1 {
   	font-size: 80px;
-  	font-weight: 500;	
+  	font-weight: 600;	
 }
 
 .heading--h2 {
-	font-size: 60px;
-	line-height: 40px;
+	font-size: 48px;
+	font-weight: 600;
 }
 	
 .heading--h3 {
-  	font-size: 48px;
-  	font-weight: 500;
-	line-height: 1.2;
+  	font-size: 32px;
+  	font-weight: 600;
 }
 
 .heading--h4 {
-  	font-size: 24px;
-  	font-weight: 500;
-	line-height: 1.2;
+  	font-size: 16px;
+  	font-weight: 600;
+	font-family: 'Open-Sans';
+	text-transform: uppercase;
+	letter-spacing: 8%;
 }
 
 .heading--p {

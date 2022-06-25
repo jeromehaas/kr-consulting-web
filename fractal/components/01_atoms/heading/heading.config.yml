@@ -14,7 +14,6 @@ variants:
     content: Heading H2
     type: h2
     lookLike: h2
-    showShadow: true
 - name: h3
   context:
     content: Heading H3
