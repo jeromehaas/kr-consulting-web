@@ -1,0 +1,15 @@
+<form class="contact-form js-contact-form {{ class }}">
+	{{> @text-input class="contact-form__input contact-form__input--name" label="Name*" error-text="Bitte geben Sie Ihren Namen an" }}
+	{{> @text-input class="contact-form__input contact-form__input--email" label="Email-Adresse*" error-text="Bitte geben Sie eine gültige E-Mail-Adresse an"}}
+	{{> @text-input class="contact-form__input contact-form__input--phone" label="Telefon"}}
+	{{> @textarea class="contact-form__textarea contact-form__textarea--message" label="Erzählen Sie uns vobn Ihrem Projekt*" error-text="Bitte verfassen Sie eine Nachricht"}}
+	<span class="contact-form__disclaimer disclaimer">
+		<p class="disclaimer__text">
+			* Mit dem Senden sind Sie mit unserer <a class="disclaimer__link">Datenschutzerklärung</a> einverstanden.
+		</p>
+	</span>
+	<div class="contact-form__status-message status-message">
+		<p class="status-message--success">Ihre Nachricht wurde versendet.</p>
+		<p class="status-message--error">Ein Fehler ist aufgetreten - die Nachricht konnte nicht gesendet werden.</p>
+	</div>
+</form>

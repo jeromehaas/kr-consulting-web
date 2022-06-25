@@ -1,31 +1,19 @@
 'use strict';
 
-/*
-* Require the path module
-*/
+// INIT PATH
 const path = require('path');
 
-/*
- * Require the Fractal module
- */
+// INIT MODULE
 const fractal = module.exports = require('@frctl/fractal').create();
 
-/*
- * Give your project a title.
- */
-fractal.set('project.title', 'Fractal');
+// TITLE
+fractal.set('project.title', 'fractal');
 
-/*
- * Tell Fractal where to look for components.
- */
+// COMPONENT DIRECTORY
 fractal.components.set('path', path.join(__dirname, 'components'));
 
-/*
- * Tell Fractal where to look for documentation pages.
- */
-fractal.docs.set('path', path.join(__dirname, 'docs'));
+// PREVIEW DIRECTORY
+fractal.components.set('default.preview', '@page');
 
-/*
- * Tell the Fractal web preview plugin where to look for static assets.
- */
+// ASSETS DIRECTORY
 fractal.web.set('static.path', path.join(__dirname, 'public'));

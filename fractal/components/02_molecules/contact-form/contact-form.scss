@@ -1,0 +1,59 @@
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	background-color: $blue-60;
+
+	&__disclaimer, .disclaimer {
+
+		&__text, .paragraph {
+			color: $white;
+			margin-bottom: 16px;
+
+			&__link, a {
+				color: $grey-20;
+				text-decoration: none;
+			}
+		}
+
+		&__link {
+			color: white;
+			text-decoration: underline;
+			font-weight: inherit;
+		}
+
+	}
+
+	&__submit {
+		align-self: flex-end;
+	}
+
+	&__status-message, .status-message {
+
+		&--success, 
+		&--error {
+			display: none;
+			color: $white;
+			position: relative;	
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 4px;
+				height: 4px;
+				top: 12px;
+				display: inline-block;
+				margin-left: 8px;
+				background-color: $red-100;
+				border-radius: 50%;
+			}
+
+		}
+
+		&--success::after { background-color: $blue-60; }
+		&--error::after { background-color: $red-100; }
+		&--active { display: block }
+
+	}
+
+}

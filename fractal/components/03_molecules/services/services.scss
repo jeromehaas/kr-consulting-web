@@ -1,0 +1,283 @@
+.references {
+  background-color: $grey-80;
+  
+  &__inner {
+    display: grid;
+    grid-template-areas:
+		"heading"
+    	"grid";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+	padding-bottom: 96px;
+  }
+
+  &__heading, .heading {
+   grid-area: heading; 
+	position: relative;
+	margin-bottom: 64px;
+	z-index: 15;
+	color: $white;
+
+	 &__title {
+		 color: $white;
+		 width: 100%;
+	 }
+
+	 &__line {
+		 background-color: $white;
+	 }
+
+  }
+
+  &__grid, .grid{
+	grid-area: grid;
+	height: 560px;
+	width: 100%;
+	display: grid;
+	grid-gap: 16px; 
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	
+	
+	&__item, .item {
+		display: block;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+
+		&--big {
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+
+		&--wide {
+			grid-column: span 2;
+		}
+
+		&--small {
+			grid-column: span 1;
+		}
+
+		&--show-more {
+			border: 1px solid $white;
+			display: flex !important;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 32px;
+			text-align: center;
+
+				& .item__icon {
+					color: $white;
+					width: 48px;
+					height: 48px;
+					transform: rotate(235deg);
+					border: 1px solid $white;
+					border-radius: 50%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-bottom: 24px;
+				}			
+
+		}
+
+		&:hover {
+			
+			& .item__image {
+				transform: scale(1.1);
+			}
+
+		}
+	
+		&__image-limitter {
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+
+		&__image {
+			position: absolute;
+			display: block;
+			object-fit: cover;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			transition: all 1s ease;
+		}
+
+		&__heading {	
+			position: absolute;
+			left: 32px;
+			bottom: 32px;
+			margin-bottom: 0;
+			width: calc(100% - (2 * 32px))
+		}
+
+	
+	}
+
+}
+  
+@media (max-width: 950px) {
+
+		&__inner {
+			display: grid;
+			grid-template-areas:
+			"heading"
+			"grid"; 
+			grid-template-columns: 100%;
+			grid-template-rows: auto auto;
+
+		}
+
+		 &__grid, .grid{
+			height: 800px;
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+			grid-gap: 16px;
+
+
+				&__item, .item {
+				
+					&--big {
+						grid-row: span 3;
+					}
+
+					&--small {
+						grid-column: span 2;
+					}
+						
+					&--show-more {
+						grid-column: span 2;
+				}
+
+			}
+
+		 }
+
+	}
+	
+	@media (max-width: 750px) {
+
+	&__inner {
+		padding-bottom: 64px;
+	}
+
+	 &__grid, .grid {
+			height: auto;
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(1, 50%);
+			grid-template-rows: repeat(4, 150px);
+			grid-gap: 16px;
+
+
+				&__item, .item {
+				
+					&--big {
+						grid-row: span 2;
+					}
+
+					&--small {
+						grid-column: span 1;
+					}
+						
+					&--show-more {
+						grid-column: span 1;
+				}
+
+			}
+
+		 }
+
+	}
+
+	@media (max-width: 650px) {
+
+	  &__description, .description {
+			padding: 64px 32px 32px $padding-page-vertical-small;
+		}
+
+		&__controls, .controls {
+			padding: 32px $padding-page-vertical-small;
+		}
+
+	}
+
+	@media (max-width: 550px) {
+
+		&__grid, .grid{
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(5, 150px);
+			grid-gap: 16px;
+
+
+				&__item, .item {
+				
+					&--big {
+						grid-row: span 2;
+						grid-column: span 1;
+					}
+
+					&--small {
+						grid-column: span 1;
+					}
+	
+					&--wide {
+						grid-column: span 1;
+					}
+						
+					&--show-more {
+						grid-column: span 1;
+					}
+
+			}
+
+		 }
+
+	}
+
+	@media (max-width: 450px) {
+
+		&__grid, .grid {
+			grid-template-rows: repeat(5, 160px);
+
+				&__item, .item {
+				
+					&--big {
+						grid-column: span 1;
+					}
+
+					&--small {
+						grid-column: span 1;
+					}
+						
+					&--show-more {
+						grid-column: span 1;
+				}
+
+			}
+
+		}
+	}
+	
+	@media (max-width: 350px) {
+
+		&__controls, .controls {
+
+			&__arrow-wrapper {
+				display: none;
+			}
+
+		}
+
+	}
+
+}

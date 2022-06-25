@@ -1,0 +1,6 @@
+name: Text Input
+preview: "@page"
+context:
+  label: Label
+  name: email
+  errorMessage: "Dies ist ein Plichtfeld"

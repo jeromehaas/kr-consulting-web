@@ -1,0 +1,51 @@
+<div class="reference-detail section js-reference-detail">
+	<div class="reference-detail__inner section__inner">
+
+		<div class="reference-detail__panel panel">
+			{{> @heading class="panel__heading" type="h1" content="Restaurant Löwen" color="white"}}
+			{{> @paragraph class="panel__description" color="white" content="Erarbeitung und Umsetzung der Inneneinrichtung für Restaurant, Bar, Saal und Lounge."}}
+			<div class="panel__item item">
+				{{> @paragraph class="item__heading" style="serif" color="white" content="Jahr"}}
+				{{> @paragraph class="item__heading" color="white" content="2021"}}
+			</div>
+			<div class="panel__item item">
+				{{> @paragraph class="item__heading" style="serif" color="white" content="Ort"}}
+				{{> @paragraph class="item__heading" color="white" content="Tuggen ZH"}}
+			</div>
+			<div class="panel__item item">
+				{{> @paragraph class="item__heading" style="serif" color="white" content="In Zusammenarbeit mit"}}
+				{{> @paragraph class="item__heading" color="white" content="MB Architekten AG Lachen SZ"}}
+				{{> @paragraph class="item__heading" color="white" content="Hensel Architekten Lachen SZ"}}
+			</div>
+
+			{{> @back-link class="panel__back-link" }}
+		</div>
+
+		<div class="reference-detail__showcase showcase">
+			
+			<div class="showcase__swiper swiper">
+				<div class="showcase__wrapper swiper-wrapper">
+					<div class="showcase__slide swiper-slide">
+						<img class="showcase__image" src="/media/images/rupa-restaurant.webp" alt="Rupa Restaurant" />
+					</div>
+					<div class="showcase__slide swiper-slide">
+						<img class="showcase__image" src="/media/images/cresta-lounge.webp" alt="Rupa Restaurant" />
+					</div>
+					<div class="showcase__slide swiper-slide">
+						<img class="showcase__image" src="/media/images/schloss-restaurant.webp" alt="Rupa Restaurant" />
+					</div>
+				</div>
+			</div>
+				
+			<div class="showcase__controls controls">
+				<div class="controls__pagination"></div>
+				<i class="controls__angle controls__angle--previous icon icon--angle"></i>
+				<i class="controls__angle controls__angle--next icon icon--angle"></i>
+			</div>
+		
+		{{> @switcher class="showcase__switcher" }}
+
+		</div>
+
+	</div>
+</div>

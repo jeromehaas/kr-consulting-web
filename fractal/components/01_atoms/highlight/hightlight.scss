@@ -1,0 +1,10 @@
+.highlight {
+	color: $black;
+  font-size: inherit;
+
+  &--black { color: $black; }
+  &--beige-dark { color: $grey-80; }
+  &--blue-dark { color: $blue-100; }
+	&--white { color: $white; }
+
+}

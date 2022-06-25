@@ -1,0 +1,11 @@
+name: Link
+preview: "@page"
+context: 
+  content: Link
+  href: '#'
+  color: white
+variants:
+  - name: small
+    context:
+      content: Link (small)
+      style: small

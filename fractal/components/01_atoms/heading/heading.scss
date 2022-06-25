@@ -1,0 +1,10 @@
+.heading {
+  color: $blue-100;
+	 
+  &--black { color: $black }
+  &--beige-dark { color: $grey-80 }
+  &--beige-medium { color: $grey-20 }
+  &--blue-dark { color: $blue-100 }
+	&--white { color: $white }
+
+}
