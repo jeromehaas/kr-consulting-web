@@ -26,6 +26,11 @@
 }
 
 .heading--h4 {
+  	font-size: 24px;
+  	font-weight: 600;
+}
+
+.heading--h5 {
   	font-size: 16px;
   	font-weight: 600;
 	font-family: 'Open-Sans';
@@ -39,7 +44,7 @@
 }
 
 .paragraph, p {
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
 	font-family: "Open-Sans", Helvetica, sans-serif;
@@ -109,5 +114,11 @@
 .sub-navigation__item {
 	font-size: 14px;
 	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.contact-card__phone, 
+.contact-card__email {
+	font-size: 16px;
 	font-weight: 600;
 }
