@@ -1,33 +1,32 @@
-.textarea {
+.input-text {
 	width: 100%;
 	position: relative;
 	
 	&__input {
 		width: 100%;
-		display: block;
-		height: 120px;
-		color: $white;
+		height: 48px;
+		color: $black;
+		padding: 8px 0;
 		outline: none;
 		border: none;
 		border-radius: 0;
-		border-bottom: 1px solid $white;
+		border-bottom: 1px solid transparentize($black, 0.3);
 		padding: 0;
 		background-color: transparent;
 		margin-top: 40px;
-		resize: none;
-		
-		&:focus + .textarea__label,
-		&:not(:placeholder-shown) + .textarea__label,
-		&--active + .textarea__label {
+
+		&:focus + .input-text__label,
+		&:not(:placeholder-shown) + .input-text__label,
+		&--active + .input-text__label {
 			transform: translate(-16px, -32px);
 			font-size: 12px;
 		}
 
 		&--error {
 			
-			& ~ .text-input__error-message {
+			& ~ .input-text__error-message {
 				display: block;
-				
+
 				&::after {
 					content: "";
 					height: 8px;
@@ -35,19 +34,19 @@
 					width: 8px;
 					background-color: $red-100;
 					right: 16px;
-					top: 134px;
+					top: 56px;
 					position: absolute;
 				}
-				
-			}
 
+			}
+			
 		}
 
 	}
 	
 	&__label {
 		position: absolute;
-		color: $white;
+		color: transparentize($black, 0.3);
 		top: 48px;
 		left: 16px;
 		transition: all 0.2s ease;
