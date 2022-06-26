@@ -1,6 +1,34 @@
 .quote {
 
-	&::before { content: "\“"; }
-	&::after { content: "\”"; }
+	&__icon {
+		font-size: 80px;
+		color: $blue-80;
+		margin-bottom: 32px;
+	}
+	
+	&__text {
+		margin-bottom: 32px;
+	}
+
+	&__author, .author {
+
+		&__name,
+		&__role, 
+		&__separator {
+			display: inline;
+			color: $blue-80;
+		}
+
+		&__name {
+			
+		}
+
+		&__separator {
+			margin: 0 8px;
+		}
+
+
+
+	}
 
 }
