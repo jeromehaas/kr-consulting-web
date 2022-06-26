@@ -39,14 +39,15 @@
 }
 
 .paragraph, p {
-	font-size: 18px;
-	font-weight: 300;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.5;
 	font-family: "Open-Sans", Helvetica, sans-serif;
 
 	&--bold { font-weight: 600; }
 	&--small { font-size: 14px; }
 	&--big { font-size: 32px; }
-	&--serif { font-style: "Playfair-Display"; }
+	&--serif { font-family: "Playfair-Display"; }
 	strong { font-weight: inherit; }
 
 }
