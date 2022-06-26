@@ -1,18 +1,32 @@
 .contact-form {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
-	background-color: $blue-60;
+
+	&__input-text-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 16px;
+		margin-bottom: 32px;
+	}
+
+	&__input-checkbox {
+		margin-bottom: 16px;
+	}
+
+	&__input-textarea {
+		margin-bottom: 16px;
+	}
 
 	&__disclaimer, .disclaimer {
+		margin-bottom: 32px;
+		display: block;
 
 		&__text, .paragraph {
-			color: $white;
-			margin-bottom: 16px;
+			color: $black;
 
 			&__link, a {
-				color: $grey-20;
+				color: $blue-60;
 				text-decoration: none;
+				font-size: inherit;
+				cursor: pointer;
 			}
 		}
 
@@ -24,8 +38,8 @@
 
 	}
 
-	&__submit {
-		align-self: flex-end;
+	&__input-submit {
+		margin: 0 auto;
 	}
 
 	&__status-message, .status-message {

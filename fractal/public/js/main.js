@@ -1,2 +1,5 @@
 import Page from '../../components/04_layouts/page/page';
-const page = new Page().init();
+new Page().init();
+
+import ContactForm from '../../components/02_molecules/contact-form/contact-form';
+new ContactForm().init();

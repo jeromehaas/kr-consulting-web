@@ -18,7 +18,7 @@
 		&:focus + .input-text__label,
 		&:not(:placeholder-shown) + .input-text__label,
 		&--active + .input-text__label {
-			transform: translate(-16px, -32px);
+			transform: translate(-16px, -16px);
 			font-size: 12px;
 		}
 
@@ -29,9 +29,9 @@
 
 				&::after {
 					content: "";
-					height: 8px;
+					height: 6px;
 					border-radius: 50%;
-					width: 8px;
+					width: 6px;
 					background-color: $red-100;
 					right: 16px;
 					top: 56px;

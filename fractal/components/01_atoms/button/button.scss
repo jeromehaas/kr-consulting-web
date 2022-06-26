@@ -19,7 +19,7 @@
 
     &__icon {
         margin-left: 16px;
-        color: $white !important;
+        color: $white;
         z-index: 5;
         transition: all 0.3s ease;
         position: relative;
@@ -39,6 +39,17 @@
         transition: all 0.3s ease;
     }
 
+    &--light {
+        .button__text { color: $white; }
+        .button__icon { color: $white; }
+    }
+
+    &--dark {
+       .button__text { color: $blue-100; }
+       .button__icon { color: $blue-100; }
+    }
+    
+
     &:hover {
         
         & .button__overlay {
@@ -47,7 +58,6 @@
         }
 
         & .button__icon {
-            // margin-left: 32px;
             left: 8px;
         }
     }

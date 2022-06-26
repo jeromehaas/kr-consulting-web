@@ -1,17 +1,12 @@
-import { elementsInterface, inputsInterface } from './contact-form.model';
 import emailjs from '@emailjs/browser';
 
 class ContactForm {
-	name: string;
-	elements: elementsInterface;
-	errors: string[];
-	inputs: inputsInterface;
 
 	constructor() {
 		this.name = 'contact-form';
 		this.elements = {
 			form: document.querySelector('.contact-form'),
-			submitButton: document.querySelector('.contact-form__submit'),
+			submitButton: document.querySelector('.contact-form__input-submit'),
 			statusMessage: {
 				success: document.querySelector('.status-message--success'),
 				error: document.querySelector('.status-message--error'),
@@ -19,27 +14,33 @@ class ContactForm {
 		};
 		this.errors = [];
 		this.inputs = {
-			name: {
-				name: 'name',
-				element: document.querySelector('.contact-form__input--name input'),
+			firstname: {
+				name: 'firstname',
+				element: document.querySelector('.contact-form__input-text--firstname input'),
+				isRequired: true,
+				validationSchema: '^.{2,50}$',
+			},
+			lastname: {
+				name: 'lastname',
+				element: document.querySelector('.contact-form__input-text--lastname input'),
 				isRequired: true,
 				validationSchema: '^.{2,50}$',
 			},
 			email: {
 				name: 'email',
-				element: document.querySelector('.contact-form__input--email input'),
+				element: document.querySelector('.contact-form__input-text--email input'),
 				isRequired: true,
 				validationSchema: '[a-z0-9]+@[a-z]+.[a-z]{2,3}',
 			},
 			phone: {
 				name: 'phone',
-				element: document.querySelector('.contact-form__input--phone input'),
+				element: document.querySelector('.contact-form__input-text--phone input'),
 				isRequired: false,
 				validationSchema: '',
 			},
 			message: {
 				name: 'message',
-				element: document.querySelector('.contact-form__textarea--message textarea'),
+				element: document.querySelector('.contact-form__input-textarea--message textarea'),
 				isRequired: true,
 				validationSchema: '^.{2,500}$',
 			}
@@ -47,8 +48,9 @@ class ContactForm {
 	};
 
 
-	init = (): void => {
+	init = () => {
 		if (!document.querySelector(`.js-${this.name}`)) return;
+		console.log(this.inputs);
 		this.elements.submitButton.addEventListener('click', (event) => {
 			event.preventDefault();
 			this.validateInputs();
@@ -56,7 +58,7 @@ class ContactForm {
 		});
 	};
 
-	validateInputs = (): void => {
+	validateInputs = () => {
 		this.errors = [];
 		for (const input in this.inputs) {
 			const name = this.inputs[input].name;
@@ -74,27 +76,27 @@ class ContactForm {
 		};
 	};
 
-	addErrorStyle = (element: HTMLInputElement): void => {
+	addErrorStyle = (element) => {
 		switch(element.tagName) {
 		case 'INPUT': {
-			element.classList.add('text-input__input--error');
+			element.classList.add('input-text__input--error');
 			break;
 		};
 		case 'TEXTAREA': {
-			element.classList.add('textarea__input--error');
+			element.classList.add('input-textarea__input--error');
 			break;
 		};
 		};
 	};
 
-	removeErrorStyle = (element: HTMLInputElement) => {
+	removeErrorStyle = (element) => {
 		switch(element.tagName) {
 		case 'INPUT': {
-			element.classList.remove('text-input__input--error');
+			element.classList.remove('input-text__input--error');
 			break;
 		};
 		case 'TEXTAREA': {
-			element.classList.remove('textarea__input--error');
+			element.classList.remove('input-textarea__input--error');
 			break;
 		};
 		};
