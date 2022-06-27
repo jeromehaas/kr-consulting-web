@@ -24,3 +24,8 @@ variants:
     content: Heading H4
     type: h4
     lookLike: h4
+- name: h5
+  context:
+    content: Heading H4
+    type: h5
+    lookLike: h5   

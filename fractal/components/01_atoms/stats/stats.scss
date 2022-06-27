@@ -1,0 +1,34 @@
+.stats {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 48px;
+    flex-wrap: wrap;
+
+    &__item, .item {
+
+        &__wrapper {
+            white-space: nowrap;
+        }
+
+        &__icon { 
+            color: $blue-60;
+            font-size: 32px;
+        } 
+
+        &__icon, 
+        &__value, 
+        &__plus {
+            display: inline-block;
+            line-height: 1; 
+        }
+
+        &__label {
+            margin-top: 8px;
+        }
+
+        
+    }
+
+}

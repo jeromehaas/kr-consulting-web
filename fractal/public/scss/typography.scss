@@ -52,6 +52,7 @@
 	&--bold { font-weight: 600; }
 	&--small { font-size: 14px; }
 	&--big { font-size: 32px; }
+	&--extrabig { font-size: 48px; }
 	&--serif { font-family: "Playfair-Display"; }
 	strong { font-weight: inherit; }
 
@@ -121,4 +122,10 @@
 .contact-card__email {
 	font-size: 16px;
 	font-weight: 600;
+}
+
+.stats__item .item__value,
+.stats__item .item__plus,
+.stats__item .item__label {
+	line-height: 1;
 }
