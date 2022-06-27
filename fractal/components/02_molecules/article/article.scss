@@ -1,0 +1,27 @@
+.article {
+   display: grid;
+   grid-template-rows: auto auto auto;
+   grid-template-columns: 120px 1fr;
+   grid-template-areas: 
+    "heading heading"
+    "subheading text" 
+    ". outro"; 
+    grid-gap: 24px;
+
+    &__heading {
+        grid-area: heading;
+    }
+
+    &__subheading {
+        grid-area: subheading;
+    }
+
+    &__text {
+        grid-area: text;
+    }
+    
+    &__outro {
+        grid-area: outro;
+    }
+
+}
