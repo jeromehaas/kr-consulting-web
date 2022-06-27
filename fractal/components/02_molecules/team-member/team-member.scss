@@ -1,0 +1,39 @@
+.team-member {
+    display: flex;
+    flex-direction: row;
+
+    &__image {
+        display: block;
+        width: 50%;
+        object-fit: cover;
+    }
+
+    &__infos, .infos {
+        width: 50%;
+        padding: 120px;
+
+        &__heading { 
+            margin-bottom: 4px;
+        }
+
+        &__subheading {
+            margin-bottom: 32px;
+        }
+
+        &__text {
+            margin-bottom: 32px;
+        }
+
+        &__email {
+            padding-bottom: 2px;
+            display: inline-block;
+            border-bottom: 1px solid $blue-60;
+        }
+
+    }
+
+    &--reversed {
+        flex-direction: row-reverse;
+    }
+    
+}
