@@ -24,4 +24,24 @@
         grid-area: outro;
     }
 
+    @media( max-width: 550px) {
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "heading"
+        "subheading" 
+        "text" 
+        "outro"; 
+        grid-gap: 0;
+        
+        &__subheading {
+            margin-bottom: 24px;
+        }
+
+        &__text {
+            margin-bottom: 24px;
+        }
+
+    }
+
 }
