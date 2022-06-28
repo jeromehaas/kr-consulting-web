@@ -1,0 +1,37 @@
+.desktop-navigation {
+    height: auto;
+    position: relative;
+
+
+    &__inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 64px auto;
+    }
+
+        // }
+
+    &__logo {
+        height: 40px;
+    }
+
+    &__link-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__link {
+        margin: 8px 16px 4px 16px;
+        color: $white;
+    }
+    
+    &__partnerlogin {
+        margin: 8px 0 4px 16px;
+    }
+
+
+
+
+}

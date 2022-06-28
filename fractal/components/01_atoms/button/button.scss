@@ -32,19 +32,19 @@
         right: calc(100% - 32px);
         bottom: 0;
         width: 100%;
-        background-color: $blue-80;
+        background-color: $blue-40;
         opacity: 0.3;
         pointer-events: none;
         transform: skew(-45deg);
         transition: all 0.3s ease;
     }
 
-    &--light {
+    &--white {
         .button__text { color: $white; }
         .button__icon { color: $white; }
     }
 
-    &--dark {
+    &--blue {
        .button__text { color: $blue-100; }
        .button__icon { color: $blue-100; }
     }

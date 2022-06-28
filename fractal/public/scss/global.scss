@@ -43,6 +43,11 @@ img {
 	-webkit-user-drag: none;
 }
 
+@media (max-width: 1250px) {
+	.desktop-navigation { display: none; }
+	.mobile-navigation { display: block; }
+}
+
 @media (max-width: 950px) {
 	
 	.section__inner {
