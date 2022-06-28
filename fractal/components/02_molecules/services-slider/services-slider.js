@@ -6,11 +6,12 @@ class ServicesSlider {
 	constructor() {
 		this.name = 'services-slider';
 		this.elements = {
-			slider: {
-				items: document.querySelectorAll('.services-slider .slider__item') 
-			}, 
 			background: {
 				image: document.querySelectorAll('.services-slider .background__image')
+			},
+			arrows: {
+				left: document.querySelector('.services-slider .arrows__icon--left'),
+				right: document.querySelector('.services-slider .arrows__icon--right'),
 			}
 		},
 		this.slider = {
@@ -19,7 +20,7 @@ class ServicesSlider {
 				modules: [Navigation, Autoplay],
 				speed: 400,
 				loop: true,
-				slidesPerView: 3,
+				slidesPerView: 1,
 				spaceBetween: 0,
 				navigation: {
 					nextEl: '.swiper-button-next',
@@ -31,7 +32,13 @@ class ServicesSlider {
 				},
 				autoplay: {
 					delay: 8000
-				}
+				},
+				breakpoints: {
+					350: { slidesPerView: 1.2, spaceBetween: 0 },
+					650: { slidesPerView: 2, spaceBetween: 0 },
+					950: { slidesPerView: 3, spaceBetween: 0 },
+					1250: { slidesPerView: 4, spaceBetween: 0 },
+				},	
 
 			}
 		};
@@ -40,6 +47,7 @@ class ServicesSlider {
 	init = () => {
 		this.createCarousel();
 		this.changeBackgroundImage();
+		this.updateBackgroundImage();
 	};
 
 	createCarousel = () => {
@@ -47,61 +55,36 @@ class ServicesSlider {
 	};
 
 	changeBackgroundImage = () => {
-		const items = gsap.utils.toArray(this.elements.slider.items);
-		const images = gsap.utils.toArray(this.elements.background.image);
+		const items = document.querySelectorAll('.services-slider .slider__item');
+		const images = document.querySelectorAll('.services-slider .background__image')
 		items.forEach((item) =>  {
-			item.addEventListener('pointerenter', () => {
+			item.addEventListener('mouseenter', () => {
+				images.forEach((image) => gsap.to(image, { opacity: 0, delay: 0.3 }));
 				images.forEach((image) => {
-					gsap.to(image, { opacity: 0 });
+					if (image.getAttribute('data-key') === item.getAttribute('data-key')) {
+						gsap.to(image, { opacity: 0.3, delay: 0.3 });
+					};
 				});
-				const itemKey = item.getAttribute('data-key');
-				console.log(itemKey);
-				const imageTarget = images.find((image) => {
-					if (image.getAttribute('data-key') === itemKey) return image;
-				});
-				console.log(imageTarget);
-				gsap.to(imageTarget, { opacity: 0.3 });
-				// this.elements.background.image.src = imageUrl;
 			});
 		});
-
 	};
 
-	setItemEventListener = () => {
-		// const items = gsap.utils.toArray(this.elements.slider.items);
-		// items.forEach((item) =>  {
-		// 	item.addEventListener('pointerenter', () => {
-		// 		this.showItemDetail(item);
-		// 	});
-		// 	item.addEventListener('pointerleave', () => {
-		// 		this.hideItemDetail();
-		// 	})
-		// });
+	updateBackgroundImage = () => {
+		this.slider.element.on('slideChange', () => {
+			if ( window.innerWidth > 650 ) return;
+			const items = document.querySelectorAll('.services-slider .slider__item');
+			const images = gsap.utils.toArray(document.querySelectorAll('.services-slider .background__image'));
+			const index = this.slider.element.activeIndex;
+			const activeItem = items[index];
+			const imageKey = activeItem.getAttribute('data-key');
+			images.forEach((image) => gsap.to(image, { opacity: 0, delay: 0.15 } ));
+			images.forEach((image) => {
+				if (image.getAttribute( 'data-key' ) === imageKey) {
+					gsap.to(image, { opacity: 0.3, delay: 0.15 });
+				};
+			} );
+		});
 	};
-
-	showItemDetail = (item) => {
-		// console.log('show item:', item);
-		// const heading = item.querySelector('.item__heading');
-		// const text = item.querySelector('.item__text');
-		// const square = item.querySelector('.item__square');
-		// const timeline = gsap.timeline();
-		// timeline.to(heading, { y: -32 } );
-		// timeline.to(text, { y: -32, opacity: 1 }, '-=0' );
-		// timeline.to(square, { x: 16 }, '-=0' );
-	};
-
-	hideItemDetail = () => {
-		// const items = gsap.utils.toArray(this.elements.slider.items);
-		// const timeline = gsap.timeline();
-		// items.forEach((item) => {
-		// 	const heading = item.querySelector('.item__heading');
-		// 	const text = item.querySelector('.item__text');
-		// 	const square = item.querySelector('.item__square');
-		// 		timeline.to(square, { x: -16 }, '-=0' );
-		// 		timeline.to(text, { y: +32, opacity: 0 }, '-=0' );
-		// 		timeline.to(heading, { y: +32 } );
-		// 	})
-	}
 
 };
 
