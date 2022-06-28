@@ -70,4 +70,15 @@
 
 	}
 
+	@media (max-width: 650px) {
+
+		&__input-text-wrapper {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 16px;
+			margin-bottom: 32px;
+		}
+		
+	}
+
 }
