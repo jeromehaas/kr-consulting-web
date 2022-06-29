@@ -71,7 +71,6 @@ class ServicesSlider {
 
 	updateBackgroundImage = () => {
 		this.slider.element.on('slideChange', () => {
-			if ( window.innerWidth > 650 ) return;
 			const items = document.querySelectorAll('.services-slider .slider__item');
 			const images = gsap.utils.toArray(document.querySelectorAll('.services-slider .background__image'));
 			const index = this.slider.element.activeIndex;
