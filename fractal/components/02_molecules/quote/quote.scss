@@ -1,34 +1,69 @@
 .quote {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 120px 1fr; 	
+	grid-template-areas: 
+		"navigation content"
+		"avatar content";
+	grid-gap: 48px;
 
-	&__icon {
-		font-size: 80px;
-		color: $blue-80;
-		margin-bottom: 32px;
+	&__avatar {
+		grid-area: avatar;
+		width: 100%;
+		display: block;
+		align-self: end;
 	}
 	
-	&__text {
-		margin-bottom: 32px;
-	}
-
-	&__author, .author {
-
-		&__name,
-		&__role, 
-		&__separator {
-			display: inline;
+	&__content, .content {
+		grid-area: content;
+		
+		&__icon {
+			font-size: 80px;
 			color: $blue-80;
+			margin-bottom: 32px;
+		}
+	
+		&__text {
+			margin-bottom: 32px;
 		}
 
-		&__name {
+		&__author, .author {
+
+			&__name,
+			&__role, 
+			&__separator {
+				display: inline;
+				color: $blue-80;
+			}
+
+			&__name {
+				
+			}
+			
+			&__separator {
+				margin: 0 8px;
+			}
 			
 		}
+		
+	}
 
-		&__separator {
-			margin: 0 8px;
+	@media (max-width: 550px) {
+		
+		grid-template-rows: auto;
+		grid-template-columns: auto; 	
+		grid-template-areas: 
+		 	"navigation"
+			"avatar"
+			"content"
+			"content";
+		grid-gap: 0;
+		
+		&__avatar {
+			max-width: 160px;
+			margin: 0 auto 24px auto;
 		}
-
-
-
+			
 	}
 
 }

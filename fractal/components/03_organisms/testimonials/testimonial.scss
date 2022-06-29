@@ -1,0 +1,35 @@
+.testimonials {
+
+    &__inner {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    &__symbol {
+        height: 150%;
+        position: absolute;
+        right:  calc(100% - 320px);
+        bottom: -65%;
+        z-index: -5;
+    }
+
+    &__quote {
+        margin-left: 240px;
+    }
+
+    @media (max-width: 1000px) {
+
+        &__quote {
+            margin-left: 120px;
+        }
+
+    }
+
+    @media (max-width: 750px) {
+
+        &__quote {
+            margin-left: 0;
+        }
+    }
+
+}
