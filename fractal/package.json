@@ -34,6 +34,8 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
+    "js-cookie": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
     "node-sass": "^7.0.1",
     "prettier": "^2.6.2",
     "sass": "^1.50.1",

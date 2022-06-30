@@ -6,3 +6,9 @@ new ContactForm().init();
 
 import ServicesSlider from '../../components/02_molecules/services-slider/services-slider';
 new ServicesSlider().init();
+
+import Login from '../../components/03_organisms/login/login';
+new Login().init();
+
+import SessionCheck from '../../components/03_organisms/login/session-check';
+new SessionCheck().init();
