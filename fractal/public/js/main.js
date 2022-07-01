@@ -12,3 +12,6 @@ new Login().init();
 
 import SessionCheck from '../../components/03_organisms/login/session-check';
 new SessionCheck().init();
+
+import MobileNavigation from '../../components/03_organisms/mobile-navigation/mobile.navigation';
+new MobileNavigation().init();

@@ -1,3 +1,67 @@
 .mobile-navigation {
-	
+    background-color: $blue-80;
+
+    &__inner {
+        padding: 0;
+    }
+
+    &__bar, .bar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 64px;
+        padding: 16px 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $blue-80;
+        transition: top 0.3s ease;
+
+        &--hidden {
+            top: -64px !important;
+        }
+
+        &__logo {
+            height: 32px;
+        }
+
+        &__hamburger {
+            height: 32px;
+            width: 32px;
+        }
+    }
+
+    &__menu, .menu {
+        padding: 64px ;
+        flex-direction: column;
+        margin-top: 64px;
+        min-height: calc(100vh - 64px);
+        position: fixed;
+        top: 0;
+        left: 100%;
+        bottom: 0;
+        width: 100%;
+        background-color: $blue-80;
+        transition: all 0.3s ease;
+        display: flex;
+        
+        &--active {
+            left: 0% !important;
+        }
+
+        &__link {
+            color: $white;
+            margin-bottom: 16px;
+        }
+
+    }
+
+}
+
+.fakepage {
+    height: 400vh;
+    width: 100%;
+    background: linear-gradient(red, blue);
+
 }
