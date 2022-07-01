@@ -1,3 +1,164 @@
 .footer {
-	
-} 
+    background-color:  $blue-80;
+
+    &__inner {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+            "infos infos"
+            "links partners";
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    &__infos, .infos {
+        grid-area: infos;
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid $white;
+        
+        &__logo {
+            margin-right: 32px;
+        }
+
+        &__address, .address {
+
+            &__item,
+            &__heading {
+                display: block;
+                color: $white;
+            }
+
+        }
+       
+        &__contact, .contact {
+            
+                &__heading {
+                    display: block;
+                    color: $white;
+                }
+
+                &__link {
+                    display: block;
+                    color: $blue-40;
+                }
+
+            }
+
+    }
+
+
+    &__links, .links {
+        align-self: end;
+        grid-area: links;
+        display: flex;
+        flex-direction: row;
+
+        &__item {
+            margin-right: 32px;
+            color: $white;
+        }
+
+        &__link {
+            margin-right: 32px;
+            color: $blue-40;
+        }
+
+    }
+
+    &__partners, .partners {
+        align-self: end;
+        justify-self: end;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        margin-bottom: 32px;
+
+        &__item {
+            height: 32px;
+        }
+
+        &__logo {
+            height: 100%;
+        }
+
+    }
+
+    @media (max-width: 1350px) {
+
+        &__inner {
+            grid-template-rows: auto auto auto;
+            grid-template-columns: auto;
+            grid-template-areas: 
+                "infos"
+                "partners"
+                "links";
+            grid-gap: 32px;
+        }
+
+        &__infos, .infos {
+
+            &__logo {
+                margin-bottom: 32px;                
+            }
+
+        }
+
+        &__partners, .partners {
+            justify-self: start;
+
+            &__item {
+                height: 40px;
+            }
+
+        }
+
+
+    }
+
+    @media (max-width: 900px) {
+
+        &__infos, .infos {
+            gap: 16px;
+            flex-direction: column;
+            
+            &__logo {
+                max-width: 240px;
+            }
+
+        }
+
+        &__partners, .partners {
+            flex-direction: column;
+            gap: 32px;
+        }
+    
+        &__links, .links {
+            flex-direction: column;
+        }
+
+    }
+
+    @media (max-width: 350px) {
+
+        &__infos, .infos {
+        
+            &__logo {
+                max-width: 100%;
+            }
+        }
+
+        &__partners, .partners {
+            gap: 16px;
+
+            &__logo {
+                height: 30px;
+            }
+        }
+    }
+
+}

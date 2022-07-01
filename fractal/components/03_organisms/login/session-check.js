@@ -9,7 +9,7 @@ class SessionCheck {
   init = () => {
     if ( process.env.MODE === 'production') return;
     if ( window.location.href === '/login') return;
-    this.validateSession();
+    // this.validateSession();
   };
 
   validateSession() {

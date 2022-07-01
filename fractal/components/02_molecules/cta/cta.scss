@@ -1,0 +1,60 @@
+.cta {
+    width: 100%;
+    height: auto;
+    position: relative;
+    
+    &__inner {
+        position: relative;
+    }
+    
+    &__image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: transparentize($blue-100, 0.75);
+    }
+
+    &__background {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $blue-80;
+        z-index: -5;
+    }
+
+    &__content, .content {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 40px 80px;
+        gap: 40px;
+
+        &__heading  {
+            height: 100%;
+            margin-bottom: 32px;
+        }
+
+        &__button {
+            min-width: 320px;
+        }
+
+    }
+
+}
