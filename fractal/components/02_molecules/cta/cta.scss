@@ -49,6 +49,7 @@
         &__heading  {
             height: 100%;
             margin-bottom: 32px;
+            hyphens: unset;
         }
 
         &__button {
@@ -56,5 +57,43 @@
         }
 
     }
+
+    @media (max-width: 1200px) {
+
+        &__content, .content {
+            flex-direction: column;
+
+            &__button {
+                align-self: flex-end;
+            }
+
+        }
+
+    }
+
+    @media (max-width: 1050px) {
+
+        &__content, .content {
+
+            &__button {
+                align-self: center;
+            }
+
+        }
+
+    }
+
+    @media (max-width: 750px) {
+
+        &__content, .content {
+
+            &__button {
+                align-self: flex-start;
+            }
+
+        }
+
+    }
+   
 
 }
