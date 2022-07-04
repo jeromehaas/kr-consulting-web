@@ -7,6 +7,7 @@
         list-style: none;
         line-height: 2;
         color: $blue-80;
+				cursor: pointer;
 
         &::before {
             content: "";
@@ -16,7 +17,7 @@
             display: block;
             position: absolute;
             left: -24px;
-            top: calc(50% - 4px);
+            top: calc(10px);
             border-radius: 50%;
         }
 

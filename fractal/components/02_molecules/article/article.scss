@@ -1,16 +1,18 @@
 .article {
-   display: grid;
-   grid-template-rows: auto auto auto auto;
-   grid-template-columns: 120px 1fr;
-   grid-template-areas: 
-   "image image"
-    "heading heading"
-    "subheading text" 
-    ". outro"; 
-    grid-gap: 24px;
+	
+	&__content {
+		padding: 32px;
+			display: grid;
+			grid-template-rows: auto auto auto auto;
+			grid-template-columns: 120px 1fr;
+			grid-template-areas: 
+			 "heading heading"
+			 "subheading text" 
+			 ". outro"; 
+			 grid-gap: 24px;
+		}
 
     &__image {
-        grid-area: image;
         width: 100%;
         height: 240px;
         object-fit: cover;
@@ -32,15 +34,23 @@
         grid-area: outro;
     }
 
-    @media( max-width: 550px) {
+    @media (max-width: 750px) {
+
+			&__content {
+				display: grid;
         grid-template-rows: auto auto auto auto;
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         grid-template-areas: 
         "heading"
         "subheading" 
         "text" 
         "outro"; 
         grid-gap: 0;
+			}
+
+				&__heading {
+					margin-bottom: 24px;
+				}
         
         &__subheading {
             margin-bottom: 24px;

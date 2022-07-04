@@ -15,3 +15,6 @@ new SessionCheck().init();
 
 import MobileNavigation from '../../components/03_organisms/mobile-navigation/mobile.navigation';
 new MobileNavigation().init();
+
+import Services from '../../components/03_organisms/services/services';
+new Services().init();
