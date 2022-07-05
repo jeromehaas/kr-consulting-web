@@ -1,4 +1,11 @@
 .about {
+
+	&__inner {
+		padding: 0;
+	}
 	
+	&__team-member:not(:last-child) {
+		margin-bottom: 120px;
+	}
 
 }
