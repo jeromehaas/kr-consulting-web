@@ -1,0 +1,29 @@
+.contact-teaser {
+	display: grid;
+	grid-template-areas:
+		"text contact-details"
+		"button contact-details";
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	align-items: flex-start;
+	grid-gap: 64px;
+
+	&__text {
+		grid-area: text;
+		max-width: 640px;
+	}
+
+	&__contact-details, .contact-details {
+		grid-area: contact-details;
+
+		&__item:not(:last-child) {
+			margin-bottom: 32px;
+		}
+
+	}
+
+	&__button {
+		grid-area: button;
+	}
+
+}
