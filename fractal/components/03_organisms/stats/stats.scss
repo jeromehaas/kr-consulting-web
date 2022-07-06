@@ -1,5 +1,14 @@
 .stats {
 
+		&__inner {
+			padding-top: 64px;
+			padding-bottom: 64px;
+		}
+		
+		&__wrapper {
+			max-width: 800px;
+		}
+
     &__peaker {
         margin-bottom: 32px;
     }
@@ -17,21 +26,30 @@
         margin-left: 160px;
     }
 
+		@media (max-width: 950px) {
+
+			&__inner {
+				padding-left: 64px;
+				padding-right: 64px;
+			}
+
+		}
+
+    @media (max-width: 850px) {
+
+        &__counters {
+            margin-left: 64px;
+        }
+
+         &__button {
+            margin-left: 64px;
+        }
+
+    }
+
     @media (max-width: 750px) {
 
         &__counters {
-            margin-left: 80px;
-        }
-
-         &__button {
-            margin-left: 80px;
-        }
-
-    }
-
-    @media (max-width: 6750px) {
-
-        &__counters {
             margin-left: 0;
         }
 
@@ -40,4 +58,14 @@
         }
 
     }
+
+		@media (max-width: 650px) {
+
+			&__inner {
+				padding-left: 32px;
+				padding-right: 32px;
+			}
+
+		}
+
 }

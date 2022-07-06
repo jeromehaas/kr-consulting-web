@@ -1,7 +1,7 @@
 .desktop-navigation {
     height: auto;
-    position: relative;
-
+    position: absolute;
+		z-index: 15;
 
     &__inner {
         display: flex;
@@ -29,8 +29,6 @@
     &__partnerlogin {
         margin: 8px 0 4px 16px;
     }
-
-
 
 
 }

@@ -4,11 +4,12 @@
 &__inner {
 	position: relative;
 	padding-right:  0;
-	padding: 64px 0 64px 96px;
+	padding: 96px 0 0 96px;
   }
 
   &__heading, .heading {
-	margin-bottom: 32px;
+		margin-bottom: 32px;
+		margin-right: calc(400px + 96px);
   }
 
   &__background {
@@ -23,9 +24,32 @@
 
   @media (max-width: 1000px) {
 	
-	&__background {
-		right: 0;
-	}
+
+
+		&__background {
+			right: 0;
+		}
+
+		&__heading, .heading {
+			margin-right: 96px;
+		}
+
   }
+
+	@media (max-width: 950px) {
+		
+		&__inner {
+			padding: 96px 0 0 64px;
+		}
+
+	}
+
+	@media (max-width: 650px) {
+
+		&__inner {
+			padding: 96px 0 0 32px;
+		}
+		
+	}
 
 }

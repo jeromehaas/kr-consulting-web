@@ -14,13 +14,11 @@
 .heading--h1 {
   	font-size: 80px;
   	font-weight: 600;	
-	hyphens: auto;
 }
 
 .heading--h2 {
 	font-size: 48px;
 	font-weight: 600;
-	hyphens: auto;
 }
 	
 .heading--h3 {
@@ -36,9 +34,9 @@
 .heading--h5 {
   	font-size: 16px;
   	font-weight: 600;
-	font-family: 'Open-Sans';
-	text-transform: uppercase;
-	letter-spacing: 8%;
+		font-family: 'Open-Sans';
+		text-transform: uppercase;
+		letter-spacing: 8%;
 }
 
 .heading--p {
@@ -152,4 +150,37 @@
 .page-not-found__content .content__heading {
 	font-size: 240px;
 	line-height: 1;
+}
+
+@media (max-width: 950px) {
+
+	.heading--h1 {
+		font-size: 60px;
+	}
+
+	.heading--h2 {
+		font-size: 40px;
+	}
+
+	.heading--h3 {
+		font-size: 24px;
+	}
+
+
+}
+
+@media (max-width: 650px) {
+
+	.heading--h1 {
+		font-size: 40px;
+	}
+
+	.heading--h2 {
+		font-size: 32px;
+	}
+
+	.heading--h3 {
+		font-size: 20px;
+	}
+
 }

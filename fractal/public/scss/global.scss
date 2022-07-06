@@ -29,13 +29,13 @@
 }
 .section {
 	width: 100%;
-	overflow: hidden;
+	overflow-y: hidden;
 }
 
 .section__inner {
 	width: 100%;
 	padding: 0 $padding-page-vertical-big;
-	max-width: 1440px;
+	max-width: 1800px;
 	margin: 0 auto;
 }
 
@@ -45,7 +45,7 @@ img {
 
 @media (max-width: 1250px) {
 	.desktop-navigation { display: none; }
-	.mobile-navigation { display: block; }
+	.mobile-navigation { display: block !important; }
 }
 
 @media (max-width: 950px) {
