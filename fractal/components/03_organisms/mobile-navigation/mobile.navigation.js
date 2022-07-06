@@ -27,8 +27,11 @@ class MobileNavigation {
 	};
 
 	setupEventListeners = () => {
-		window.addEventListener('scroll', this.setNavigationVisibility);
-	}
+		window.addEventListener('scroll', () => {
+			this.setNavigationVisibility();
+			this.setNavigationOpacity();
+		});
+	};
 
 	setupHamburger = () => {
 		this.hamburger.element = lottieWeb.loadAnimation({
@@ -78,6 +81,15 @@ class MobileNavigation {
 			this.elements.bar.classList.remove('mobile-navigation__bar--hidden');
 		}
 		this.status.scrollPosition = window.pageYOffset;
+	};
+
+	setNavigationOpacity = () => {
+		console.log(window.pageYOffset);
+		if (window.pageYOffset < 120 && this.status.isActive === false) {
+			this.elements.bar.classList.add('mobile-navigation__bar--transparent');
+		} else {
+			this.elements.bar.classList.remove('mobile-navigation__bar--transparent');
+		}
 	};
 
 };

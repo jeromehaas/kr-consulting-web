@@ -14,11 +14,16 @@
         left: 0;
         height: 64px;
         background-color: $blue-80;
-        transition: top 0.3s ease;
+        transition: all 0.3s ease;
 				
         &--hidden {
 					top: -64px !important;
         }
+
+				&--transparent {
+					background-color: transparentize($blue-80, 1) !important;
+					// background-color: red !important;
+				}
 				
 				&__inner {
 					display: flex;
