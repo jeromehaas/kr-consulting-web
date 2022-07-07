@@ -15,6 +15,7 @@
         height: 64px;
         background-color: $blue-80;
         transition: all 0.3s ease;
+        z-index: 5;
 				
         &--hidden {
 					top: -64px !important;
@@ -43,10 +44,9 @@
     }
 
     &__menu, .menu {
-        padding: 64px ;
+        padding: 128px 64px 64px 64px ;
         flex-direction: column;
-        margin-top: 64px;
-        min-height: calc(100vh - 64px);
+        min-height: 100vh;
         position: fixed;
         top: 0;
         left: 100%;

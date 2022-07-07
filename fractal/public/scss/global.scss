@@ -35,7 +35,7 @@
 .section__inner {
 	width: 100%;
 	padding: 0 $padding-page-vertical-big;
-	max-width: 1800px;
+	max-width: $max-section-width;
 	margin: 0 auto;
 }
 
