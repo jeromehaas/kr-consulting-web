@@ -2,14 +2,15 @@
 	
 	&__content {
 		padding: 32px;
-			display: grid;
-			grid-template-rows: auto auto auto auto;
-			grid-template-columns: 120px 1fr;
-			grid-template-areas: 
-			 "heading heading"
-			 "subheading text" 
-			 ". outro"; 
-			 grid-gap: 24px;
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 120px 1fr;
+        grid-template-areas: 
+        "heading heading"
+        "subheading text" 
+        ". outro"; 
+        grid-gap: 48px;
+        max-width: 800px;
 		}
 
     &__image {
@@ -48,9 +49,9 @@
         grid-gap: 0;
 			}
 
-				&__heading {
-					margin-bottom: 24px;
-				}
+        &__heading {
+            margin-bottom: 24px;
+        }
         
         &__subheading {
             margin-bottom: 24px;

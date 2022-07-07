@@ -2,12 +2,15 @@
     width: 100%;
     height: auto;
     position: relative;
+    background-color: red;
+    z-index: -5;
+    background-color: $grey-20;
     
     &__inner {
-			position: relative;
-			z-index: 5;
-			width: calc(100% - (2 * 96px));
-			padding: 0;
+        position: relative;
+        z-index: 5;
+        width: calc(100% - (2 * 96px));
+        padding: 0;
     }
     
     &__image {

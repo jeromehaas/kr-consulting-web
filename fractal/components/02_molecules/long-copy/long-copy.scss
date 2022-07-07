@@ -1,0 +1,31 @@
+.long-copy {
+	background-color: $blue-80;
+
+	&__inner {
+		padding: 96px;
+	}
+
+	&__heading {
+		margin-bottom: 32px;
+	}
+
+	@media (max-width: 950px) {
+
+		&__inner {
+			padding: 64px;
+		}
+
+	}
+
+	@media (max-width: 650px) {
+
+		&__inner {
+			padding: 32px;
+		}
+
+	}
+
+
+
+
+}
