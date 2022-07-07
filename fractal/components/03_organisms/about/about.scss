@@ -3,9 +3,31 @@
 	&__inner {
 		padding: 0;
 	}
+
+
 	
-	&__team-member:not(:last-child) {
-		margin-bottom: 120px;
+	&__team-member {
+
+		&:not(:last-child) {
+			padding-bottom: 120px;
+		}
+
+		&:first-child {
+			background-color: $grey-20;
+		}
+		
+	}
+
+	@media (max-width: 750px) {
+
+		&__team-member {
+
+			&:not(:last-child) {
+				padding-bottom: 48px;	
+			}
+
+		}
+
 	}
 
 }
