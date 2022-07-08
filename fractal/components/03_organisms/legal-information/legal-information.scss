@@ -1,0 +1,67 @@
+.legal-information {
+    overflow: unset;
+    background-color: $grey-20;
+
+&__inner {
+    width: 100%;
+    padding-right: 0;
+    overflow: unset;
+}
+
+&__heading {
+    margin-bottom: 96px;
+}
+
+&__wrapper {
+    display: grid;
+    grid-template-columns: 240px auto;
+}
+
+&__sidepanel, .sidepanel {
+    width: 240px;
+    padding: 96px 32px  32px 32px;
+    
+    &__sub-navigation {
+        position: sticky;
+        top: 96px;
+    }
+    
+}
+
+&__content {
+    background-color: $white;
+    max-width: calc($max-section-width - 240px);
+    padding-right: 96px;
+}
+
+@media (max-width: 950px) {
+
+    &__content {
+        padding-right: 64px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    &__inner {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    &__wrapper {
+        grid-template-columns: auto;
+
+    }
+
+    &__sidepanel {
+        display: none;
+    }
+
+    &__content {
+        padding-right: 0;
+    }
+
+}
+
+}

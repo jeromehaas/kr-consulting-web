@@ -45,6 +45,7 @@ img {
 
 @media (max-width: 1250px) {
 	.desktop-navigation { display: none; }
+	.desktop-navigation__spacer { display: none; }
 	.mobile-navigation { display: block !important; }
 }
 

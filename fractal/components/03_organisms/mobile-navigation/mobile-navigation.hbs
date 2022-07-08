@@ -1,11 +1,15 @@
-<nav class='mobile-navigation js-mobile-navigation'>
+<nav class='mobile-navigation {{ class }} {{#if block}} mobile-navigation--block {{/if}} js-mobile-navigation'>
     <div class="mobile-navigation__inner section__inner">
         
         <div class="mobile-navigation__bar mobile-navigation__bar--transparent bar">
-					<div class="bar__inner">
-            <img class="bar__logo" src="/media/graphics/logos/logo-kr-consulting-small.svg" alt="KR Consulting">
+			<div class="bar__inner">
+                {{#if light}}
+                    <img class="bar__logo" src="/media/graphics/logos/logo-kr-consulting-small-dark.svg" alt="KR Consulting">
+                {{else}}
+                    <img class="bar__logo" src="/media/graphics/logos/logo-kr-consulting-small-light.svg" alt="KR Consulting">
+                {{/if}}
             <div class="bar__hamburger"></div>
-					</div>
+			</div>
         </div>
 
         <div class="mobile-navigation__menu menu">
@@ -17,4 +21,5 @@
 
     </div>    
 </nav>
+<div class="mobile-navigation__spacer"></div>
 

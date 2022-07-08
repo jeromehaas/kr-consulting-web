@@ -84,7 +84,6 @@ class MobileNavigation {
 	};
 
 	setNavigationOpacity = () => {
-		console.log(window.pageYOffset);
 		if (window.pageYOffset < 120 && this.status.isActive === false) {
 			setTimeout(() => {
 				this.elements.bar.classList.add('mobile-navigation__bar--transparent');
