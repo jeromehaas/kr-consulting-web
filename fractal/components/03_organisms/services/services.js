@@ -18,7 +18,6 @@ class Services {
 	setupScrollTrigger = () => {
 		const links = gsap.utils.toArray(this.links);
 		links.forEach((link) => {
-			console.log(link)
 			if (link.hash) {
 				link.addEventListener('click', (event) => this.scrollToSection(event, link.hash));
 			};
@@ -27,7 +26,6 @@ class Services {
 
 	scrollToSection = (event, hash) => {
 		event.preventDefault();
-		console.log(hash)
 		gsap.to( window, { scrollTo: hash, duration: 1.3, ease: 'Power4.easeInOut' });
 	};
 

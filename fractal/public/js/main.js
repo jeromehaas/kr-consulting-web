@@ -1,5 +1,8 @@
-import Page from '../../components/04_layouts/page/page';
-new Page().init();
+import Dark from '../../components/04_layouts/page/dark/dark';
+new Dark().init();
+
+import Light from '../../components/04_layouts/page/light/light';
+new Light().init();
 
 import ContactForm from '../../components/02_molecules/contact-form/contact-form';
 new ContactForm().init();

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="{{ path '/css/main.min.css' }}">
+  <link rel="icon" href="{{ path '/media/favicons/favicon.ico' }}">
+  <title>KR Consulting</title>
+
+</head>
+
+<body class="body page js-page">
+    {{> @mobile-navigation block="true" }}
+    {{> @desktop-navigation block="true" light="true" }}
+        {{{ yield }}}
+    {{> @footer }}
+	<div class="page__transition-layer"></div>
+  <script src="/js/main.build.js"></script>
+</body>
+
+</html>
