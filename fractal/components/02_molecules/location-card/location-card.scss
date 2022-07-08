@@ -1,6 +1,19 @@
  .location-card {
 	display: flex;
 	flex-direction: row;
+	display: flex;
+	position: relative;
+	margin-bottom: 80px;
+
+	&__background {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: -80px;
+		left: 240px;
+		background-color: $grey-20;
+		z-index: -5;
+	}
 
 	&__image { 
 		max-width: 400px;
