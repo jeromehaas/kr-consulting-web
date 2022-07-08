@@ -1,6 +1,4 @@
-<nav class='mobile-navigation {{ class }} {{#if block}} mobile-navigation--block {{/if}} js-mobile-navigation'>
-    <div class="mobile-navigation__inner section__inner">
-        
+{{#>@section id="mobile-navigation" js="true" tag="nav" }}
         <div class="mobile-navigation__bar mobile-navigation__bar--transparent bar">
 			<div class="bar__inner">
                 {{#if light}}
@@ -11,15 +9,12 @@
             <div class="bar__hamburger"></div>
 			</div>
         </div>
-
         <div class="mobile-navigation__menu menu">
             <a class="menu__link" href="">Anlageberatungen</a>
             <a class="menu__link" href="">Vorsorgelösungen</a>
             <a class="menu__link" href="">Über Uns</a>
             <a class="menu__link" href="">Kontakt</a>
         </div>
-
-    </div>    
-</nav>
+{{/@section}}
 <div class="mobile-navigation__spacer"></div>
 

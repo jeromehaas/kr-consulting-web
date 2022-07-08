@@ -18,4 +18,4 @@ fractal.components.set('ext', '.hbs');
 fractal.web.set('static.path', path.join(__dirname, '/public'));
 
 // PREVIEW DIRECTORY
-fractal.components.set('default.preview', '@barbone');
+fractal.components.set('default.preview', '@barebone');

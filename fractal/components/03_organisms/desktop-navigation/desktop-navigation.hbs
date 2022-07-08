@@ -1,17 +1,19 @@
-<nav class="desktop-navigation {{ class }} {{#if light}} desktop-navigation--light {{/if}} {{#if block}} desktop-navigation--block {{/if}} section">
-	<div class="desktop-navigation__inner section__inner">
+{{#>@section id="desktop-navigation" js="false" tag="nav" }}
+
 		{{#if light }} 
 			<img class="desktop-navigation__logo" src="/media/graphics/logos/logo-kr-consulting-dark.svg" alt="KR Consulting">
 		{{else}}
 			<img class="desktop-navigation__logo" src="/media/graphics/logos/logo-kr-consulting-light.svg" alt="KR Consulting">
 		{{/if}}
+
 		<span class="desktop-navigation__link-wrapper">
 			<a class="desktop-navigation__link" href="#">Anlageberatungen</a>
 			<a class="desktop-navigation__link" href="#">Vorsorgelösungen</a>
 			<a class="desktop-navigation__link" href="#">Über Uns</a>
 			<a class="desktop-navigation__link" href="#">Kontakt</a>
 		</span>
+
 		{{> @external-link class="desktop-navigation__partnerlogin" content="Partnerlogin" }}
-	</div>
-</nav>
+
+{{/@section}}
 <div class="desktop-navigation__spacer"></div>
