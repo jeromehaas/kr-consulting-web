@@ -1,67 +1,63 @@
 .cta {
-    width: 100%;
-    height: auto;
     position: relative;
-    background-color: red;
-    z-index: -5;
-    background-color: $grey-20;
+    border: 0px solid transparent;
     
-    &__inner {
-        position: relative;
-        z-index: 5;
-        width: calc(100% - (2 * 96px));
-        padding: 0;
-    }
     
-    &__image {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    &__overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: transparentize($blue-100, 0.75);
-    }
-
-    &__background {
-        position: absolute;
-        top: 50%;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: $blue-80;
-        z-index: -5;
-    }
-
+    
     &__content, .content {
         position: relative;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 40px;
+        padding: 32px;
         gap: 40px;
+        z-index: 10;
+  
+        &__image {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        &__overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: transparentize($blue-100, 0.75);
+            z-index: 5;
+        }
 
         &__heading  {
             height: 100%;
             margin-bottom: 32px;
             hyphens: unset;
+            z-index: 5;
         }
 
         &__button {
             min-width: 320px;
         }
+
+    }
+
+    &__background {
+        z-index: 5;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $blue-80;
+        
 
     }
 
@@ -90,13 +86,7 @@
 
     }
 
-		@media (max-width: 950px) {
 
-			&__inner {
-				width: calc(100% - (2 * 64px));
-			}
-
-		}
 
     @media (max-width: 750px) {
 
@@ -110,13 +100,23 @@
 
     }
 
-		@media (max-width: 950px) {
+    @media (max-width: 650px) {
 
-			&__inner {
-				width: calc(100% - (2 * 32px));
-			}
-			
-		}
+        &__content, .content {
+
+            &__heading {
+                margin-bottom: 0;
+            }
+
+            &__button {
+                min-width: unset;
+            }
+
+        }
+
+    }
+
+
    
 
 }

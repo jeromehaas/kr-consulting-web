@@ -1,6 +1,6 @@
 name: Link
 status: "ready"
-preview: "@page"
+preview: "@barebone"
 context: 
   content: Link
   href: '#'

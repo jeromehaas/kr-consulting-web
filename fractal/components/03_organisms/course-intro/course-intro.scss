@@ -1,21 +1,31 @@
 .course-intro {
     overflow: unset;
     background-color: $grey-20;
+    overflow: unset !important;
     
     
     &__inner {
-        display: grid;
-        grid-template-columns: auto 360px;
-        width: 100%;
-        padding-right: 0;
-        overflow: unset;
-        justify-content: center;
+
+        &--left {
+            background-color: $white;
+        }
+        
+        &--center {
+            border: 5px solid orange;
+            display: grid;
+            grid-template-columns: auto 360px;
+            padding-right: 0 !important;
+            overflow: unset;
+            justify-content: center;
+            background-color: $white;
+        }
 
     }
 
     &__sidepanel, .sidepanel {
         width: 360px;
         padding: 96px 32px 32px 32px;
+        background-color: $grey-20;
 
         &__contact-card {
             position: sticky;
@@ -30,11 +40,16 @@
         
         &__article, .article {
             margin-bottom: 96px;
+            padding-left: 0;
 
             &__content {
                 padding-right: 64px;
                 padding-left: 0;
             }
+
+        }
+
+        &__quote {
 
         }
 
@@ -69,10 +84,14 @@
     @media (max-width: 950px) {
 
         &__inner {
-            display: grid;
-            grid-template-columns: auto;
-            padding-right: 0;
-            padding-left: 0;
+
+            &--center {
+                display: grid;
+                grid-template-columns: auto;
+                padding-right: 0;
+                padding-left: 0 !important;
+            }
+
         }
 
         &__sidepanel {
@@ -85,6 +104,7 @@
 
                 &__content {
                     padding-right: 64px;
+                    padding-left: 64px;
                 }
 
             }
@@ -101,6 +121,14 @@
 
         &__content, .content {
 
+            &__article, .article {
+
+                &__content {
+                    padding-right: 32px;
+                    padding-left: 32px;
+                }
+
+            }
             
             & > * {
                 padding-left: 32px;

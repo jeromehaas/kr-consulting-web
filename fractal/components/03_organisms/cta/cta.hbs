@@ -1,11 +1,9 @@
- <section class="cta {{ class }} section">
-    <div class="cta__inner section__inner">
-        <img class="cta__image" src="/media/images/various/desk.webp" alt="Desk">
-        <div class="cta__overlay"></div>
-        <div class="cta__content content">
-            {{> @heading class="content__heading" type="h2" color="white" content="Jetzt unverbindlichen Termin vereinbaren" }}
-            {{> @button class="content__button" color="white" content="Kontaktieren Sie Uns" }}
-        </div>
-    </div>
+{{#>@section id="cta" js="false" tag="section" }}
     <div class="cta__background"></div>
-</section>
+    <div class="cta__content content">
+        <div class="content__overlay"></div>
+        <img class="content__image" src="/media/images/various/desk.webp" alt="Desk" />
+        {{> @heading class="content__heading" type="h2" color="white" content="Jetzt unverbindlichen Termin vereinbaren" }}
+        {{> @button class="content__button" color="white" content="Kontaktieren Sie Uns" }}
+    </div>
+{{/@section}}

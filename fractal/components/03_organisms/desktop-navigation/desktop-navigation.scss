@@ -5,11 +5,17 @@
     background-color: transparent;
 
     &__inner {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-        margin: 64px auto;
+
+        &--center {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin: 64px auto;
+            padding: 32px 0;
+        }
+        
     }
 
 

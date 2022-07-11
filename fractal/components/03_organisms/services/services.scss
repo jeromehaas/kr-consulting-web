@@ -1,18 +1,27 @@
 .services {
-		overflow: unset;
-		background-color: $grey-20;
+	overflow: unset !important;
+	background-color: $grey-20;
+	padding-bottom: 64px;
 
 	&__inner {
-		display: grid;
-		grid-template-columns: 240px auto;
-		width: 100%;
-		padding-right: 0;
-		overflow: unset;
+
+		&--right {
+			background-color: $white;
+		}
+
+		&--center {
+			display: grid;
+			grid-template-columns: 240px auto;
+			width: 100%;
+			padding-right: 0;
+			overflow: unset;
+			padding-right: 0 !important;		}
+
 	}
 
 	&__sidepanel, .sidepanel {
 		width: 240px;
-		padding: 96px 32px  32px 32px;
+		padding: 96px 32px  32px 0;
 		
 		&__sub-navigation {
 			position: sticky;
@@ -21,27 +30,37 @@
 		
 	}
 
-	&__content {
+	&__content, .content {
 		background-color: $white;
 		max-width: calc($max-section-width - 240px);
-		padding-right: 96px;
+		
+		&__item {
+			
+			& .article__content {
+				padding-right: 96px;
+
+			}
+		}
+
 	}
 
 	@media (max-width: 950px) {
 
-		&__content {
-			padding-right: 64px;
-		}
 
 	}
 	
 	@media (max-width: 650px) {
 
-		&__inner {
-			display: grid;
-			grid-template-columns: auto;
-			padding-right: 0;
-			padding-left: 0;
+		&__inner { 
+			
+			&--center {
+				border:  1px solid red;
+				display: grid;
+				grid-template-columns: auto;
+				padding-right: 0;
+				padding-left: 0 !important;
+			}
+		
 		}
 
 		&__sidepanel {

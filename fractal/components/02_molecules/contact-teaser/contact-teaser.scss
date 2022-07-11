@@ -26,4 +26,13 @@
 		grid-area: button;
 	}
 
+	@media (max-width: 650px) {
+		grid-template-areas:
+			"text"
+			"button"
+			"contact-details"	;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto;
+	}
+
 }

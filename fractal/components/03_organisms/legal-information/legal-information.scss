@@ -1,11 +1,17 @@
 .legal-information {
-    overflow: unset;
+    overflow: unset !important;
     background-color: $grey-20;
 
 &__inner {
     width: 100%;
-    padding-right: 0;
-    overflow: unset;
+
+    &--center {
+
+        padding-right: 0 !important;
+        // overflow: unset;
+        padding-right: 0;
+    }
+
 }
 
 &__heading {
@@ -28,17 +34,35 @@
     
 }
 
-&__content {
+&__content, .content {
     background-color: $white;
     max-width: calc($max-section-width - 240px);
-    padding-right: 96px;
+    
+    &__item {
+
+        .article__content {
+            padding-right: 96px
+        }
+
+    }
+
 }
 
 @media (max-width: 950px) {
 
-    &__content {
-        padding-right: 64px;
-    }
+    &__content, .content {
+        background-color: $white;
+        max-width: calc($max-section-width - 240px);
+        
+        &__item {
+
+            .article__content {
+                padding-right: 64px
+            }
+
+        }
+
+}
 
 }
 

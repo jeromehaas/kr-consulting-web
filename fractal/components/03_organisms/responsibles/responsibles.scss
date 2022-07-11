@@ -19,4 +19,12 @@
 
     }
 
+    @media (max-width: 650px) {
+
+        &__content {
+            margin-left: 0px;
+        }
+
+    }
+
 }

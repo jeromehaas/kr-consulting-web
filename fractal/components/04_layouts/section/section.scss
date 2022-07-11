@@ -1,0 +1,53 @@
+.section {
+	width: 100vw;
+    overflow: hidden;
+    display: grid;
+    grid-template: auto / minmax(0, auto) minmax(auto, 1400px) minmax(0, auto);
+    justify-content: stretch;;
+    
+    &__inner {
+	width: 100%;
+	margin: 0 auto;
+
+    &--left {
+    };
+
+    &--center {
+        border: 1px solid red;
+        padding-left: 96px;
+        padding-right: 96px;
+    }
+
+    &--right {
+    }
+
+}
+
+    @media (max-width: 950px) {
+
+        &__inner {
+
+            &--center {
+                border: 1px solid yellow;
+                padding-left: 64px;
+                padding-right: 64px;
+            }
+            
+        }
+
+    }
+
+    @media (max-width: 650px) {
+
+        &__inner {
+
+            &--center {
+                border: 1px solid yellow;
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+            
+        }
+
+    }
+}
