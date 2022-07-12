@@ -1,0 +1,39 @@
+fieldLayouts:
+  e88ad07d-b69f-453b-87bf-0694be07783e:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 55e50ec9-395b-4b43-9c64-5354f7570daf
+            warning: null
+            width: 100
+        name: Content
+        uid: d44bd344-8c52-449b-8ecc-4d8eef5151da
+handle: retirementSolutions
+hasTitleField: false
+name: 'Retirement Solutions'
+section: 9f90e5bc-9157-4526-8dde-681edb929c58 # Retirement Solutions
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

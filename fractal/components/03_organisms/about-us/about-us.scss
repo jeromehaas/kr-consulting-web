@@ -1,12 +1,16 @@
 .about-us {
 
 	&__inner {
-		padding: 0;
-	}
 
+		&--center {
+			padding: 0 !important;
+			padding-left: 0 !important;
+		}
+		
+	} 
 
 	
-	&__team-member {
+	&__team-member, .team-member {
 
 		&:not(:last-child) {
 			padding-bottom: 120px;

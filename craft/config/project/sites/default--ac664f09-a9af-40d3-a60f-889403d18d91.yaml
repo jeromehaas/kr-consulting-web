@@ -1,8 +1,9 @@
 baseUrl: $PRIMARY_SITE_URL
+enabled: true
 handle: default
 hasUrls: true
-language: en
+language: de-CH
 name: kr-consulting
 primary: true
-siteGroup: ba58fc37-be30-4b99-a88d-7f4d9e94e73d
+siteGroup: ba58fc37-be30-4b99-a88d-7f4d9e94e73d # kr-consulting
 sortOrder: 1

@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: dataPrivacy
+name: 'Data Privacy'
+propagationMethod: all
+siteSettings:
+  ac664f09-a9af-40d3-a60f-889403d18d91: # kr-consulting
+    enabledByDefault: true
+    hasUrls: true
+    template: 05_pages/data-privacy.twig
+    uriFormat: '{slug}'
+type: single

@@ -1,0 +1,8 @@
+handle: default
+hasTitleField: true
+name: Default
+section: 6ef04a00-5ae7-4cb6-a2b7-1d1ad0acf651 # Services
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

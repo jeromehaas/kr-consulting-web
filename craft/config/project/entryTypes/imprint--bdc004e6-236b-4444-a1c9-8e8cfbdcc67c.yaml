@@ -1,0 +1,39 @@
+fieldLayouts:
+  823ca4af-4b0d-467a-843c-aec36a2d9ab4:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 49abdf51-9016-4f9f-9be4-827727ddfa7a
+            warning: null
+            width: 100
+        name: Content
+        uid: c33c29a7-6366-4c7d-bed2-3093c8463ce1
+handle: imprint
+hasTitleField: false
+name: Imprint
+section: 5ebc446b-1d16-47b3-890a-35c338268fa6 # Imprint
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

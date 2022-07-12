@@ -1,0 +1,39 @@
+fieldLayouts:
+  9db3d397-08f0-4aeb-8747-e96a7a2b9a7d:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: fc71a9bd-c2ca-4026-bec7-e91ac7d0c96b
+            warning: null
+            width: 100
+        name: Content
+        uid: defa5ab6-258a-483a-8b57-a839b86289af
+handle: aboutUs
+hasTitleField: true
+name: 'About Us'
+section: 1e53762a-6675-426a-9783-3793bdd16929 # About Us
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

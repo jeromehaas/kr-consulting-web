@@ -1,13 +1,53 @@
-dateModified: 1656175891
+dateModified: 1657549441
+elementSources:
+  craft\elements\Entry:
+    -
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      disabled: false
+      key: singles
+      tableAttributes:
+        - link
+        - slug
+      type: native
+    -
+      heading: Navigation
+      type: heading
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: kr-consulting
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
-    0e8b9745-1a76-4aa6-b2f1-f72225252c2c: Common
-    ac664f09-a9af-40d3-a60f-889403d18d91: kr-consulting
-    ba58fc37-be30-4b99-a88d-7f4d9e94e73d: kr-consulting
+    0e8b9745-1a76-4aa6-b2f1-f72225252c2c: Common # Common
+    1e53762a-6675-426a-9783-3793bdd16929: 'About Us' # About Us
+    5ebc446b-1d16-47b3-890a-35c338268fa6: Imprint # Imprint
+    6ef04a00-5ae7-4cb6-a2b7-1d1ad0acf651: Services # Services
+    8d9fb8fc-aa34-42cb-98bc-97228160016c: 'Investment Advisory' # Investment Advisory
+    9f90e5bc-9157-4526-8dde-681edb929c58: 'Retirement Solutions' # Retirement Solutions
+    47e94b3a-30ca-480e-aade-3be1b448c694: 'Data Privacy' # Data Privacy
+    465ad94a-6ff0-4776-aec3-1a8d9c28d177: Start # Start
+    505b5f6b-5951-4484-9ced-7f3f61abc5d9: Login # Login
+    567b3a46-9655-43df-8e0d-02a52454e459: 'About Us' # About Us
+    1603d4ed-dff5-40eb-8f99-db85545a375e: Start # Start
+    2335bc14-e769-484f-9f4f-9dc2f14e9db3: Services
+    5797b8b9-3f5f-4ea9-8bd6-80f9e56e761e: 'Retirement Solutions' # Retirement Solutions
+    a8a54faf-f815-4b38-80ee-c66acca0a063: Contact # Contact
+    a81b2519-de8d-404a-bff8-bcc3402ad870: Default # Default
+    abb7c8e9-a3e2-4c0d-a2f4-23606f8a06e2: Contact # Contact
+    ac664f09-a9af-40d3-a60f-889403d18d91: kr-consulting # kr-consulting
+    ba58fc37-be30-4b99-a88d-7f4d9e94e73d: kr-consulting # kr-consulting
+    bdc004e6-236b-4444-a1c9-8e8cfbdcc67c: Imprint # Imprint
+    c157b61b-db87-471f-8609-c7f60ecf7283: Login # Login
+    cf05b8dd-8dfa-47ae-a86d-e19e315bd668: 'Data Privacy' # Data Privacy
+    f9dc201a-1d70-41de-addd-45fd5fafb195: 'Investment Advisory' # Investment Advisory
 system:
   edition: solo
   live: true
