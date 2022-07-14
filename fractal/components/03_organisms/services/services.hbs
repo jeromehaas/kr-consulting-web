@@ -4,19 +4,11 @@
 			{{> @sub-navigation class="sidepanel__sub-navigation" }}
 		</div>
 
-		<div class="services__content content">
-			<div class="content__item item">
-				{{> @article key="klassische-anlagen" }}	
-			</div>
-			<div class="content__item item">\
-				{{> @article key="zweitmarkt-policen"}}	
-			</div>
-			<div class="content__item item">\
-				{{> @article key="immobilien"}}	
-			</div>
-			<div class="content__item item">\
-				{{> @article key="digital-assets"}}	
-			</div>
+		<div class="services__container container">
+				{{> @article class="container__article" key="klassische-anlagen" }}	
+				{{> @article class="container__article" key="zweitmarkt-policen"}}	
+				{{> @article class="container__article" key="immobilien"}}	
+				{{> @article class="container__article" key="digital-assets"}}	
 		</div>
 
 {{/@section}}

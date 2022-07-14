@@ -8,9 +8,14 @@
 	grid-gap: 48px;
 
 	&--no-avatar {
-	grid-template-columns: 1fr; 	
-	grid-template-areas: 
-		"content";
+		grid-template-columns: 1fr; 	
+		grid-template-rows: auto; 	
+		grid-template-areas: 
+			"content";
+
+			& .quote__avatar {
+				display: none;
+			}
 	}
 
 	&__avatar {
@@ -25,8 +30,7 @@
 	
 	&__content, .content {
 		grid-area: content;
-		padding-left: 64px;
-		padding-right: 64px;
+
 		
 		&__icon {
 			font-size: 80px;
@@ -59,15 +63,10 @@
 		
 	}
 
-	@media (max-width: 650px) {
-	
-		&__content, .content {
-			padding-left: 32px;
-			padding-right: 32px;
-		}
+	@media (max-width: 950px) {
 
 	}
-	
+
 	@media (max-width: 550px) {
 		
 		grid-template-rows: auto;

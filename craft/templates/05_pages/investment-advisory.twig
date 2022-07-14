@@ -39,106 +39,33 @@
             </nav>
         </div>
 
-        <div class="services__content content">
+        <div class="services__container container">
             
 
 		{% for service in services %}
-				<div class="content__item item">
-                <div class="article " id="klassische-anlagen">
-                    <img class="article__image" src="{{ service.servicesImage.one().url() }}" alt="{{ service.servicesImage.one().imageAltTag }}">
-                    <div class="article__content">
-                        <h2 class="heading  heading--h2   article__heading js-heading">
-                            {{ service.servicesHeading }} 
-                        </h2>
-                        <p class="paragraph  paragraph--blue   paragraph--bold  article__subheading">
-                            {{ service.servicesLabel }}
-                        </p>
-                        <p class="paragraph  paragraph--black   article__text">
-													{{ service.servicesLongCopy }}
-                        </p>
-                        <p class="paragraph  paragraph--black   paragraph--bold  article__outro">
-													{{ service.servicesTeaser }}
-                        </p>
-                    </div>
-                </div>
-            </div>
-			{% endfor %}
-			<!-- 			<div class="content__item item">
-                <div class="article " id="klassische-anlagen">
-                    <img class="article__image" src="/media/images/services/classic-investments.webp" alt="">
-                    <div class="article__content">
-                        <h2 class="heading  heading--h2   article__heading js-heading">
-                            Klassische Anlagen
-                        </h2>
-                        <p class="paragraph  paragraph--blue   paragraph--bold  article__subheading">
-                            Traditionell &amp; bewährt
-                        </p>
-                        <p class="paragraph  paragraph--black   article__text">
-                            Wir bieten eine umfassende Anlageberatung, die auf Ihre Bedürfnisse, Wünsche und Lebensziele zugeschnitten ist. Gemeinsam mit unserem langjährigen Partner beraten wir Sie aktiv und weitsichtig, damit Sie Marktchancen für sich nutzen und zielgerichtet investieren können. Dabei steht ein überschaubares Risiko mithilfe einer klassischen Portfoliodiversifikation im Vordergrund. Ganz dem Zeitgeist entsprechend bieten wir auch nachhaltige Geldanlagen an, die Mehrwert für Wirtschaft, Gesellschaft und Umwelt schaffen. Übrigens, Anlegen ist bei uns bereits ab 50 Franken im Monat möglich. Wir freuen uns Sie, Ihre Bedürfnisse und Träume bei einem persönlichen Gespräch kennenzulernen.
-                        </p>
-                        <p class="paragraph  paragraph--black   paragraph--bold  article__outro">
-                            Wir freuen uns Sie, Ihre Bedürfnisse und Träume bei einem persönlichen Gespräch kennenzulernen.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="content__item item">\
-                <div class="article " id="zweitmarkt-policen">
-                    <img class="article__image" src="/media/images/services/classic-investments.webp" alt="">
-                    <div class="article__content">
-                        <h2 class="heading  heading--h2   article__heading js-heading">
-                            Klassische Anlagen
-                        </h2>
-                        <p class="paragraph  paragraph--blue   paragraph--bold  article__subheading">
-                            Traditionell &amp; bewährt
-                        </p>
-                        <p class="paragraph  paragraph--black   article__text">
-                            Wir bieten eine umfassende Anlageberatung, die auf Ihre Bedürfnisse, Wünsche und Lebensziele zugeschnitten ist. Gemeinsam mit unserem langjährigen Partner beraten wir Sie aktiv und weitsichtig, damit Sie Marktchancen für sich nutzen und zielgerichtet investieren können. Dabei steht ein überschaubares Risiko mithilfe einer klassischen Portfoliodiversifikation im Vordergrund. Ganz dem Zeitgeist entsprechend bieten wir auch nachhaltige Geldanlagen an, die Mehrwert für Wirtschaft, Gesellschaft und Umwelt schaffen. Übrigens, Anlegen ist bei uns bereits ab 50 Franken im Monat möglich. Wir freuen uns Sie, Ihre Bedürfnisse und Träume bei einem persönlichen Gespräch kennenzulernen.
-                        </p>
-                        <p class="paragraph  paragraph--black   paragraph--bold  article__outro">
-                            Wir freuen uns Sie, Ihre Bedürfnisse und Träume bei einem persönlichen Gespräch kennenzulernen.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="content__item item">\
-                <div class="article " id="immobilien">
-                    <img class="article__image" src="/media/images/services/classic-investments.webp" alt="">
-                    <div class="article__content">
-                        <h2 class="heading  heading--h2   article__heading js-heading">
-                            Klassische Anlagen
-                        </h2>
-                        <p class="paragraph  paragraph--blue   paragraph--bold  article__subheading">
-                            Traditionell &amp; bewährt
-                        </p>
-                        <p class="paragraph  paragraph--black   article__text">
-                            Wir bieten eine umfassende Anlageberatung, die auf Ihre Bedürfnisse, Wünsche und Lebensziele zugeschnitten ist. Gemeinsam mit unserem langjährigen Partner beraten wir Sie aktiv und weitsichtig, damit Sie Marktchancen für sich nutzen und zielgerichtet investieren können. Dabei steht ein überschaubares Risiko mithilfe einer klassischen Portfoliodiversifikation im Vordergrund. Ganz dem Zeitgeist entsprechend bieten wir auch nachhaltige Geldanlagen an, die Mehrwert für Wirtschaft, Gesellschaft und Umwelt schaffen. Übrigens, Anlegen ist bei uns bereits ab 50 Franken im Monat möglich. Wir freuen uns Sie, Ihre Bedürfnisse und Träume bei einem persönlichen Gespräch kennenzulernen.
-                        </p>
-                        <p class="paragraph  paragraph--black   paragraph--bold  article__outro">
-                            Wir freuen uns Sie, Ihre Bedürfnisse und Träume bei einem persönlichen Gespräch kennenzulernen.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="content__item item">\
-                <div class="article " id="digital-assets">
-                    <img class="article__image" src="/media/images/services/classic-investments.webp" alt="">
-                    <div class="article__content">
-                        <h2 class="heading  heading--h2   article__heading js-heading">
-                            Klassische Anlagen
-                        </h2>
-                        <p class="paragraph  paragraph--blue   paragraph--bold  article__subheading">
-                            Traditionell &amp; bewährt
-                        </p>
-                        <p class="paragraph  paragraph--black   article__text">
-                            Wir bieten eine umfassende Anlageberatung, die auf Ihre Bedürfnisse, Wünsche und Lebensziele zugeschnitten ist. Gemeinsam mit unserem langjährigen Partner beraten wir Sie aktiv und weitsichtig, damit Sie Marktchancen für sich nutzen und zielgerichtet investieren können. Dabei steht ein überschaubares Risiko mithilfe einer klassischen Portfoliodiversifikation im Vordergrund. Ganz dem Zeitgeist entsprechend bieten wir auch nachhaltige Geldanlagen an, die Mehrwert für Wirtschaft, Gesellschaft und Umwelt schaffen. Übrigens, Anlegen ist bei uns bereits ab 50 Franken im Monat möglich. Wir freuen uns Sie, Ihre Bedürfnisse und Träume bei einem persönlichen Gespräch kennenzulernen.
-                        </p>
-                        <p class="paragraph  paragraph--black   paragraph--bold  article__outro">
-                            Wir freuen uns Sie, Ihre Bedürfnisse und Träume bei einem persönlichen Gespräch kennenzulernen.
-                        </p>
-                    </div>
-                </div>
-            </div> -->
+		<div class="article container__article">
+   		<img class="article__image" src="{{ service.servicesImage.one().url() }}" alt="{{ service.servicesImage.one().imageAltTag }}">
+    	<div class="article__wrapper">
+        <p class="paragraph  paragraph--blue   paragraph--bold  article__label">
+            Traditionell &amp; bewährt
+        </p>
+        <div class="article__content content">
+            <h2 class="heading  heading--h2   content__heading js-heading">
+						{{ service.servicesHeading }}
+            </h2>
+            <p class="paragraph  paragraph--blue   paragraph--bold  content__subheading">
+						{{ service.servicesLabel }}
+            </p>
+            <p class="paragraph  paragraph--black   content__text">
+								{{ service.servicesLongCopy }}
+            </p>
+            <p class="paragraph  paragraph--black   paragraph--bold  content__outro">
+								{{ service.servicesTeaser }}
+            </p>
+        </div>
+    	</div>
+		</div>
+	{% endfor %}
         </div>
 
     </div>

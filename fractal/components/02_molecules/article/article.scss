@@ -8,7 +8,6 @@
     }
 
 	&__wrapper {
-		// padding: 32px;
         display: grid;
         grid-template-columns: 120px 1fr;
         grid-template-areas: 
@@ -24,10 +23,8 @@
     &__content, .content {
         display: flex;
         flex-direction: column;
-        padding-right: 64px;
 
         &__subheading {
-            // display: none;
             margin-bottom: 40px;
         }
 
@@ -73,9 +70,7 @@
             "subheading" 
             "content"; 
             grid-gap: 0;
-            padding-left: 64px;
-            padding-right: 64px;
-            max-width
+            max-width: unset
 		}
 
         &__label {
@@ -83,8 +78,7 @@
         }
 
         &__content, .content {
-        // padding-right: 64px;
-        // padding-left: 64px;
+
 
             &__subheading {
                 display: block;
@@ -105,18 +99,6 @@
             
         }
 
-    }
-
-    @media (max-width: 650px) {
-
-
-        &__content, .content {
-        padding-right: 32px;
-        padding-left: 32px;
-
-         
-        }
-    
     }
 
 }

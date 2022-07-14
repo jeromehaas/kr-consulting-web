@@ -1,14 +1,11 @@
 .long-copy {
 	background-color: $blue-80;
-	padding: 96px;
+	padding: 64px;
 
 	&__heading {
 		margin-bottom: 32px;
 	}
 
-	@media (max-width: 950px) {
-			padding: 64px;
-	}
 
 	@media (max-width: 650px) {
 			padding: 32px;

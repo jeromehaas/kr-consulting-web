@@ -1,82 +1,46 @@
 .course-intro {
     overflow: unset;
-    // background-color: $grey-20;
     overflow: unset !important;
     
     
     &__inner {
 
-        &--left {
-            background-color: $white;
-        }
-        
         &--center {
             display: grid;
             grid-template-columns: auto 360px;
             margin-right: 96px;
             overflow: unset;
             justify-content: center;
-            background-color: $white;
         }
 
     }
 
     &__sidepanel, .sidepanel {
         width: 360px;
-        padding: 96px 32px 32px 32px;
-        // background-color: $grey-20;
+        padding: 32px;
 
         &__contact-card {
             position: sticky;
-            top: 96px;
+            top: 32px;
         }
 
     }
 
-    &__content, .content {
+    &__container, .container {
         background-color: $white;
         max-width: calc($max-section-width - 360px);
         
         &__article, .article {
             margin-bottom: 96px;
-            // padding-left: 0;
-
-            &__content {
-                // padding-right: 64px;
-                // padding-left: 0;
-            }
-
-        }
-
-        &__quote {
-
         }
 
         &__quote, .quote {
             margin-bottom: 96px;
-
-            &__content, .content {
-                // padding-right: 64px;
-
-                &__text, &__author {
-                    // padding-left: unset;
-                }
-
-            }
-
         }
 
-        &__long-copy, .long-copy {
 
-            &__inner {
-                padding-left: 0;
-            }
 
-        }
 
-        & > * {
-            // padding-left: 96px;
-        }
 
     }
 
@@ -97,20 +61,22 @@
             display: none;
         }
 
-        &__content, .content {
+        &__container, .container {
             
             &__article, .article {
+							margin-bottom: 64px;
 
                 &__content {
-                    // padding-right: 64px;
-                    // padding-left: 64px;
-                }
-
-            }
-
-            & > * {
-                // padding-left: 64px;
-            }
+                    padding-right: 64px;
+                    padding-left: 64px;
+									}
+									
+								}
+								
+								&__quote, .quote {
+							padding-right: 64px;
+							padding-left: 64px;
+						}
 
         }
 
@@ -118,22 +84,24 @@
 
     @media (max-width: 650px) {
 
-        &__content, .content {
-
-            &__article, .article {
-
-                // &__content {
-                //     padding-right: 32px;
-                //     padding-left: 32px;
-                // }
-
-            }
+			&__container, .container {
             
-            & > * {
-                // padding-left: 32px;
-            }       
-            
-        }
+				&__article, .article {
+
+						&__content {
+								padding-right: 32px;
+								padding-left: 32px;
+							}
+							
+						}
+						
+						&__quote, .quote {
+					padding-right: 32px;
+					padding-left: 32px;
+
+				}
+
+		}
 
     }
 
