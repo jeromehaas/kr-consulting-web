@@ -110,18 +110,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 6b177a7b-e7bf-48bb-ae7b-4160f6bf4d7d # Course Intro Info Peaker
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 61ad1dc6-18c9-4df0-858b-0994fe2db5dd
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 0e183b6a-831b-4ec6-832a-8a3710434247 # Course Intro Info Heading 
             instructions: null
             label: null
@@ -134,6 +122,30 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 9981532a-4d9a-4060-bacf-c0c4959b6d85 # Course Intro Info  Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 317007bf-55f3-44bb-9ded-64e9efd83bb5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6b177a7b-e7bf-48bb-ae7b-4160f6bf4d7d # Course Intro Info Peaker
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 61ad1dc6-18c9-4df0-858b-0994fe2db5dd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 06591078-9481-42e1-a081-4b0684eb111b # Course Intro Info  List
             instructions: null
             label: null
@@ -141,6 +153,30 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 45629d06-d021-4df9-b8e6-6c740c951251
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 967ce7fc-82b0-4640-b4fc-88a245b7585e # Course Intro Info  Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aad2b7b3-84e0-45dd-b427-0ebc5d40da63
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 51615717-e499-40ee-93b5-35714cad533e # Course Intro Info  Button Href
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e8c41a51-1439-4b0c-a453-25cc84f516bc
             userCondition: null
             warning: null
             width: 100

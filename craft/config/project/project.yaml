@@ -1,4 +1,4 @@
-dateModified: 1657760339
+dateModified: 1657813113
 elementSources:
   craft\elements\Entry:
     -
@@ -121,7 +121,7 @@ meta:
     cf0c14ba-cc45-4b47-bdf2-24ae9f3fd86a: 'Image Alt Tag' # Image Alt Tag
     cf05b8dd-8dfa-47ae-a86d-e19e315bd668: 'Data Privacy' # Data Privacy
     d6ade586-96dd-4523-903d-924c4fe7df63: 'Course Intro Info Image' # Course Intro Info Image
-    d6fab119-06a5-434f-bab0-8836d0bebef0: Course-Intro # Course-Intro
+    d6fab119-06a5-434f-bab0-8836d0bebef0: 'Course Intro' # Course Intro
     d8f9a01c-3729-4a9d-838c-aaae7fae2bfe: 'Course Intro Article Outro' # Course Intro Article Outro
     d823a91c-5e63-4e68-9eb0-93d775259750: 'Services Image' # Services Image
     d2481310-b317-4bb2-8863-d25fdae20952: 'Course Intro' # Course Intro

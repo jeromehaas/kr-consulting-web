@@ -1,6 +1,6 @@
 columnSuffix: peacmden
 contentColumnType: text
-fieldGroup: d6fab119-06a5-434f-bab0-8836d0bebef0 # Course-Intro
+fieldGroup: d6fab119-06a5-434f-bab0-8836d0bebef0 # Course Intro
 handle: courseIntroInfoButtonText
 instructions: null
 name: 'Course Intro Info  Button Text'
@@ -11,7 +11,7 @@ settings:
   code: false
   columnType: null
   initialRows: 4
-  multiline: true
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

@@ -3,19 +3,30 @@
 	grid-template-rows: auto auto;
 	grid-template-columns: 120px 1fr; 	
 	grid-template-areas: 
-		"navigation content"
+		"avatar content"
 		"avatar content";
 	grid-gap: 48px;
 
+	&--no-avatar {
+	grid-template-columns: 1fr; 	
+	grid-template-areas: 
+		"content";
+	}
+
 	&__avatar {
 		grid-area: avatar;
-		width: 100%;
+		width: 120px;
+		height: 120px;
+		object-fit: cover;
+		border-radius: 50%;
 		display: block;
 		align-self: end;
 	}
 	
 	&__content, .content {
 		grid-area: content;
+		padding-left: 64px;
+		padding-right: 64px;
 		
 		&__icon {
 			font-size: 80px;
@@ -48,6 +59,15 @@
 		
 	}
 
+	@media (max-width: 650px) {
+	
+		&__content, .content {
+			padding-left: 32px;
+			padding-right: 32px;
+		}
+
+	}
+	
 	@media (max-width: 550px) {
 		
 		grid-template-rows: auto;

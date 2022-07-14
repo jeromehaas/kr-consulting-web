@@ -1,6 +1,6 @@
 .course-intro {
     overflow: unset;
-    background-color: $grey-20;
+    // background-color: $grey-20;
     overflow: unset !important;
     
     
@@ -13,7 +13,7 @@
         &--center {
             display: grid;
             grid-template-columns: auto 360px;
-            padding-right: 0 !important;
+            margin-right: 96px;
             overflow: unset;
             justify-content: center;
             background-color: $white;
@@ -24,7 +24,7 @@
     &__sidepanel, .sidepanel {
         width: 360px;
         padding: 96px 32px 32px 32px;
-        background-color: $grey-20;
+        // background-color: $grey-20;
 
         &__contact-card {
             position: sticky;
@@ -39,11 +39,11 @@
         
         &__article, .article {
             margin-bottom: 96px;
-            padding-left: 0;
+            // padding-left: 0;
 
             &__content {
-                padding-right: 64px;
-                padding-left: 0;
+                // padding-right: 64px;
+                // padding-left: 0;
             }
 
         }
@@ -56,10 +56,10 @@
             margin-bottom: 96px;
 
             &__content, .content {
-                padding-right: 64px;
+                // padding-right: 64px;
 
                 &__text, &__author {
-                    padding-left: unset;
+                    // padding-left: unset;
                 }
 
             }
@@ -75,7 +75,7 @@
         }
 
         & > * {
-            padding-left: 96px;
+            // padding-left: 96px;
         }
 
     }
@@ -87,7 +87,7 @@
             &--center {
                 display: grid;
                 grid-template-columns: auto;
-                padding-right: 0;
+                padding-right: 0 !important;
                 padding-left: 0 !important;
             }
 
@@ -102,14 +102,14 @@
             &__article, .article {
 
                 &__content {
-                    padding-right: 64px;
-                    padding-left: 64px;
+                    // padding-right: 64px;
+                    // padding-left: 64px;
                 }
 
             }
 
             & > * {
-                padding-left: 64px;
+                // padding-left: 64px;
             }
 
         }
@@ -122,15 +122,15 @@
 
             &__article, .article {
 
-                &__content {
-                    padding-right: 32px;
-                    padding-left: 32px;
-                }
+                // &__content {
+                //     padding-right: 32px;
+                //     padding-left: 32px;
+                // }
 
             }
             
             & > * {
-                padding-left: 32px;
+                // padding-left: 32px;
             }       
             
         }
