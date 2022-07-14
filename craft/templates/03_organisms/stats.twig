@@ -1,0 +1,37 @@
+{% set stats = craft.entries.section('stats').one()	 %}
+
+<section class="stats section  js-stats ">
+    <div class="stats__inner stats__inner--left section__inner section__inner--right"></div>
+    <div class="stats__inner stats__inner--center section__inner section__inner--center">
+
+        <div class="stats__wrapper">
+            <h5 class="heading  heading--h5   heading--black  stats__peaker js-heading">
+								{{ stats.statsPeaker }}
+            </h5>
+            <h2 class="heading  heading--h2   heading--black  stats__heading js-heading">
+							{{ stats.statsHeading }}
+            </h2>
+
+            <div class="counters stats__counters">
+
+						{% for counter in stats.statsCounters.all() %}
+                <div class="counters__item item">
+                    <span class="item__wrapper">
+                        <i class="item__icon icon icon--kr-symbol"></i>
+                        <p class="paragraph  paragraph--blue   paragraph--extrabig  item__value">{{ counter.amount }}</p>
+                        <p class="paragraph  paragraph--blue   paragraph--extrabig  item__plus">+</p>
+                    </span>
+                    <p class="paragraph  paragraph--blue   item__label">{{ counter.label }}</p>
+                </div>
+						{% endfor %}
+            </div> 
+						<a class="button stats__button  button--blue" href="{{ stats.statsButtonHref }}">
+                <span class="button__text">{{ stats.statsButtonText }}</span>
+                <i class="button__icon icon icon--arrow"></i>
+                <figure class="button__overlay"></figure>
+            </a>
+        </div>
+
+    </div>
+    <div class="stats__inner stats__inner--right section__inner section__inner--left"></div>
+</section>

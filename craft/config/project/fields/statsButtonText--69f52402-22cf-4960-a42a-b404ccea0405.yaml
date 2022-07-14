@@ -1,0 +1,19 @@
+columnSuffix: nmxiezjr
+contentColumnType: text
+fieldGroup: 3de39d90-3539-4e32-a20d-4fac31dc12aa # Stats
+handle: statsButtonText
+instructions: null
+name: 'Stats Button Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

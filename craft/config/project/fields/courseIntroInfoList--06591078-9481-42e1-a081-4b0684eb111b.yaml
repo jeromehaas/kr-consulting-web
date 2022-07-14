@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: d6fab119-06a5-434f-bab0-8836d0bebef0 # Course-Intro
+handle: courseIntroInfoList
+instructions: null
+name: 'Course Intro Info  List'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_courseintroinfolist}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

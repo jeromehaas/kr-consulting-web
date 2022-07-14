@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 3de39d90-3539-4e32-a20d-4fac31dc12aa # Stats
+handle: statsCounters
+instructions: null
+name: 'Stats Counters'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_statscounters}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

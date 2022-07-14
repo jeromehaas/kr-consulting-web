@@ -1,0 +1,27 @@
+columnSuffix: madgkdal
+contentColumnType: text
+fieldGroup: 146a4478-2537-438c-acbf-11cd3bf2bfa4 # Hero
+handle: heroHeading
+instructions: null
+name: 'Hero Heading'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: Hero.json
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

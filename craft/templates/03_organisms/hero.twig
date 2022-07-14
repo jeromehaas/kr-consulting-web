@@ -1,0 +1,21 @@
+{% set hero = craft.entries.section('hero').one() %}
+
+<div class="hero section  js-hero ">
+    <div class="hero__inner hero__inner--left section__inner section__inner--right"></div>
+    <div class="hero__inner hero__inner--center section__inner section__inner--center">
+        <div class="desktop-navigation__background background">
+            <img class="background__image" src="/media/images/various/meeting.webp" alt="Meeting">
+            <div class="background__overlay"></div>
+        </div>
+        <img class="hero__symbol" src="/media/graphics/logos/logo-kr-consulting-symbol-dark.svg"></figure>
+        <div class="hero__content content">
+					{{ hero.heroHeading }}
+					<button class="button content__button  button--white  ">
+					<span class="button__text">Mehr erfahren</span>
+					<i class="button__icon icon icon--arrow"></i>
+					<figure class="button__overlay"></figure>
+            </button>
+        </div>
+    </div>
+    <div class="hero__inner hero__inner--right section__inner section__inner--left"></div>
+</div>

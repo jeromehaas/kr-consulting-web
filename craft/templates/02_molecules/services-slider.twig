@@ -1,0 +1,24 @@
+{% set services = craft.entries.section('services').all() %}
+
+	<div class="services-slider__background background">
+{% for service in services %}
+    <img class="background__image" src="{{ service.servicesImage.one().url() }}" data-key="{{ service.servicesId }}" />
+{% endfor %}
+  </div>
+
+<div class="services-slider__slider slider swiper-wrapper">
+{% for service in services %}
+	<a class="slider__item item cell swiper-slide" href="/anlageberatungen?id={{ service.servicesId }}" data-key="{{ service.servicesId }}">
+			<h3 class="heading  heading--h3   heading--white  item__heading js-heading">
+				{{ service.servicesHeading }}
+			</h3>
+			<p class="paragraph  paragraph--white   item__text">
+				{{ service.servicesShortCopy }}
+			</p>
+			<p class="paragraph  paragraph--white   item__teaser">
+				{{ service.servicesLabel }}
+			</p>
+			<figure class="item__square"></figure>
+	</a>
+	{% endfor %}
+</div>

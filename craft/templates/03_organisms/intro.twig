@@ -1,0 +1,20 @@
+{% set intro = craft.entries.section('intro').one() %}
+
+<section class="intro section  js-intro ">
+    <div class="intro__inner intro__inner--left section__inner section__inner--right"></div>
+    <div class="intro__inner intro__inner--center section__inner section__inner--center">
+
+        <img class="intro__symbol" src="/media/graphics/logos/logo-kr-consulting-symbol-light.svg" />
+        <div class="intro__content">
+            <h2 class="heading  heading--h2   heading--black  content__heading js-heading">
+							{{ intro.introHeading }}
+            </h2>
+            <p class="paragraph  paragraph--black   content__text">
+							{{ intro.introHeading }}
+            </p>
+        </div>
+        <img class="intro__image" src="/media/images/various/person.webp" alt="Person">
+
+    </div>
+    <div class="intro__inner intro__inner--right section__inner section__inner--left"></div>
+</section>

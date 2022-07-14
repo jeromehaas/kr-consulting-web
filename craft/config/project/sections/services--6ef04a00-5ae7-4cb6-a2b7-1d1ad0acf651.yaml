@@ -9,4 +9,7 @@ siteSettings:
     hasUrls: false
     template: null
     uriFormat: null
-type: channel
+structure:
+  maxLevels: null
+  uid: f81d1dab-23e2-4e17-8cf4-6f3250c925dd
+type: structure

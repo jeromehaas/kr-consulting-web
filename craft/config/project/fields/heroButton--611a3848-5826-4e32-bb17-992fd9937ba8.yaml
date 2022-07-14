@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 146a4478-2537-438c-acbf-11cd3bf2bfa4 # Hero
+handle: heroButton
+instructions: null
+name: 'Hero Button'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_herobutton}}'
+  maxBlocks: 1
+  minBlocks: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

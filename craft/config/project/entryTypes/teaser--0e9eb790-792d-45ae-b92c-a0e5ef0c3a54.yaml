@@ -1,0 +1,91 @@
+fieldLayouts:
+  e0261b8b-85c5-4032-ab2c-e86c0b2a0a69:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7dded342-e8c0-49d7-9e56-c2f69ea54141
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 78967eb2-4573-48b8-830b-07fc6954c961 # Teaser Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 42cf27f5-9e42-4059-b1b3-3862349fb59b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: dfc00c2f-8e40-41cf-8181-3df7d8cd37ca # Teaser Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 594821e7-b5de-475f-b0e4-de7ad6bfe729
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: e48a7320-f8b9-4ab1-b877-7b9c3bcd9b7a # Teaser Button Href
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: abc4fd12-1527-4563-9c0c-adfe450caaf9
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 63ab7bb9-d043-4d70-b513-c1bd9d75d685 # Teaser Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cca38510-aa7d-4fc0-baeb-c267f44acc1d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cf261b5a-25c5-4d7b-a51a-a4a65a7026a6
+        userCondition: null
+handle: teaser
+hasTitleField: false
+name: Teaser
+section: 535b41e8-932f-49eb-80e0-a57aad52a713 # Teaser
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

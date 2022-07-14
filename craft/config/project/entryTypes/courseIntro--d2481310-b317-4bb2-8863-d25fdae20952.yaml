@@ -1,0 +1,241 @@
+fieldLayouts:
+  628fa723-a680-45a5-a7ee-79036608f2ca:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 70da125c-e165-45c4-b39f-f4a46d309cb0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8cfa3bff-513c-423a-b99d-8aea13bc9592 # Course Intro Article Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c9a48136-ca88-465b-ba21-57725076fff4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e7ce083a-c963-4214-9fa8-31b6c05ec30f # Course Intro Article Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d3d62daa-c9b7-44d5-b392-013972bfcb98
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6fd6f5f4-2ae1-451d-9f3a-a377f8123232 # Course Intro Article Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1bdbf29a-04b4-4d9e-8ad5-fceffb16d3d0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d8f9a01c-3729-4a9d-838c-aaae7fae2bfe # Course Intro Article Outro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4a46651b-89c6-487e-848c-6ec44eb3fc0d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 68473838-5b99-491d-b305-d7d0b6b2c1ac # Course Intro Article Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5df17d1a-178b-4806-b150-41ad347d78d0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Article
+        uid: 002eda03-b944-4f0d-855e-1ca4ab34151a
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d6ade586-96dd-4523-903d-924c4fe7df63 # Course Intro Info Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 76402f3d-03d5-46e2-b1c3-3339e7a642c6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6b177a7b-e7bf-48bb-ae7b-4160f6bf4d7d # Course Intro Info Peaker
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 61ad1dc6-18c9-4df0-858b-0994fe2db5dd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0e183b6a-831b-4ec6-832a-8a3710434247 # Course Intro Info Heading 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 17237ba2-4567-4877-82d4-0942475ce019
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 06591078-9481-42e1-a081-4b0684eb111b # Course Intro Info  List
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 45629d06-d021-4df9-b8e6-6c740c951251
+            userCondition: null
+            warning: null
+            width: 100
+        name: Info
+        uid: 76541af3-c4ac-418b-b127-837c0af59651
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b645bed4-42c3-4a07-adae-f918e4d05e24 # Course Intro Long Copy Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b35ef8fb-0fe1-4ef0-bd44-30a68109c738
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 77f88702-2981-4e43-9963-965cd0f6bcc8 # Course Intro Long Copy Text 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41d91172-dc23-474b-bb91-1a8bcf812c2c
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Long Copy'
+        uid: addb7e55-1bd6-4c59-825c-c399618caeb0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: eeada128-dc74-4253-8a77-f784c19c2fe7 # Course Intro Quote Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 21055343-1db1-4eaa-bfef-a7fb376e4e35
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7efc5e3b-a65c-4408-a215-896492dd1aea # Course Intro Quote Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6aaf7d45-5fbb-4b34-afb8-a66e9aa9498c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 83d2d997-ad1f-49c6-901c-3663f63358f5 # Course Intro Quote Role
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b134883f-c73d-4141-bebe-e0480354114f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9ca332d8-ae84-4fd6-a910-86840be2a2ad # Course Intro Quote Text 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 60a38da9-fa4f-482d-96f2-4bc24bb5545b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Quote
+        uid: 507ae865-d191-444b-9633-26b21b0db66f
+        userCondition: null
+handle: courseIntro
+hasTitleField: false
+name: 'Course Intro'
+section: dfed0f48-8e31-47d3-a4f9-bc0c00a21ee0 # Course Intro
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
