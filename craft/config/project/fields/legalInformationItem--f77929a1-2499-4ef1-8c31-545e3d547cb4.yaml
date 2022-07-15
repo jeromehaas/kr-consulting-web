@@ -1,14 +1,14 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 146a4478-2537-438c-acbf-11cd3bf2bfa4 # Hero
-handle: heroButton
+fieldGroup: 6f9e4970-bcc2-4757-8a80-ca6ae4106ca6 # Legal Information
+handle: legalInformationItem
 instructions: null
-name: 'Hero Button'
+name: 'Legal Information Item'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_herobutton}}'
-  maxBlocks: 1
-  minBlocks: 1
+  contentTable: '{{%matrixcontent_legalinformationitem}}'
+  maxBlocks: null
+  minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

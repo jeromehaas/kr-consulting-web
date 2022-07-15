@@ -1,92 +1,10 @@
 
 {% extends "04_layouts/page/dark" %}
 {% set services = craft.entries.section('services').all() %}
+{% set page = craft.entries.section('invesmentAdvisory').one() %}
 
 {% block main %}
-
-<section class="heroine section  js-heroine ">
-    <div class="heroine__inner heroine__inner--left section__inner section__inner--right"></div>
-    <div class="heroine__inner heroine__inner--center section__inner section__inner--center">
-
-        <div class="heroine__background background">
-            <img class="background__image" src="/media/images/heros/pen.webp" alt="Meeting">
-            <div class="background__overlay"></div>
-        </div>
-
-        <div class="heroine__content content">
-            <h1 class="heading  heading--h2   heading--white  content__heading js-heading">
-                Anlageberatungen
-            </h1>
-            <div class="content__paragraph paragraph">
-                <i class="paragraph__icon icon icon--kr-symbol"></i>
-                <p class="paragraph__text">Für viele Arbeitnehmende ist die zweite Säule der Eckpfeiler ihrer Altersvorsorge. Die Pensionskasse sorgt dafür, dass sie auch im Alter auf den gewohnten Lebensstandard zählen können. Bereits eine minimale Veränderung des Zinsniveaus kann zu einer wesentlichen Erhöhung der Rentenleistung nach der Pensionierung führen.</p>
-            </div>
-        </div>
-
-    </div>
-    <div class="heroine__inner heroine__inner--right section__inner section__inner--left"></div>
-</section>
-<section class="services section  js-services ">
-    <div class="services__inner services__inner--left section__inner section__inner--right"></div>
-    <div class="services__inner services__inner--center section__inner section__inner--center">
-
-        <div class="services__sidepanel sidepanel">
-            <nav class="sub-navigation sidepanel__sub-navigation ">
-                <a class="sub-navigation__item" href="./#klassische-anlagen">Klassische Anlagen</a>
-                <a class="sub-navigation__item" href="./#zweitmarkt-policen">Zweitmarkt-Policen</a>
-                <a class="sub-navigation__item" href="./#immobilien">Immobilien</a>
-                <a class="sub-navigation__item" href="./#digital-assets">Digital Assets</a>
-            </nav>
-        </div>
-
-        <div class="services__container container">
-            
-
-		{% for service in services %}
-		<div class="article container__article">
-   		<img class="article__image" src="{{ service.servicesImage.one().url() }}" alt="{{ service.servicesImage.one().imageAltTag }}">
-    	<div class="article__wrapper">
-        <p class="paragraph  paragraph--blue   paragraph--bold  article__label">
-            Traditionell &amp; bewährt
-        </p>
-        <div class="article__content content">
-            <h2 class="heading  heading--h2   content__heading js-heading">
-						{{ service.servicesHeading }}
-            </h2>
-            <p class="paragraph  paragraph--blue   paragraph--bold  content__subheading">
-						{{ service.servicesLabel }}
-            </p>
-            <p class="paragraph  paragraph--black   content__text">
-								{{ service.servicesLongCopy }}
-            </p>
-            <p class="paragraph  paragraph--black   paragraph--bold  content__outro">
-								{{ service.servicesTeaser }}
-            </p>
-        </div>
-    	</div>
-		</div>
-	{% endfor %}
-        </div>
-
-    </div>
-    <div class="services__inner services__inner--right section__inner section__inner--left"></div>
-</section>
-<section class="cta section  js-cta ">
-    <div class="cta__inner cta__inner--left section__inner section__inner--right"></div>
-    <div class="cta__inner cta__inner--center section__inner section__inner--center">
-        <div class="cta__background"></div>
-        <div class="cta__content content">
-            <div class="content__overlay"></div>
-            <img class="content__image" src="/media/images/various/desk.webp" alt="Desk" />
-            <h2 class="heading  heading--h2   heading--white  content__heading js-heading">
-                Jetzt unverbindlichen Termin vereinbaren
-            </h2> <button class="button content__button  button--white  ">
-                <span class="button__text">Kontaktieren Sie Uns</span>
-                <i class="button__icon icon icon--arrow"></i>
-                <figure class="button__overlay"></figure>
-            </button>
-        </div>
-    </div>
-    <div class="cta__inner cta__inner--right section__inner section__inner--left"></div>
-</section>
+	{% include "03_organisms/heroine" with { heading: page.heroineHeading, text: page.heroineText } %}
+	{% include "03_organisms/services" %}
+	{% include "03_organisms/cta" %}
 {% endblock %}

@@ -22,7 +22,9 @@
         border-bottom: 1px solid $white;
         
         &__logo {
-            margin-right: 32px;
+            width: 240px;
+						height: auto;
+						object-fit: contain;
         }
 
         &__address, .address {
@@ -138,7 +140,7 @@
         }
     
         &__links, .links {
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
 
     }

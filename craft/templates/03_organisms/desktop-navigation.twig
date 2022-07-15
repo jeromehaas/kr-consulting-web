@@ -3,7 +3,11 @@
     <div class="desktop-navigation__inner desktop-navigation__inner--center section__inner section__inner--center">
 
         <a class="desktop-navigation__logo-link" href="/">
+				{% if dark %}
+            <img class="desktop-navigation__logo" src="/media/graphics/logos/logo-kr-consulting-dark.svg" alt="KR Consulting">
+						{% else %}
             <img class="desktop-navigation__logo" src="/media/graphics/logos/logo-kr-consulting-light.svg" alt="KR Consulting">
+				{% endif %}
         </a>
 
         <span class="desktop-navigation__link-wrapper">

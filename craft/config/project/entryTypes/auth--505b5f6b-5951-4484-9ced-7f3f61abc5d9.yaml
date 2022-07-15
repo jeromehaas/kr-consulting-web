@@ -2,6 +2,7 @@ fieldLayouts:
   dbcc6db4-57d8-46b7-a9b7-af6b960a5979:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,14 +27,16 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
             uid: 07d089c6-b319-425e-ab2c-02846b89ec8d
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 962a2a2b-a617-4001-84dd-e5deaaab163e
-handle: login
+        userCondition: null
+handle: auth
 hasTitleField: false
-name: Login
-section: c157b61b-db87-471f-8609-c7f60ecf7283 # Login
+name: Auth
+section: c157b61b-db87-471f-8609-c7f60ecf7283 # Auth
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

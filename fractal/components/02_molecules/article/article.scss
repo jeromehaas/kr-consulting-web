@@ -23,6 +23,7 @@
     &__content, .content {
         display: flex;
         flex-direction: column;
+				align-items: flex-start;
 
         &__subheading {
             margin-bottom: 40px;

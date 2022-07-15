@@ -7,7 +7,7 @@ class Services {
 
 	constructor() {
 		this.name = 'services';
-		this.links = document.querySelectorAll('.sub-navigation__item');
+		this.links = document.querySelectorAll('.services .sub-navigation__item');
 	};
 	
 	init = () => {

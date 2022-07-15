@@ -1,50 +1,5 @@
 {% extends "04_layouts/page/light" %}
 
 {% block main %}
-<section class="responsibles section  js-responsibles ">
-    <div class="responsibles__inner responsibles__inner--left section__inner section__inner--right"></div>
-    <div class="responsibles__inner responsibles__inner--center section__inner section__inner--center">
-
-        <h1 class="heading  heading--h1   responsibles__heading js-heading">
-            Impressum
-        </h1>
-        <div class="responsibles__content">
-
-            <address class="responsibles__address address">
-                <p class="paragraph   paragraph--bold  address__header">
-                    KR Consulting GmbH
-                </p>
-                <p class="paragraph   address__item">
-                    Surenthalstrassee 10
-                </p>
-                <p class="paragraph   address__item">
-                    6210 Sursee
-                </p>
-                <p class="paragraph   address__item">
-                    Schweiz
-                </p> <a class="link address__item    address__item" href="">
-                    kretz@krconsulting.ch
-                </a>
-            </address>
-
-            <div class="responsibles__commercial-register commercial-register">
-                <p class="paragraph   commercial-register__item">
-                    UID: CHE-335.070.267
-                </p>
-                <p class="paragraph   commercial-register__item">
-                    Handelsregister-Nummer: CH-100-4809660-0
-                </p>
-            </div>
-
-            <div class="responsibles__supervision supervision">
-                <p class="paragraph   supervisison__item">
-                    Eidgenössische Finanzmarktaufsicht FINMA Register Nr. 12’471, Registereintrag für unabhängige Versicherungsvermittlung
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-    <div class="responsibles__inner responsibles__inner--right section__inner section__inner--left"></div>
-</section>
+	{% include "03_organisms/responsibles" %}
 {% endblock %}

@@ -21,3 +21,6 @@ new MobileNavigation().init();
 
 import Services from '../../components/03_organisms/services/services';
 new Services().init();
+
+import LegalInformation from '../../components/03_organisms/legal-information/legal-information';
+new LegalInformation().init();

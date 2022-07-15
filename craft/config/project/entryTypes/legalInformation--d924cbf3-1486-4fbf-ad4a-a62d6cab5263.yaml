@@ -1,0 +1,91 @@
+fieldLayouts:
+  5b8df577-a566-4a57-8bd1-84b19f2284dd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ae484655-19bd-4f74-8efd-797c8be275c1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e684dceb-67da-4d43-a347-968720ed01d8 # Legal Information Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 003e680d-df2c-4b9c-a678-466e7a312a87
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 05abef9a-1f12-4388-9f90-86f28757b001 # Legal Information Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 38da0345-e691-425a-b458-fbfa75121598
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f77929a1-2499-4ef1-8c31-545e3d547cb4 # Legal Information Item
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e826e486-d460-449c-ab08-c53a553e7f40
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a07f0402-d25a-4dd0-923d-a0fc7dee5147
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 626a3195-7bb5-45e0-8313-def5b752e946
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 607912a8-4641-4d43-8c2c-2bb25ff33787
+        userCondition: null
+handle: legalInformation
+hasTitleField: true
+name: 'Legal Information'
+section: d5b0b14b-5e0d-43e7-bb64-da295724ba6e # Legal Information
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

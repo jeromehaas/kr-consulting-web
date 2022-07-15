@@ -1,5 +1,6 @@
 .statement {
 	background-color: $grey-20;
+	overflow: visible;
 
 	&__inner {
 		position: relative;
@@ -10,8 +11,8 @@
 
 	&__symbol {
 		position: absolute;
-		bottom: 0%;
-		left: -480px;
+		top: 64px;
+		left: -320px;
 		height: 175%;
 		opacity: 0.5;
 	}

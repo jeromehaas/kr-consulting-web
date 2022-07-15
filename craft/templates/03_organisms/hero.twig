@@ -10,11 +10,11 @@
         <img class="hero__symbol" src="/media/graphics/logos/logo-kr-consulting-symbol-dark.svg"></figure>
         <div class="hero__content content">
 					{{ hero.heroHeading }}
-					<button class="button content__button  button--white  ">
-					<span class="button__text">Mehr erfahren</span>
+					<a class="button content__button  button--white" href="{{ hero.heroButtonHref }}">
+					<span class="button__text">{{ hero.heroButtonText }} </span>
 					<i class="button__icon icon icon--arrow"></i>
 					<figure class="button__overlay"></figure>
-            </button>
+            </a>
         </div>
     </div>
     <div class="hero__inner hero__inner--right section__inner section__inner--left"></div>

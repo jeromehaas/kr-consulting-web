@@ -13,7 +13,7 @@
 
 <body class="body page page--dark js-page">
     {% include "03_organisms/mobile-navigation" %}
-    {% include "03_organisms/desktop-navigation" %}
+    {% include "03_organisms/desktop-navigation" with { dark: false } %}
     {% block main %} {% endblock %} 
     {% include "03_organisms/footer" %}
 	<div class="page__transition-layer"></div>

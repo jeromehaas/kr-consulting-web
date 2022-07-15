@@ -1,0 +1,42 @@
+{% set legalInformation = craft.entries.section('legalInformation').one() %}
+
+<section class="legal-information section  js-legal-information ">
+    <div class="legal-information__inner legal-information__inner--left section__inner section__inner--right"></div>
+    <div class="legal-information__inner legal-information__inner--center section__inner section__inner--center">
+
+        <h1 class="heading  heading--h1   legal-information__heading js-heading">
+            {{ legalInformation.legalInformationHeading }} 
+        </h1>
+
+        <div class="legal-information__wrapper">
+
+            <div class="legal-information__sidepanel sidepanel">
+                <nav class="sub-navigation sidepanel__sub-navigation ">
+								{% for item in legalInformation.legalInformationItem.all() %}
+                    <a class="sub-navigation__item" href="./#{{ item.key }}">{{ item.heading }}</a>
+								{% endfor %}
+                </nav>
+            </div>
+
+            <div class="legal-information__container container">
+
+						{% for item in legalInformation.legalInformationItem.all() %}
+						<div class="article article--no-label container__article" id="{{ item.key }}">
+								<div class="article__wrapper">
+										<div class="article__content content">
+												<h3 class="heading  heading--h3   content__heading js-heading">
+														{{ item.heading }}
+												</h3>
+												{{ item.text }}
+										</div>
+								</div>
+						</div>
+						{% endfor %}
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="legal-information__inner legal-information__inner--right section__inner section__inner--left"></div>
+</section>

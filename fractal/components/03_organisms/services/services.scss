@@ -14,7 +14,8 @@
 			width: 100%;
 			padding-right: 0;
 			overflow: unset;
-			padding-right: 0 !important;		}
+			padding-right: 0 !important;		
+		}
 
 	}
 
@@ -39,6 +40,12 @@
 				padding-left: 32px;
 				padding-right: 96px;
 				margin-bottom: 64px;
+			}
+
+			&__content, .content {
+				
+				&__heading {
+				}
 			}
 
 		}

@@ -1,0 +1,16 @@
+
+<div class="contact-card sidepanel__contact-card {{ class }}">
+            <img class="avatar contact-card__avatar" src="/media/images/avatars/roger-kretz.webp" alt="Roger Kretz">
+            <h4 class="heading  heading--h4   contact-card__name js-heading">
+               {{ contactCard.contactCardName }}
+            </h4>
+            <p class="paragraph  paragraph--blue   paragraph--bold  contact-card__role">
+               {{ contactCard.contactCardRole }}
+            </p>
+            <a class="link contact-card__phone  link--black    contact-card__phone" href="tel:{{ contactCard.contactCardPhone|replace(' ', '') }}">
+               {{ contactCard.contactCardPhone }}
+            </a> 
+						<a class="link contact-card__email  link--black    contact-card__email" href="mailto:{{ contactCard.contactCardEmail }}">
+               {{ contactCard.contactCardEmail }}
+            </a>
+</div>

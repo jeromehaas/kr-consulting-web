@@ -1,78 +1,71 @@
 .legal-information {
     overflow: unset !important;
-    background-color: $grey-20;
 
 &__inner {
-    width: 100%;
+
+		&--right {
+			background-color: $white;
+		}
 
     &--center {
-
         padding-right: 0 !important;
-        // overflow: unset;
-        padding-right: 0;
     }
 
 }
 
-&__heading {
-    margin-bottom: 96px;
-}
 
 &__wrapper {
-    display: grid;
-    grid-template-columns: 240px auto;
+	display: grid;
+	grid-template-columns: 240px auto;
+	width: 100%;
+	padding-right: 0;
+	overflow: unset;
+	padding-right: 0 !important;		
+	margin-bottom: 96px;
 }
 
 &__sidepanel, .sidepanel {
-    width: 240px;
-    padding: 96px 32px  32px 32px;
+	width: 240px;
+    padding: 96px 32px  32px 0;
     
     &__sub-navigation {
-        position: sticky;
-        top: 96px;
+			position: sticky;
+			top: 96px;
     }
     
-}
+	}
+	
+	&__container, .container  {
+		
+	&__article, .article {
+		
+		&__content, .content {
+			margin-top: 96px;
+			padding-left: 32px;
+			padding-right: 96px;
 
-&__content, .content {
-    background-color: $white;
-    max-width: calc($max-section-width - 240px);
-    
-    &__item {
+			&__heading {
+				margin-bottom: 16px;
+			}
 
-        .article__content {
-            padding-right: 96px
-        }
+		}
 
-    }
+	}
 
 }
 
 @media (max-width: 950px) {
 
-    &__content, .content {
-        background-color: $white;
-        max-width: calc($max-section-width - 240px);
-        
-        &__item {
+ 
+	&__inner {
 
-            .article__content {
-                padding-right: 64px
-            }
-
-        }
-
-}
-
-}
-
-@media (max-width: 650px) {
-
-    &__inner {
-        padding-right: 0;
-        padding-left: 0;
+    &--center {
+        padding-right: 64px !important;
+        padding-left: 64px !important;
     }
-    
+
+}
+
     &__wrapper {
         grid-template-columns: auto;
 
@@ -82,10 +75,27 @@
         display: none;
     }
 
-    &__content {
-        padding-right: 0;
+		&__article, .article {
+		
+			&__content, .content {
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+	
+		}
+
+}
+
+@media (max-width: 650px) {
+
+	&__inner {
+
+    &--center {
+        padding-left: 32px !important;
+        padding-right: 32px !important;
     }
 
+}
 }
 
 }

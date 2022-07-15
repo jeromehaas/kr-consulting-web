@@ -9,20 +9,23 @@
                     Adresse
                 </h5>
                 <p class="paragraph   address__item">
-                    Surenthalerstrasse 10
+                    {{ address.addressStreet }}
                 </p>
                 <p class="paragraph   address__item">
-                    6210 Sursee
+                    {{ address.addressCity }}
                 </p>
             </address>
             <div class="infos__contact contact">
                 <h5 class="heading  heading--h5   contact__heading js-heading">
                     Kontakt
-                </h5> <a class="link contact__link    contact__link" href="mailto:kretz@krconsulting.ch">
-                    kretz@krconsulting.com
-                </a> <a class="link contact__link    contact__link" href="tel:+41793026329">
-                    +41 79 302 63 29
-                </a> <a class="link contact__link    contact__link" href="https://linkedin.com">
+                </h5> 
+								<a class="link contact__link contact__link" href="mailto:{{ connection.connectionEmail }}">
+                    {{ connection.connectionEmail }}
+                </a> 
+								<a class="link contact__link contact__link" href="tel:{{ connection.connectionPhone|replace(' ', '') }}">
+										{{ connection.connectionPhone }}
+                </a> 
+								<a class="link contact__link    contact__link" target="_blank" href="{{ connection.connectionLinkedin }}">
                     LinkedIn
                 </a>
             </div>
@@ -30,10 +33,12 @@
 
         <div class="footer__links links">
             <p class="paragraph   links__item">
-                © 2022, KR Consulting GmbH
-            </p> <a class="link links__link    links__link" href="#">
+                © 2022, {{ address.addressCompany }}
+            </p> 
+						<a class="link links__link    links__link" href="/impressum">
                 Impressum
-            </a> <a class="link links__link    links__link" href="#">
+            </a> 
+						<a class="link links__link    links__link" href="/datenschutz">
                 Datenschutz
             </a>
         </div>

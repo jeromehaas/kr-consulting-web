@@ -14,6 +14,7 @@
 	&--center {
 		position: relative;
 		padding-top: 96px;
+		padding-right: 0px;
 		width: 100%
 	}
 
@@ -34,10 +35,10 @@
 	width: calc(100% - 400px);
   }
 
-  @media (max-width: 1600px) {
+  @media (max-width: 1400px) {
 
 	&__background {
-		width: calc(100% - 400px);
+		width: calc(100vw - 400px);
   	}
  
   }

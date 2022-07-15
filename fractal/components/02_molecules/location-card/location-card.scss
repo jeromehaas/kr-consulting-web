@@ -30,6 +30,7 @@
 		align-items: flex-start;
 		max-width: calc(100% - 400px);
 		max-width: 400px;
+		padding-right: 64px;
 
 
 		&__label {
@@ -50,17 +51,22 @@
 
 	}
 
-	@media (max-width: 750px) {
+	@media (max-width: 950px) {
 		flex-direction: column !important;
 
 		&__image {
 			max-width: unset;
 			max-height: 320px;
-			margin-bottom: 32px;
+		}
+
+		&__background {
+			left: 0;
+			bottom: 0;
 		}
 
 		&__content, .content {
 			margin-left: 0 !important;
+			padding: 64px;
 
 			&__label {
 				margin-bottom: 24px;
@@ -72,6 +78,13 @@
 
 		}
 
+	}
+
+	@media (max-width: 950px) {
+
+		&__content, .content {
+			padding: 32px;
+		}
 
 	}
 

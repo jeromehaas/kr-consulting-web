@@ -1,67 +1,12 @@
+{% set aboutUs = craft.entries.section('aboutUs').one() %}
+
 {% extends "04_layouts/page/dark" %}
 
 {% block main %}
-<section class="heroine section  js-heroine ">
-    <div class="heroine__inner heroine__inner--left section__inner section__inner--right"></div>
-    <div class="heroine__inner heroine__inner--center section__inner section__inner--center">
+{% include "03_organisms/heroine" with { heading: aboutUs.heroineHeading, text: aboutUs.heroineText } %}
+{% include "03_organisms/about-us" %}
 
-        <div class="heroine__background background">
-            <img class="background__image" src="/media/images/heros/pen.webp" alt="Meeting">
-            <div class="background__overlay"></div>
-        </div>
 
-        <div class="heroine__content content">
-            <h1 class="heading  heading--h2   heading--white  content__heading js-heading">
-                Anlageberatungen
-            </h1>
-            <div class="content__paragraph paragraph">
-                <i class="paragraph__icon icon icon--kr-symbol"></i>
-                <p class="paragraph__text">Für viele Arbeitnehmende ist die zweite Säule der Eckpfeiler ihrer Altersvorsorge. Die Pensionskasse sorgt dafür, dass sie auch im Alter auf den gewohnten Lebensstandard zählen können. Bereits eine minimale Veränderung des Zinsniveaus kann zu einer wesentlichen Erhöhung der Rentenleistung nach der Pensionierung führen.</p>
-            </div>
-        </div>
-
-    </div>
-    <div class="heroine__inner heroine__inner--right section__inner section__inner--left"></div>
-</section>
-<section class="about-us section  js-about-us ">
-    <div class="about-us__inner about-us__inner--left section__inner section__inner--right"></div>
-    <div class="about-us__inner about-us__inner--center section__inner section__inner--center">
-
-        <div class="team-member about-us__team-member ">
-            <img class="team-member__image" src="/media/images/team-members/roger-kretz.webp" alt="Roger Kretz" />
-            <div class="team-member__infos infos">
-                <h2 class="heading  heading--h2   infos__heading js-heading">
-                    Roger Kretz
-                </h2>
-                <p class="paragraph  paragraph--blue   paragraph--bold  infos__subheading">
-                    Gründer und Inhaber
-                </p>
-                <p class="paragraph  paragraph--black   infos__text">
-                    Mit bald 25 Jahren Erfahrung in der Finanzbranche, 14 davon bei einem der grössten bankenunabhängigen Vermögensverwalter, ist Roger Kretz ein ausgewiesener Berater und Fachspezialist für Vermögensanlagen und der Beruflichen Vorsorge. Seit Sommer 2019 ist Roger Kretz selbständig. Er fungiert als Berater und Begleiter bei allen Fragen rund um die Entscheidungen der Vermögensanlagen sowie der Beruflichen Vorsorge.
-                </p> <a class="link infos__email  link--blue    link--bold  infos__email" href="mailto:kretz@krconsulting.ch">
-                    kretz@krconsulting.ch
-                </a>
-            </div>
-        </div>
-        <div class="team-member about-us__team-member  team-member--reversed ">
-            <img class="team-member__image" src="/media/images/team-members/roger-kretz.webp" alt="Roger Kretz" />
-            <div class="team-member__infos infos">
-                <h2 class="heading  heading--h2   infos__heading js-heading">
-                    Roger Kretz
-                </h2>
-                <p class="paragraph  paragraph--blue   paragraph--bold  infos__subheading">
-                    Gründer und Inhaber
-                </p>
-                <p class="paragraph  paragraph--black   infos__text">
-                    Mit bald 25 Jahren Erfahrung in der Finanzbranche, 14 davon bei einem der grössten bankenunabhängigen Vermögensverwalter, ist Roger Kretz ein ausgewiesener Berater und Fachspezialist für Vermögensanlagen und der Beruflichen Vorsorge. Seit Sommer 2019 ist Roger Kretz selbständig. Er fungiert als Berater und Begleiter bei allen Fragen rund um die Entscheidungen der Vermögensanlagen sowie der Beruflichen Vorsorge.
-                </p> <a class="link infos__email  link--blue    link--bold  infos__email" href="mailto:kretz@krconsulting.ch">
-                    kretz@krconsulting.ch
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="about-us__inner about-us__inner--right section__inner section__inner--left"></div>
-</section>
 <section class="statement section  js-statement ">
     <div class="statement__inner statement__inner--left section__inner section__inner--right"></div>
     <div class="statement__inner statement__inner--center section__inner section__inner--center">
