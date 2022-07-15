@@ -15,17 +15,17 @@
                     {{ address.addressCity }}
                 </p>
             </address>
-            <div class="infos__contact contact">
-                <h5 class="heading  heading--h5   contact__heading js-heading">
+            <div class="infos__connection connection">
+                <h5 class="heading  heading--h5   connection__heading js-heading">
                     Kontakt
                 </h5> 
-								<a class="link contact__link contact__link" href="mailto:{{ connection.connectionEmail }}">
+					<a class="link connection__link contact__link" href="mailto:{{ connection.connectionEmail }}">
                     {{ connection.connectionEmail }}
                 </a> 
-								<a class="link contact__link contact__link" href="tel:{{ connection.connectionPhone|replace(' ', '') }}">
+								<a class="link connection__link" href="tel:{{ connection.connectionPhone|replace(' ', '') }}">
 										{{ connection.connectionPhone }}
                 </a> 
-								<a class="link contact__link    contact__link" target="_blank" href="{{ connection.connectionLinkedin }}">
+								<a class="link connection__link" target="_blank" href="{{ connection.connectionLinkedin }}">
                     LinkedIn
                 </a>
             </div>

@@ -1,16 +1,22 @@
 import emailjs from '@emailjs/browser';
 
-class ContactForm {
+class MessageModal {
 
 	constructor() {
-		this.name = 'contact-form';
+		this.name = 'message-modal';
 		this.elements = {
+			modal: document.querySelector('.message-modal'),
 			form: document.querySelector('.contact-form'),
 			submitButton: document.querySelector('.contact-form__input-submit'),
 			statusMessage: {
 				success: document.querySelector('.status-message--success'),
 				error: document.querySelector('.status-message--error'),
-			}
+			}, 
+			triggers: document.querySelectorAll('[data-trigger="message-modal"]'),
+			closeIcon: document.querySelector('.message-modal__close-icon'),
+			navigation: {
+				bar: document.querySelector('.mobile-navigation .bar'),
+			},
 		};
 		this.errors = [];
 		this.inputs = {
@@ -50,13 +56,34 @@ class ContactForm {
 
 	init = () => {
 		if (!document.querySelector(`.js-${this.name}`)) return;
-		console.log(this.inputs);
+		this.addEventListeners();
+	};
+	
+	addEventListeners = () => {
 		this.elements.submitButton.addEventListener('click', (event) => {
 			event.preventDefault();
 			this.validateInputs();
 			this.send();
 		});
+		this.elements.triggers.forEach((item) => {
+			item.addEventListener('click', (event) => {
+				event.preventDefault();
+				this.showModal();
+			});
+		});		
+		this.elements.closeIcon.addEventListener('click', () => {
+			this.hideModal();
+		});
 	};
+
+	showModal = () => {
+		this.elements.modal.classList.add('message-modal--visible');
+		this.elements.navigation.bar.classList.add('mobile-navigation__bar--hidden');
+	};
+
+	hideModal = () => {
+		this.elements.modal.classList.remove('message-modal--visible');
+	}
 
 	validateInputs = () => {
 		this.errors = [];
@@ -104,8 +131,9 @@ class ContactForm {
 
 	send = async () => {
 		if (this.errors.length === 0) {
-			const res = await emailjs.send('yellowreach','lautissimi',{
-				name: this.inputs.name.element.value,
+			const res = await emailjs.send('krconsulting','krconsulting',{
+				firstname: this.inputs.firstname.element.value,
+				lastname: this.inputs.lastname.element.value,
 				email: this.inputs.email.element.value,
 				phone: this.inputs.phone.element.value,
 				message: this.inputs.message.element.value,
@@ -135,4 +163,4 @@ class ContactForm {
 
 };
 
-export default ContactForm;
+export default MessageModal;

@@ -4,8 +4,8 @@ new Dark().init();
 import Light from '../../components/04_layouts/page/light/light';
 new Light().init();
 
-import ContactForm from '../../components/02_molecules/contact-form/contact-form';
-new ContactForm().init();
+import MessageModal from '../../components/03_organisms/message-modal/message-modal';
+new MessageModal().init();
 
 import ServicesSlider from '../../components/02_molecules/services-slider/services-slider';
 new ServicesSlider().init();

@@ -1,29 +1,46 @@
-.page--light {
+.page {
+	background-color: $white;
+	position: relative;
+
+	&__transition-layer {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $white;
+		z-index: 100;
+		opacity: 1;
+		pointer-events: none;
+	}
+	
+	.page--light {
     
-    
-    & .desktop-navigation {
-        background-color: $white;
-        position: static;
-        padding-bottom: 95px;
+		& .desktop-navigation {
+			background-color: $white;
+			position: static;
+			padding-bottom: 95px;
 
-        &__link {
-            margin: 7px 16px 4px 16px;
-            color: $blue-80;
-        }
+			&__link {
+				margin: 7px 16px 4px 16px;
+				color: $blue-80;
+			}
 
-        &__partnerlogin {
-            color: $blue-80;
-        }
-        
-    }
+			&__partnerlogin {
+				color: $blue-80;
+			}
+			
+		}
 
-    & .mobile-navigation {
-        padding-bottom: 120px;
+		& .mobile-navigation {
+			padding-bottom: 120px;
 
-        &__bar {
-            background-color: $blue-80 !important;
-        }
-        
-    }
+			&__bar {
+				background-color: $blue-80 !important;
+			}
+			
+		}
+
+	}
 
 }

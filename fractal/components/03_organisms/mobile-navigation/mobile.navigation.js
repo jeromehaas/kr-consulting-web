@@ -8,6 +8,7 @@ class MobileNavigation {
 			hamburger: document.querySelector('.mobile-navigation .bar__hamburger'),
 			bar: document.querySelector('.mobile-navigation .bar'),
 			menu: document.querySelector('.mobile-navigation .mobile-navigation__menu'),
+			messageModal: document.querySelector('.message-modal'),
 		};
 		this.status = {
 			isActive: false,
@@ -75,7 +76,7 @@ class MobileNavigation {
 	}
 
 	setNavigationVisibility = () => {
-		if (window.pageYOffset > 60 && this.status.isActive === false && window.pageYOffset > this.status.scrollPosition ) {
+		if (window.pageYOffset > 60 && this.status.isActive === false && window.pageYOffset > this.status.scrollPosition || this.elements.messageModal.classList.contains('message-modal--visible') ) {
 			this.elements.bar.classList.add('mobile-navigation__bar--hidden');
 		} else {
 			this.elements.bar.classList.remove('mobile-navigation__bar--hidden');
