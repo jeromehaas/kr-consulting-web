@@ -2,6 +2,7 @@ fieldLayouts:
   958c5407-77aa-41b9-98a8-610a80df893c:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,10 +27,66 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
             uid: 8f22a18e-8e66-4c28-8f8d-74eaa6ac0b39
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2b4a9fe1-30b9-46eb-bf48-cf76750cbc76 # Heroine Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 52a6361c-7c41-4dd3-a2d8-c305d2281984
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e286f9b7-986e-4d00-a407-41b8c313cfa7 # Heroine Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b92f9cbe-a444-4ba5-8e48-eede159dcb85
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 0bd97a08-34a3-4bd5-98ba-e5b67803a279
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0622be8b-b30f-4d45-8e51-c0449d675572 # Meta Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0d53161f-2201-4fff-a1ca-2a3aa3df652b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4c1b1937-b330-4172-b6b4-fe7f3bc8ebde # Meta Page Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc16f131-f8f3-4a5e-a30f-bc001fd7dfe6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Meta
+        uid: 1f1fc8e5-acec-48ca-8a41-8e7eb1bb85fb
+        userCondition: null
 handle: contact
 hasTitleField: true
 name: Contact

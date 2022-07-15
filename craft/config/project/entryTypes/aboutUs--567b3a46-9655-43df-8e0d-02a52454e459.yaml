@@ -57,6 +57,36 @@ fieldLayouts:
         name: Content
         uid: defa5ab6-258a-483a-8b57-a839b86289af
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0622be8b-b30f-4d45-8e51-c0449d675572 # Meta Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2b75029-f0bf-4b63-b5f0-617d0888b335
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4c1b1937-b330-4172-b6b4-fe7f3bc8ebde # Meta Page Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a65c5d16-0607-4c91-b7b4-e7676281447c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Meta
+        uid: f37cb8b3-9f51-4696-98fe-c5a3af263fb3
+        userCondition: null
 handle: aboutUs
 hasTitleField: true
 name: 'About Us'

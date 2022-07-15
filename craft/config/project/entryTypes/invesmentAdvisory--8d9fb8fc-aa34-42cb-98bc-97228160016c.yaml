@@ -57,6 +57,36 @@ fieldLayouts:
         name: Content
         uid: a0e41219-97d9-4074-8962-33c80bfd16f1
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0622be8b-b30f-4d45-8e51-c0449d675572 # Meta Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1cca9608-893c-41cd-9e78-5b6344c89da8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4c1b1937-b330-4172-b6b4-fe7f3bc8ebde # Meta Page Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4dd8a7d8-d9a9-4516-af3e-60fa3efe83d7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Meta
+        uid: f924dd6c-31af-4990-be68-f481b159eeb3
+        userCondition: null
 handle: invesmentAdvisory
 hasTitleField: true
 name: 'Investment Advisory'

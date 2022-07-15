@@ -6,13 +6,25 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 4b79b7f0-fba0-4475-9767-de9856691ef0 # Address City
+            fieldUid: 8c774afe-67f9-446b-b7ca-9d1309c17f59 # Address Company
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: aa51b54e-81e5-4fec-88cc-749e4e64070d
+            uid: 0f6e2aff-0bd9-4a2d-86be-83f6a831cca0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e0413374-10dc-4f2d-904c-29f083e5b4a0 # Address Building
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2dd92b20-6899-4ac4-b3ed-fb7cba0b08a1
             userCondition: null
             warning: null
             width: 100
@@ -30,13 +42,13 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 8c774afe-67f9-446b-b7ca-9d1309c17f59 # Address Company
+            fieldUid: 4b79b7f0-fba0-4475-9767-de9856691ef0 # Address City
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0f6e2aff-0bd9-4a2d-86be-83f6a831cca0
+            uid: aa51b54e-81e5-4fec-88cc-749e4e64070d
             userCondition: null
             warning: null
             width: 100

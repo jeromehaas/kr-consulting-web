@@ -2,6 +2,7 @@ fieldLayouts:
   823ca4af-4b0d-467a-843c-aec36a2d9ab4:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,10 +27,42 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
             uid: 49abdf51-9016-4f9f-9be4-827727ddfa7a
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: c33c29a7-6366-4c7d-bed2-3093c8463ce1
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0622be8b-b30f-4d45-8e51-c0449d675572 # Meta Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6d6d831e-0aaf-49ae-b9db-1fc661fd8382
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4c1b1937-b330-4172-b6b4-fe7f3bc8ebde # Meta Page Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a9c5d5d0-4e93-4fe7-bf9f-ab8c47da12e5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Meta
+        uid: dce1866f-ecef-4da1-a636-1627d6a9838b
+        userCondition: null
 handle: imprint
 hasTitleField: false
 name: Imprint

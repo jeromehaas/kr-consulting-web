@@ -1,9 +1,9 @@
-columnSuffix: vtvvlzfg
+columnSuffix: hhtrzrkv
 contentColumnType: text
-fieldGroup: e66e9dbe-8ea7-4e6a-9d54-712031a2d2a7 # Meta
-handle: metaPageDescription
+fieldGroup: 64e36b03-32f3-4b82-b976-a3eaef3f8705 # Address
+handle: addressBuilding
 instructions: null
-name: 'Meta Page Description'
+name: 'Address Building'
 searchable: false
 settings:
   byteLimit: null
@@ -11,9 +11,9 @@ settings:
   code: false
   columnType: null
   initialRows: 4
-  multiline: true
+  multiline: false
   placeholder: null
-  uiMode: enlarged
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText

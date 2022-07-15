@@ -1,48 +1,9 @@
 {% set aboutUs = craft.entries.section('aboutUs').one() %}
-
 {% extends "04_layouts/page/dark" %}
 
 {% block main %}
-{% include "03_organisms/heroine" with { heading: aboutUs.heroineHeading, text: aboutUs.heroineText } %}
-{% include "03_organisms/about-us" %}
-
-
-<section class="statement section  js-statement ">
-    <div class="statement__inner statement__inner--left section__inner section__inner--right"></div>
-    <div class="statement__inner statement__inner--center section__inner section__inner--center">
-
-        <img class="statement__symbol" src="/media/graphics/logos/logo-kr-consulting-symbol-dark.svg" alt="">
-        <div class="quote statement__quote">
-            <img class="quote__avatar" src="/media/images/avatars/roger-kretz.webp" alt="">
-            <div class="quote__content content">
-                <i class="content__icon icon icon--quote"></i>
-                <p class="content__text">Egal ob Investments in Immobilien, interessante Zweitmarkt-Policen oder klassische Anlagen, wir empfehlen nur, was wir selbst auch kaufen. Diese Erfahrungen und dieses Wissen stecken in unseren bewährten Anlagelösungen. Und diese machen wir unseren Kundinnen und Kunden zugänglich – und zwar allen.</p>
-                <span class="content__author author">
-                    <p class="author__name">Max Mustermann</p>
-                    <p class="author__separator">-</p>
-                    <p class="author__role">Moonshot Investor Network</p>
-                </span>
-            </div>
-        </div>
-    </div>
-    <div class="statement__inner statement__inner--right section__inner section__inner--left"></div>
-</section>
-<section class="cta section  js-cta ">
-    <div class="cta__inner cta__inner--left section__inner section__inner--right"></div>
-    <div class="cta__inner cta__inner--center section__inner section__inner--center">
-        <div class="cta__background"></div>
-        <div class="cta__content content">
-            <div class="content__overlay"></div>
-            <img class="content__image" src="/media/images/various/desk.webp" alt="Desk" />
-            <h2 class="heading  heading--h2   heading--white  content__heading js-heading">
-                Jetzt unverbindlichen Termin vereinbaren
-            </h2> <button class="button content__button  button--white  ">
-                <span class="button__text">Kontaktieren Sie Uns</span>
-                <i class="button__icon icon icon--arrow"></i>
-                <figure class="button__overlay"></figure>
-            </button>
-        </div>
-    </div>
-    <div class="cta__inner cta__inner--right section__inner section__inner--left"></div>
-</section>
+    {% include "03_organisms/heroine" with { heading: aboutUs.heroineHeading, text: aboutUs.heroineText } %}
+    {% include "03_organisms/about-us" %}
+    {% include "03_organisms/statement" %}
+    {% include "03_organisms/cta" %}
 {% endblock %}

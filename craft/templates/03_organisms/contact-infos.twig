@@ -1,0 +1,58 @@
+<section class="contact-infos section  js-contact-infos ">
+    <div class="contact-infos__inner contact-infos__inner--left section__inner section__inner--right"></div>
+    <div class="contact-infos__inner contact-infos__inner--center section__inner section__inner--center">
+
+        <div class="contact-teaser contact-infos__contact-teaser">
+            <p class="paragraph  paragraph--black   contact-teaser__text">
+                KR Consulting hilft Ihnen mit langjähriger Erfahrung und umfassender Expertise, damit Sie jederzeit optimal investiert sind. Gerne nehmen wir uns Zeit, Sie, Ihre Wünsche und individuellen Bedürfnisse kennenzulernen – persönlich, am Tisch, bei einer guten Tasse Kaffee.
+            </p>
+            <div class="contact-teaser__contact-details contact-details">
+                <div class="contact-details__item item">
+                    <h5 class="heading  heading--h5   heading--black  item__heading js-heading">
+                        Schreiben Sie uns
+                    </h5> <a class="link item__text  link--blue    item__text" href="">
+                        {{ connection.connectionEmail }}
+                    </a>
+                </div>
+                <div class="contact-details__item item">
+                    <h5 class="heading  heading--h5   heading--black  item__heading js-heading">
+                        Rufen Sie uns an
+                    </h5> <a class="link item__text  link--blue    item__text" href="">
+                        {{ connection.connectionPhone }}
+                    </a>
+                </div>
+            </div>
+            <button class="button contact-teaser__button  button--blue  ">
+                <span class="button__text">Termin vereinbaren</span>
+                <i class="button__icon icon icon--arrow"></i>
+                <figure class="button__overlay"></figure>
+            </button>
+        </div>
+        <div class="location-card">
+            <div class="location-card__background"></div>
+            <img class="location-card__image" src="/media/images/various/office.webp" alt="Standord">
+            <div class="location-card__content content">
+                <h5 class="heading  heading--h5   content__label js-heading">
+                    Standort
+                </h5>
+                <h3 class="heading  heading--h3   content__headgin js-heading">
+                    {{ address.addressBuilding }}
+                </h3>
+                <div class="content__address address">
+                    <p class="paragraph  paragraph--black   address__item">
+                        {{ address.addressStreet }}
+                    </p>
+                    <p class="paragraph  paragraph--black   address__item">
+                        {{ address.addressCity }}
+                    </p>
+                </div>
+                <button class="button content__button  button--blue  ">
+                    <span class="button__text">Route hierhin</span>
+                    <i class="button__icon icon icon--arrow"></i>
+                    <figure class="button__overlay"></figure>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="contact-infos__inner contact-infos__inner--right section__inner section__inner--left"></div>
+</section>

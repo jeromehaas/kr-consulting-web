@@ -7,7 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="/css/main.min.css">
   <link rel="icon" href="/media/favicons/favicon.ico">
-  <title>KR Consulting</title>
+  <title>{% if entry.metaPageTitle %} {{ entry.metaPageTitle }} | KR Consulting  {% else %} KR Consulting {% endif %}</title>
+  <meta name="description" content="{{ entry.metaPageDescription }}">
+  
 
 </head>
 
@@ -15,9 +17,9 @@
     {% include "03_organisms/mobile-navigation" %}
     {% include "03_organisms/desktop-navigation" with { dark: false } %}
     {% block main %} {% endblock %} 
+    
     {% include "03_organisms/footer" %}
     {% include "03_organisms/message-modal" %}
-	<div class="page__transition-layer"></div>
   <script src="/js/main.build.js"></script>
 </body>
 

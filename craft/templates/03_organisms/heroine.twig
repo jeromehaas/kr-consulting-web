@@ -11,10 +11,12 @@
             <h1 class="heading  heading--h2   heading--white  content__heading js-heading">
                 {{ heading }}
             </h1>
+            {% if text %}
             <div class="content__paragraph paragraph">
                 <i class="paragraph__icon icon icon--kr-symbol"></i>
                 <p class="paragraph__text">{{ text }}</p>
             </div>
+            {% endif %}
         </div>
 
     </div>

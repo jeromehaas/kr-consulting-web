@@ -28,4 +28,7 @@ return [
 
     // Whether crawlers should be allowed to index pages and following links
     'disallowRobots' => !$isProd,
+
+    // Path to error pages
+    'errorTemplatePrefix' => "05_pages/"
 ];

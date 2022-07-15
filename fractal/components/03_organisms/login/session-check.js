@@ -8,15 +8,15 @@ class SessionCheck {
 
   init = () => {
     if ( process.env.MODE === 'production') return;
-    if ( window.location.href === '/login') return;
-    // this.validateSession();
+    if ( window.location.pathname === '/auth') return;
+    this.validateSession();
   };
-
+  
   validateSession() {
     const sessionCode = cookies.get('session');
     const code = process.env.DEVELOPMENT_LOGIN_CODE;
     if ( code !== sessionCode ) {
-      window.location.href = '/login';
+      window.location.href = '/auth';
     };
   };
 

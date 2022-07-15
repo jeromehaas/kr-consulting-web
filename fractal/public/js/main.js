@@ -1,9 +1,3 @@
-import Dark from '../../components/04_layouts/page/dark/dark';
-new Dark().init();
-
-import Light from '../../components/04_layouts/page/light/light';
-new Light().init();
-
 import MessageModal from '../../components/03_organisms/message-modal/message-modal';
 new MessageModal().init();
 
