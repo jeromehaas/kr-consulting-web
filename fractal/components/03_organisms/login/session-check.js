@@ -7,9 +7,9 @@ class SessionCheck {
   };
 
   init = () => {
-    if ( process.env.MODE === 'production') return;
+    // if ( process.env.MODE === 'dev') return;
     if ( window.location.pathname === '/auth') return;
-    this.validateSession();
+    // this.validateSession();
   };
   
   validateSession() {

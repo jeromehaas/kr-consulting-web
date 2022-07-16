@@ -18,3 +18,6 @@ new Services().init();
 
 import LegalInformation from '../../components/03_organisms/legal-information/legal-information';
 new LegalInformation().init();
+
+import Counters from '../../components/01_atoms/counters/counters';
+new Counters().init();

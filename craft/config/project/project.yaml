@@ -1,4 +1,4 @@
-dateModified: 1657925140
+dateModified: 1657936418
 elementSources:
   craft\elements\Entry:
     -
@@ -36,6 +36,13 @@ email:
   fromName: kr-consulting
   transportType: craft\mail\transportadapters\Sendmail
 fs:
+  avatars:
+    hasUrls: true
+    name: Avatars
+    settings:
+      path: ./uploads/avatars
+    type: craft\fs\Local
+    url: ./uploads/avatars
   general:
     hasUrls: true
     name: General
@@ -52,17 +59,20 @@ fs:
     url: ./uploads/services
 meta:
   __names__:
+    0a7888cb-4004-44b3-841e-522126ec3c16: 'Contact Infos Location Button Text' # Contact Infos Location Button Text
     0b60c779-bb71-4367-82ad-f7f1db120c6c: Services # Services
     0d2441ac-0860-4f07-b558-d5b6ce38e210: 'Intro Heading' # Intro Heading
     0e8b9745-1a76-4aa6-b2f1-f72225252c2c: Common # Common
     0e9eb790-792d-45ae-b92c-a0e5ef0c3a54: Teaser # Teaser
     0e183b6a-831b-4ec6-832a-8a3710434247: 'Course Intro Info Heading ' # Course Intro Info Heading 
     1e53762a-6675-426a-9783-3793bdd16929: 'About Us' # About Us
+    2a514103-f593-40e7-9f8a-cd240124bce3: 'Contact Infos' # Contact Infos
     2b4a9fe1-30b9-46eb-bf48-cf76750cbc76: 'Heroine Heading' # Heroine Heading
     02de833d-159e-4685-b65a-206aab579554: 'Address Street' # Address Street
     3b103574-a626-48b3-8a51-7308dc958912: 'Services Teaser' # Services Teaser
     3de39d90-3539-4e32-a20d-4fac31dc12aa: Stats # Stats
     3e0400fb-63d8-40fc-a7ee-b7b8c58befe2: 'CTA Button Text' # CTA Button Text
+    4ab10882-1b74-4e5b-a038-afbd75a302f8: 'Contact Infos Location Image' # Contact Infos Location Image
     4b79b7f0-fba0-4475-9767-de9856691ef0: 'Address City' # Address City
     4c1b1937-b330-4172-b6b4-fe7f3bc8ebde: 'Meta Page Description' # Meta Page Description
     5a72f800-8d3a-401e-a06a-58040bae612a: Stats # Stats
@@ -71,7 +81,9 @@ meta:
     5e9517dd-12e4-432b-8d84-b04f4723109e: href # href
     5ebc446b-1d16-47b3-890a-35c338268fa6: Imprint # Imprint
     6ae3604a-a79b-4d64-9f7c-069256175426: CTA # CTA
+    6b3e7a5e-7a56-49a6-80f8-fca6b548d8bb: 'Contact Infos Teaser Button Text' # Contact Infos Teaser Button Text
     6b177a7b-e7bf-48bb-ae7b-4160f6bf4d7d: 'Course Intro Info Peaker' # Course Intro Info Peaker
+    06be8ea9-6497-4d58-9cbc-4059c1c50b06: 'Contact Infos Location Heading' # Contact Infos Location Heading
     6ef04a00-5ae7-4cb6-a2b7-1d1ad0acf651: Services # Services
     6f9e4970-bcc2-4757-8a80-ca6ae4106ca6: 'Legal Information' # Legal Information
     6fd6f5f4-2ae1-451d-9f3a-a377f8123232: 'Course Intro Article Label' # Course Intro Article Label
@@ -90,6 +102,7 @@ meta:
     9d822dff-c1c0-4211-933b-31fb7ad99fac: Hero # Hero
     9f90e5bc-9157-4526-8dde-681edb929c58: 'Retirement Solutions' # Retirement Solutions
     010edfe8-bf11-404d-ac0e-d609cb946713: CTA # CTA
+    19cff30f-a1a3-4caa-a7dc-c4cdb59d70db: 'About Us' # About Us
     23da331f-4f31-4d9e-8fdc-0ff080eba556: Address # Address
     24d6a6c1-e3ba-4502-8202-9046cda01144: 'Stats Counters' # Stats Counters
     47e94b3a-30ca-480e-aade-3be1b448c694: 'Data Privacy' # Data Privacy
@@ -98,25 +111,33 @@ meta:
     69f52402-22cf-4960-a42a-b404ccea0405: 'Stats Button Text' # Stats Button Text
     71b88c97-dd6f-493c-a1d7-f2f6761c3afa: Connection # Connection
     71f2cf7c-d1fb-437b-a254-5dc7597483b3: 'Contact Card' # Contact Card
+    75b05fff-759a-42c7-9992-838ba424e9b2: 'Contact Infos' # Contact Infos
+    75c6b6cf-12b2-45c1-a198-a12c9f0fb5a5: Avatars # Avatars
     77f88702-2981-4e43-9963-965cd0f6bcc8: 'Course Intro Long Copy Text ' # Course Intro Long Copy Text 
     81f1ea57-8f3f-4a92-aa27-52460033d593: 'Hero Heading' # Hero Heading
     83d2d997-ad1f-49c6-901c-3663f63358f5: 'Course Intro Quote Role' # Course Intro Quote Role
     84babe93-8199-4bb0-8db8-7586bbc5e99c: Intro # Intro
     86baf79e-9a0e-4654-9494-66d604f2a4d4: Heroine # Heroine
+    93a03ac3-5065-4a87-9a41-5fe7ccc9fd56: Image # Image
+    103d8c1e-9798-44c8-908e-bfdfd085f980: 'About Us Member' # About Us Member
     146a4478-2537-438c-acbf-11cd3bf2bfa4: Hero # Hero
     0310efe3-12df-418c-a30b-121cf8981bf8: 'Contact Card Name' # Contact Card Name
     465ad94a-6ff0-4776-aec3-1a8d9c28d177: Start # Start
     505b5f6b-5951-4484-9ced-7f3f61abc5d9: Auth # Auth
+    525e2697-fcdb-4800-8957-4e5199799947: Email # Email
     535b41e8-932f-49eb-80e0-a57aad52a713: Teaser # Teaser
     558dd3f0-e975-4199-aa7b-34620d3d8cb8: 'Connection Email' # Connection Email
     567b3a46-9655-43df-8e0d-02a52454e459: 'About Us' # About Us
     611a3848-5826-4e32-bb17-992fd9937ba8: 'Hero Button Text' # Hero Button Text
     0622be8b-b30f-4d45-8e51-c0449d675572: 'Meta Page Title' # Meta Page Title
+    859fe36b-3d09-4575-90a8-7a8df52896ee: Introduction # Introduction
     967ce7fc-82b0-4640-b4fc-88a245b7585e: 'Course Intro Info  Button Text' # Course Intro Info  Button Text
     1603d4ed-dff5-40eb-8f99-db85545a375e: Start # Start
     1996da9d-6afd-485e-9520-e734f9bef432: 'Services Long Copy' # Services Long Copy
     2335bc14-e769-484f-9f4f-9dc2f14e9db3: Services # Services
+    5233c6b4-1d84-492e-9c52-50a05132f5d6: 'Contact Infos Location Button Href' # Contact Infos Location Button Href
     5797b8b9-3f5f-4ea9-8bd6-80f9e56e761e: 'Retirement Solutions' # Retirement Solutions
+    6388ff27-c184-4c62-b869-98558bba4d29: 'Contact Infos Teaser Button Href' # Contact Infos Teaser Button Href
     44525f07-fb87-4d8a-a9a9-875b41bba211: Key # Key
     57477ea0-4de8-4b6a-8864-f6afc2f25a7c: 'Contact Card Phone' # Contact Card Phone
     78139d94-7a12-4f02-a8e4-8608aee5ea55: 'Contact Card Role' # Contact Card Role
@@ -141,6 +162,7 @@ meta:
     b577bd63-5d61-4855-bc46-c9b942083cf8: amount # amount
     b645bed4-42c3-4a07-adae-f918e4d05e24: 'Course Intro Long Copy Heading' # Course Intro Long Copy Heading
     b6338b26-4732-4e95-bd2f-d6ce9da766ca: Hero # Hero
+    b27818e1-617f-4ed9-96a9-8b5210a2c172: Role # Role
     b775433a-4ff9-4a89-8266-7cc268cdd27d: 'Intro Text' # Intro Text
     ba58fc37-be30-4b99-a88d-7f4d9e94e73d: kr-consulting # kr-consulting
     bdc004e6-236b-4444-a1c9-8e8cfbdcc67c: Imprint # Imprint
@@ -151,10 +173,14 @@ meta:
     c157b61b-db87-471f-8609-c7f60ecf7283: Auth # Auth
     cf0c14ba-cc45-4b47-bdf2-24ae9f3fd86a: 'Image Alt Tag' # Image Alt Tag
     cf05b8dd-8dfa-47ae-a86d-e19e315bd668: 'Data Privacy' # Data Privacy
+    cff01372-6ccb-42ee-b138-9e3a762fb047: 'Full Name' # Full Name
+    d093d66f-bf5f-47bf-bc17-7e00f590d105: 'Contact Infos Teaser Contact Phone' # Contact Infos Teaser Contact Phone
+    d4feacf6-0a3c-4856-a36f-cd816263384d: 'Contact Card Image' # Contact Card Image
     d5b0b14b-5e0d-43e7-bb64-da295724ba6e: 'Legal Information' # Legal Information
     d6ade586-96dd-4523-903d-924c4fe7df63: 'Course Intro Info Image' # Course Intro Info Image
     d6fab119-06a5-434f-bab0-8836d0bebef0: 'Course Intro' # Course Intro
     d8f9a01c-3729-4a9d-838c-aaae7fae2bfe: 'Course Intro Article Outro' # Course Intro Article Outro
+    d9ad9415-402b-41ed-a090-ab904bfea86b: 'Contact Infos Teaser Intro' # Contact Infos Teaser Intro
     d823a91c-5e63-4e68-9eb0-93d775259750: 'Services Image' # Services Image
     d924cbf3-1486-4fbf-ad4a-a62d6cab5263: 'Legal Information' # Legal Information
     d2481310-b317-4bb2-8863-d25fdae20952: 'Course Intro' # Course Intro
@@ -165,6 +191,7 @@ meta:
     dfed0f48-8e31-47d3-a4f9-bc0c00a21ee0: 'Course Intro' # Course Intro
     e01f2cd6-6f33-4599-ab41-3d7481c412eb: 'Stats Heading' # Stats Heading
     e0413374-10dc-4f2d-904c-29f083e5b4a0: 'Address Building' # Address Building
+    e06ef36f-23bb-444d-a831-4c566b500a47: 'Contact Infos' # Contact Infos
     e4e357ab-0179-4c12-a820-364727587b32: Counter # Counter
     e7ce083a-c963-4214-9fa8-31b6c05ec30f: 'Course Intro Article Heading' # Course Intro Article Heading
     e48a7320-f8b9-4ab1-b877-7b9c3bcd9b7a: 'Teaser Button Href' # Teaser Button Href
@@ -183,7 +210,9 @@ meta:
     f303fc4f-2747-4682-8b40-3259a9821000: Heading # Heading
     f989ecb4-faa8-4859-9890-1f9f818af555: Label # Label
     f77929a1-2499-4ef1-8c31-545e3d547cb4: 'Legal Information Item' # Legal Information Item
+    f801348c-e2d6-42fe-ada9-e25d66e99e0d: Member # Member
     fb774718-6b6d-4033-8391-c1e5225d7442: 'CTA Button Href' # CTA Button Href
+    fd65c4ec-0039-4c4e-b49c-3627453a832f: 'Contact Infos Teaser Contact Email' # Contact Infos Teaser Contact Email
 plugins:
   redactor:
     edition: standard

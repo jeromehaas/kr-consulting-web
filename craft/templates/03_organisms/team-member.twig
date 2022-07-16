@@ -1,0 +1,28 @@
+{% set aboutUs = craft.entries.section('aboutUs').one() %}
+
+<section class="team-member section  js-team-member ">
+    <div class="team-member__inner team-member__inner--left section__inner section__inner--right"></div>
+    <div class="team-member__inner team-member__inner--center section__inner section__inner--center">
+
+
+        {% for member in aboutUs.aboutUsMember.all() %}
+        
+        <div class="team-member__member member {% if loop.index is even %} member--reversed{% endif %} ">
+            <img class="member__image" src="{{ member.image.one().url() }}" alt="Roger Kretz" />
+            <div class="member__infos infos">
+                <h2 class="heading  heading--h2   infos__heading js-heading">
+                    {{ member.fullName }}
+                </h2>
+                <p class="paragraph  paragraph--blue   paragraph--bold  infos__subheading">
+                    {{ member.role }}
+                </p>
+                <p class="paragraph  paragraph--black   infos__text">
+                    {{ member.introduction }}
+                </p> <a class="link infos__email  link--blue    link--bold  infos__email" href="mailto:{{ member.email }}">
+                    {{ member.email }}
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    <div class="team-member__inner team-member__inner--right section__inner section__inner--left"></div>
+</section>

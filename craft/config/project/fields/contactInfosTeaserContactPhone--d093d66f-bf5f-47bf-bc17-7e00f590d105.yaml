@@ -1,0 +1,19 @@
+columnSuffix: ljitcslx
+contentColumnType: text
+fieldGroup: 2a514103-f593-40e7-9f8a-cd240124bce3 # Contact Infos
+handle: contactInfosTeaserContactPhone
+instructions: null
+name: 'Contact Infos Teaser Contact Phone'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

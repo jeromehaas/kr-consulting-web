@@ -1,0 +1,202 @@
+field: 103d8c1e-9798-44c8-908e-bfdfd085f980 # About Us Member
+fieldLayouts:
+  e6f8367b-80ab-4e56-bafa-c3153449bc6d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: cff01372-6ccb-42ee-b138-9e3a762fb047 # Full Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ff89e2ba-e684-4843-844b-7ab5a392e658
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b27818e1-617f-4ed9-96a9-8b5210a2c172 # Role
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 79ead06f-8a6b-4702-a903-6dc32d4c7778
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 859fe36b-3d09-4575-90a8-7a8df52896ee # Introduction
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2069d45-9cdb-4779-9d4b-806630635d0e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 525e2697-fcdb-4800-8957-4e5199799947 # Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 11d4e05d-ab42-47df-ac25-d694730624e5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 93a03ac3-5065-4a87-9a41-5fe7ccc9fd56 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 62c5642a-ff95-4fdd-9dc8-1fb851a23e05
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 93ce24b7-b298-479d-aa69-6af8857a83b4
+        userCondition: null
+fields:
+  93a03ac3-5065-4a87-9a41-5fe7ccc9fd56: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:c03fd4f8-9d29-48e8-871a-0640a9b29a06' # General
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: 1
+      minRelations: 1
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:0b60c779-bb71-4367-82ad-f7f1db120c6c' # Services
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  525e2697-fcdb-4800-8957-4e5199799947: # Email
+    columnSuffix: zwuorueb
+    contentColumnType: text
+    fieldGroup: null
+    handle: email
+    instructions: null
+    name: Email
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  859fe36b-3d09-4575-90a8-7a8df52896ee: # Introduction
+    columnSuffix: whljcugi
+    contentColumnType: text
+    fieldGroup: null
+    handle: introduction
+    instructions: null
+    name: Introduction
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: true
+      placeholder: null
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b27818e1-617f-4ed9-96a9-8b5210a2c172: # Role
+    columnSuffix: xeyqszbe
+    contentColumnType: text
+    fieldGroup: null
+    handle: role
+    instructions: null
+    name: Role
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  cff01372-6ccb-42ee-b138-9e3a762fb047: # Full Name
+    columnSuffix: lhadotac
+    contentColumnType: text
+    fieldGroup: null
+    handle: fullName
+    instructions: null
+    name: 'Full Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: member
+name: Member
+sortOrder: 1

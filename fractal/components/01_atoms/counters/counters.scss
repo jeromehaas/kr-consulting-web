@@ -24,11 +24,19 @@
             line-height: 1; 
         }
 
+        &__value   {
+            text-align: right;
+        }
+
         &__label {
             margin-top: 8px;
         }
 
         
+        &:nth-child(1) .item__value { width: 60px; }
+        &:nth-child(2) .item__value { width: 80px; }
+        &:nth-child(3) .item__value { width: 60px; }
+
     }
 
 }

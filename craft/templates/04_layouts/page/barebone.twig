@@ -7,13 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="/css/main.min.css">
   <link rel="icon" href="/media/favicons/favicon.ico">
-  <title>KR Consulting</title>
-
+  <title>{% if entry.metaPageTitle %} {{ entry.metaPageTitle }} | KR Consulting  {% else %} KR Consulting {% endif %}</title>
+  <meta name="description" content="{{ entry.metaPageDescription }}">
 </head>
 
 <body class="body page page--dark js-page">
     {% block main %} {% endblock %} 
-	<div class="page__transition-layer"></div>
   <script src="/js/main.build.js"></script>
 </body>
 

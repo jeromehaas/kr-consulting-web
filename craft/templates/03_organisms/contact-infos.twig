@@ -1,39 +1,41 @@
+{% set contactInfos = craft.entries.section('contactInfos').one() %}
+
 <section class="contact-infos section  js-contact-infos ">
     <div class="contact-infos__inner contact-infos__inner--left section__inner section__inner--right"></div>
     <div class="contact-infos__inner contact-infos__inner--center section__inner section__inner--center">
 
         <div class="contact-teaser contact-infos__contact-teaser">
             <p class="paragraph  paragraph--black   contact-teaser__text">
-                KR Consulting hilft Ihnen mit langjähriger Erfahrung und umfassender Expertise, damit Sie jederzeit optimal investiert sind. Gerne nehmen wir uns Zeit, Sie, Ihre Wünsche und individuellen Bedürfnisse kennenzulernen – persönlich, am Tisch, bei einer guten Tasse Kaffee.
+                {{ contactInfos.contactInfosTeaserIntro }}
             </p>
             <div class="contact-teaser__contact-details contact-details">
                 <div class="contact-details__item item">
                     <h5 class="heading  heading--h5   heading--black  item__heading js-heading">
-                        Schreiben Sie uns
+                        {{ contactInfos.contactInfosTeaserContactEmail }}
                     </h5> <a class="link item__text  link--blue    item__text" href="">
                         {{ connection.connectionEmail }}
                     </a>
                 </div>
                 <div class="contact-details__item item">
                     <h5 class="heading  heading--h5   heading--black  item__heading js-heading">
-                        Rufen Sie uns an
+                        {{ contactInfos.contactInfosTeaserContactPhone }}
                     </h5> <a class="link item__text  link--blue    item__text" href="">
                         {{ connection.connectionPhone }}
                     </a>
                 </div>
             </div>
-            <button class="button contact-teaser__button  button--blue  ">
-                <span class="button__text">Termin vereinbaren</span>
+            <button class="button contact-teaser__button  button--blue" data-trigger="message-modal">
+                <span class="button__text">{{ contactInfos.contactInfosTeaserButtonText }}</span>
                 <i class="button__icon icon icon--arrow"></i>
                 <figure class="button__overlay"></figure>
             </button>
         </div>
         <div class="location-card">
             <div class="location-card__background"></div>
-            <img class="location-card__image" src="/media/images/various/office.webp" alt="Standord">
+            <img class="location-card__image" src="{{ contactInfos.contactInfosLocationImage.one().url() }}" alt="{{ contactInfos.contactInfosLocationImage.one().imageAltTag }}">
             <div class="location-card__content content">
                 <h5 class="heading  heading--h5   content__label js-heading">
-                    Standort
+                    {{ contactInfos.contactInfosLocationHeading }}
                 </h5>
                 <h3 class="heading  heading--h3   content__headgin js-heading">
                     {{ address.addressBuilding }}
@@ -46,11 +48,11 @@
                         {{ address.addressCity }}
                     </p>
                 </div>
-                <button class="button content__button  button--blue  ">
-                    <span class="button__text">Route hierhin</span>
+                <a class="button content__button  button--blue" target="_blank" href="{{ contactInfos.contactInfosLocationButtonHref }}">
+                    <span class="button__text">{{ contactInfos.contactInfosLocationButtonText }}</span>
                     <i class="button__icon icon icon--arrow"></i>
                     <figure class="button__overlay"></figure>
-                </button>
+                </a>
             </div>
         </div>
     </div>
