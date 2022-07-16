@@ -1,5 +1,4 @@
 .services-overview {
-    // grid-template: auto / minmax(96px, auto) minmax(auto,1400px) minmax(0, 0) !important;
 
 &__inner {
 
@@ -14,7 +13,7 @@
 	&--center {
 		position: relative;
 		padding-top: 96px;
-		padding-right: 0px;
+		padding-right: 0px !important;
 		width: 100%
 	}
 

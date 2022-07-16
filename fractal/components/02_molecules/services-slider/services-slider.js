@@ -31,12 +31,13 @@ class ServicesSlider {
 					draggable: true,
 				},
 				autoplay: {
-					delay: 8000
+					delay: 6000,
+					pauseOnMouseEnter: true,
 				},
 				breakpoints: {
-					350: { slidesPerView: 1.2, spaceBetween: 0 },
-					650: { slidesPerView: 2, spaceBetween: 0 },
-					950: { slidesPerView: 3, spaceBetween: 0 },
+					350: { slidesPerView: 1, spaceBetween: 0 },
+					650: { slidesPerView: 2.5, spaceBetween: 0 },
+					950: { slidesPerView: 3.5, spaceBetween: 0 },
 					1250: { slidesPerView: 4, spaceBetween: 0 },
 				},	
 

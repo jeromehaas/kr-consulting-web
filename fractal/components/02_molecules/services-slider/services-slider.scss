@@ -4,6 +4,8 @@
   background-color: $blue-80;
   overflow: hidden;
   position: relative;
+  max-width: calc(100vw - 96px);
+  border: 5px solid red;
 
   &__slider, .slider {
 
@@ -140,19 +142,24 @@
       left: 0;
       display: block;
       z-index: 4;
-      background-color: green;
     }
 
   }
 
+  @media (max-width: 950px) {
+    max-width: calc(100vw - 64px);
+  }
+
   @media (max-width: 650px) {
+  max-width: calc(100vw - 32px);
+
     &__slider, .slider {
 
       &__item, .item {
         height: auto;
         padding: 48px;
         margin-right: 0 !important;
-        border-right: 16px solid $blue-80;
+        border-right: 32px solid $blue-80;
 
         &__heading {
           margin-top: unset;
@@ -198,17 +205,6 @@
           display: none;
         }
 
-      }
-
-    }
-
-  }
-
-  @media (max-width: 350px) {
-    &__slider, .slider {
-
-      &__item, .item {
-        border-right: 1px solid $white;
       }
 
     }
