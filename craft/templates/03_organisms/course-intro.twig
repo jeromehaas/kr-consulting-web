@@ -5,31 +5,21 @@
    <div class="course-intro__inner course-intro__inner--center section__inner section__inner--center">
    <div class="course-intro__container container">
       
-      <div class="article article--no-label">
+      <div class="article article">
          <img class="article__image" src="/media/images/services/classic-investments.webp" alt="">
          <div class="article__wrapper">
-            <p class="paragraph  paragraph--blue   paragraph--bold  article__label">
-               {{ courseIntro.courseIntroArticleLabel }}
-            </p>
-            <div class="article__content content">
-               <h2 class="heading  heading--h2   content__heading js-heading">
-                  {{ courseIntro.courseIntroArticleHeading }}
-               </h2>
-               <p class="paragraph  paragraph--blue   paragraph--bold  content__subheading">
-                  {{ courseIntro.courseIntroArticleLabel }}
-               </p>
-               <p class="paragraph  paragraph--black   content__text">
-                  {{ courseIntro.courseIntroArticleText }}
-               </p>
-               <p class="paragraph  paragraph--black   paragraph--bold  content__outro">
-                  {{ courseIntro.courseIntroArticleOutro }}
-               </p>
-            </div>
+               <h2 class="heading  heading--h2   article__heading js-heading">{{ courseIntro.courseIntroArticleHeading }}</h2>
+               {% if courseIntro.courseIntroArticleLabel %}
+                  <p class="paragraph  paragraph--blue   paragraph--bold  content__subheading">{{ courseIntro.courseIntroArticleLabel }}</p>
+               {% endif %}
+               <div class="article__content content">
+                  <p class="paragraph  paragraph--black   content__text">{{ courseIntro.courseIntroArticleText }}</p>
+                  <p class="paragraph  paragraph--black   paragraph--bold  content__outro">{{ courseIntro.courseIntroArticleOutro }}</p>
+               </div>
          </div>
       </div>
       
       <div class="quote content__quote quote--no-avatar">
-         {# <img class="quote__avatar" src="{{ courseIntro.courseIntroQuoteImage.one().url() }}" alt=""> #}
          <div class="quote__content content">
             <i class="content__icon icon icon--quote"></i>
             <p class="content__text">{{ courseIntro.courseIntroQuoteText }} </p>
@@ -50,37 +40,27 @@
          </p>
       </div>
       
-      <div class="article article--no-label">
+      <div class="article article">
          <img class="article__image" src="/media/images/services/classic-investments.webp" alt="">
          <div class="article__wrapper">
-            <p class="paragraph  paragraph--blue   paragraph--bold  article__label"></p>
-            <div class="article__content content">
-               <h2 class="heading  heading--h2   content__heading js-heading">
-                  {{ courseIntro.courseIntroInfoHeading }}
-               </h2>
-               <p class="paragraph  paragraph--blue   paragraph--bold  content__subheading"></p>
-               <p class="paragraph  paragraph--black   content__text">
-                  {{ courseIntro.courseIntroInfoText }}
-               </p>
-               <h5 class="heading  heading--h5 content__peaker">
-                  {{ courseIntro.courseIntroInfoPeaker }}
-               </h5>
-               <ul class="list content__list">
-                {% for item in courseIntro.courseIntroInfoList.all() %}
-                    <li class="list__item">{{ item.text }}</li>
-                {% endfor %}
-                </ul>
-               <p class="paragraph  paragraph--black  content__text">
-                  {{ courseIntro.courseIntroInfoText }}
-               </p>
-                <button class="button content__button  button--blue" data-trigger="message-modal">
-				    <span class="button__text">Schulung anfragen</span>
-					<i class="button__icon icon icon--arrow"></i>
-					<figure class="button__overlay"></figure>
-                </button>
+               <h2 class="heading  heading--h2   article__heading js-heading">{{ courseIntro.courseIntroInfoHeading }}</h2>
+               <div class="article__content content">
+                  <p class="paragraph  paragraph--black   content__text">{{ courseIntro.courseIntroInfoText }}</p>
+                  <h5 class="heading  heading--h5 content__peaker">{{ courseIntro.courseIntroInfoPeaker }}</h5>
+                  <ul class="list content__list">
+                      {% for item in courseIntro.courseIntroInfoList.all() %}
+                       <li class="list__item">{{ item.text }}</li>
+                      {% endfor %}
+                  </ul>
+                  <p class="paragraph  paragraph--black  content__text">{{ courseIntro.courseIntroInfoText }}</p>
+                  <button class="button content__button  button--blue" data-trigger="message-modal">
+				      <span class="button__text">Schulung anfragen</span>
+					   <i class="button__icon icon icon--arrow"></i>
+					   <figure class="button__overlay"></figure>
+                  </button>
+               </div>
             </div>
          </div>
-      </div>
       </div>
       
       <div class="course-intro__sidepanel sidepanel">

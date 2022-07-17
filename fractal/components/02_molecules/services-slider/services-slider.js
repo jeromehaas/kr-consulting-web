@@ -36,9 +36,10 @@ class ServicesSlider {
 				},
 				breakpoints: {
 					350: { slidesPerView: 1, spaceBetween: 0 },
-					650: { slidesPerView: 2.5, spaceBetween: 0 },
-					950: { slidesPerView: 3.5, spaceBetween: 0 },
-					1250: { slidesPerView: 4, spaceBetween: 0 },
+					650: { slidesPerView: 1.5, spaceBetween: 0 },
+					950: { slidesPerView: 2.5, spaceBetween: 0 },
+					1250: { slidesPerView: 3.5, spaceBetween: 0 },
+					1440: { slidesPerView: 4, spaceBetween: 0 },
 				},	
 
 			}

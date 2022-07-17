@@ -5,7 +5,7 @@
     &__inner {
         
         &--center {
-            padding-right: 0;
+            padding-right: 0 !important;
             padding-top: 96px;
             display: grid;
             grid-template-columns: 1fr 600px;
@@ -37,7 +37,11 @@
         
         &__text {
             max-width: 680px;
-            margin-left: 96px;
+            margin-bottom: 64px;
+        }
+
+        &__button {
+            margin-left: 160px;
         }
         
     }

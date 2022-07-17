@@ -2,7 +2,7 @@
 	width: 100vw;
     overflow: hidden;
     display: grid;
-    grid-template: auto / minmax(0, auto) minmax(auto, 1400px) minmax(0, auto);
+    grid-template: auto / minmax(0, auto) minmax(auto, $max-section-width) minmax(0, auto);
     justify-content: stretch;;
     
     &__inner {

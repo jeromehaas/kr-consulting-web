@@ -7,7 +7,7 @@
 
         &--center {
             display: grid;
-            grid-template-columns: auto 360px;
+            grid-template-columns: auto 320px;
             margin-right: 96px;
             overflow: unset;
             justify-content: center;
@@ -17,7 +17,7 @@
 
     &__sidepanel, .sidepanel {
         width: 360px;
-        padding: 32px;
+        padding: 32px 0 32px 32px;
 
         &__contact-card {
             position: sticky;
@@ -28,10 +28,14 @@
 
     &__container, .container {
         background-color: $white;
-        max-width: calc($max-section-width - 360px);
+        max-width: calc($max-section-width - 320px);
         
         &__article, .article {
             margin-bottom: 96px;
+
+            &__content {
+                padding-right: 32px;
+            }
         }
 
         &__quote, .quote {
@@ -64,19 +68,24 @@
         &__container, .container {
             
             &__article, .article {
-							margin-bottom: 64px;
+				margin-bottom: 64px;
+
+                &__heading {
+                    padding-right: 64px;
+                    padding-left: 64px;
+                }
 
                 &__content {
                     padding-right: 64px;
                     padding-left: 64px;
-									}
+				}
 									
-								}
+			}
 								
-								&__quote, .quote {
-							padding-right: 64px;
-							padding-left: 64px;
-						}
+			&__quote, .quote {
+			    padding-right: 64px;
+				padding-left: 64px;
+		    }
 
         }
 
@@ -88,6 +97,11 @@
             
 				&__article, .article {
 
+						&__heading {
+								padding-right: 32px;
+								padding-left: 32px;
+							}
+                            
 						&__content {
 								padding-right: 32px;
 								padding-left: 32px;
