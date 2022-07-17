@@ -32,6 +32,11 @@
     &__link {
         margin: 8px 16px 4px 16px;
         color: $white;
+        transition: opacity 0.4s ease 0.1s;
+
+        &--faded {
+            opacity: 0.5;
+        }
     }
     
     &__partnerlogin {

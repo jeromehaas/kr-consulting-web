@@ -11,7 +11,7 @@
 
 </head>
 
-<body class="body page page--light js-page">
+<body class="body page page--light js-page {% if id is defined %} page__{{id}} {% endif %}">
     {% include "03_organisms/mobile-navigation" %}
     {% include "03_organisms/desktop-navigation" with { dark: true } %}
     {% block main %} {% endblock %} 

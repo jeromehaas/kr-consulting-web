@@ -1,5 +1,6 @@
-{% set aboutUs = craft.entries.section('aboutUs').one() %}
 {% extends "04_layouts/page/dark" %}
+{% set id = 'about-us' %}
+{% set aboutUs = craft.entries.section('aboutUs').one() %}
 
 {% block main %}
     {% include "03_organisms/heroine" with { heading: aboutUs.heroineHeading, text: aboutUs.heroineText } %}

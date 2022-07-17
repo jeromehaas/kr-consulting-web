@@ -21,3 +21,6 @@ new LegalInformation().init();
 
 import Counters from '../../components/01_atoms/counters/counters';
 new Counters().init();
+
+import DesktopNavigation from '../../components/03_organisms/desktop-navigation/desktop-navigation';
+new DesktopNavigation().init();

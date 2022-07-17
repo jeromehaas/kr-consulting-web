@@ -13,15 +13,9 @@
                 </p>
             </address>
             <div class="infos__connection connection">
-					<a class="link connection__link contact__link" href="mailto:{{ connection.connectionEmail }}">
-                    {{ connection.connectionEmail }}
-                </a> 
-								<a class="link connection__link" href="tel:{{ connection.connectionPhone|replace(' ', '') }}">
-										{{ connection.connectionPhone }}
-                </a> 
-								<a class="link connection__link" target="_blank" href="{{ connection.connectionLinkedin }}">
-                    LinkedIn
-                </a>
+				<a class="link link--lightblue connection__link contact__link" href="mailto:{{ connection.connectionEmail }}">{{ connection.connectionEmail }}</a> 
+				<a class="link link--lightblue connection__link" href="tel:{{ connection.connectionPhone|replace(' ', '') }}">{{ connection.connectionPhone }}</a> 
+				<a class="link link--lightblue connection__link" target="_blank" href="{{ connection.connectionLinkedin }}">LinkedIn</a>
             </div>
         </div>
 
@@ -29,10 +23,10 @@
             <p class="paragraph   links__item">
                 © 2022, {{ address.addressCompany }}
             </p> 
-						<a class="link links__link    links__link" href="/impressum">
+						<a class="link link--lightblue links__link    links__link" href="/impressum">
                 Impressum
             </a> 
-						<a class="link links__link    links__link" href="/datenschutz">
+						<a class="link link--lightblue links__link    links__link" href="/datenschutz">
                 Datenschutz
             </a>
         </div>

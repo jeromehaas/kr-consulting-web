@@ -16,8 +16,15 @@
 	&__contact-details, .contact-details {
 		grid-area: contact-details;
 
+		&__item, .item {
+
+			&__heading {
+			margin-bottom: 4px;
+			}
+		}
+
 		&__item:not(:last-child) {
-			margin-bottom: 32px;
+			margin-bottom: 48px;
 		}
 
 	}

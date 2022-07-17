@@ -1,4 +1,4 @@
-dateModified: 1657936418
+dateModified: 1658060972
 elementSources:
   craft\elements\Entry:
     -
@@ -119,9 +119,10 @@ meta:
     84babe93-8199-4bb0-8db8-7586bbc5e99c: Intro # Intro
     86baf79e-9a0e-4654-9494-66d604f2a4d4: Heroine # Heroine
     93a03ac3-5065-4a87-9a41-5fe7ccc9fd56: Image # Image
-    103d8c1e-9798-44c8-908e-bfdfd085f980: 'About Us Member' # About Us Member
+    103d8c1e-9798-44c8-908e-bfdfd085f980: 'Team Member Persona' # Team Member Persona
     146a4478-2537-438c-acbf-11cd3bf2bfa4: Hero # Hero
     0310efe3-12df-418c-a30b-121cf8981bf8: 'Contact Card Name' # Contact Card Name
+    380c6cec-01c4-4ff5-b650-59bbb0b042b9: 'Team Member' # Team Member
     465ad94a-6ff0-4776-aec3-1a8d9c28d177: Start # Start
     505b5f6b-5951-4484-9ced-7f3f61abc5d9: Auth # Auth
     525e2697-fcdb-4800-8957-4e5199799947: Email # Email
@@ -142,6 +143,8 @@ meta:
     57477ea0-4de8-4b6a-8864-f6afc2f25a7c: 'Contact Card Phone' # Contact Card Phone
     78139d94-7a12-4f02-a8e4-8608aee5ea55: 'Contact Card Role' # Contact Card Role
     78967eb2-4573-48b8-830b-07fc6954c961: 'Teaser Heading' # Teaser Heading
+    476265c7-1460-4f45-bfa0-b3fc7be50365: 'Team Member' # Team Member
+    672102ad-6fcd-499c-be23-64c8512e979f: 'Team Member' # Team Member
     01907158-7087-433f-a781-b6f78c024142: 'Hero Image' # Hero Image
     4238344f-04f7-4d53-93f6-bdc74afc27b6: Href # Href
     6384771e-f281-43f1-b837-ba8472992e03: 'Services Label' # Services Label
@@ -210,7 +213,7 @@ meta:
     f303fc4f-2747-4682-8b40-3259a9821000: Heading # Heading
     f989ecb4-faa8-4859-9890-1f9f818af555: Label # Label
     f77929a1-2499-4ef1-8c31-545e3d547cb4: 'Legal Information Item' # Legal Information Item
-    f801348c-e2d6-42fe-ada9-e25d66e99e0d: Member # Member
+    f801348c-e2d6-42fe-ada9-e25d66e99e0d: Persona # Persona
     fb774718-6b6d-4033-8391-c1e5225d7442: 'CTA Button Href' # CTA Button Href
     fd65c4ec-0039-4c4e-b49c-3627453a832f: 'Contact Infos Teaser Contact Email' # Contact Infos Teaser Contact Email
 plugins:

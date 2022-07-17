@@ -1,12 +1,12 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 19cff30f-a1a3-4caa-a7dc-c4cdb59d70db # About Us
-handle: aboutUsMember
+fieldGroup: 476265c7-1460-4f45-bfa0-b3fc7be50365 # Team Member
+handle: teamMemberPersona
 instructions: null
-name: 'About Us Member'
+name: 'Team Member Persona'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_aboutusmember}}'
+  contentTable: '{{%matrixcontent_teammemberpersona}}'
   maxBlocks: null
   minBlocks: 1
   propagationKeyFormat: null

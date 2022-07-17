@@ -1,4 +1,4 @@
-field: 103d8c1e-9798-44c8-908e-bfdfd085f980 # About Us Member
+field: 103d8c1e-9798-44c8-908e-bfdfd085f980 # Team Member Persona
 fieldLayouts:
   e6f8367b-80ab-4e56-bafa-c3153449bc6d:
     tabs:
@@ -106,7 +106,7 @@ fields:
             - class
             - craft\elements\conditions\assets\AssetCondition
       selectionLabel: null
-      showSiteMenu: false
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       source: null
@@ -197,6 +197,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-handle: member
-name: Member
+handle: Persona
+name: Persona
 sortOrder: 1

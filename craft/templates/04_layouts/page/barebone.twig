@@ -11,7 +11,7 @@
   <meta name="description" content="{{ entry.metaPageDescription }}">
 </head>
 
-<body class="body page page--dark js-page">
+<body class="body page page--dark js-page {% if id is defined %} page__{{id}} {% endif %}">
     {% block main %} {% endblock %} 
   <script src="/js/main.build.js"></script>
 </body>

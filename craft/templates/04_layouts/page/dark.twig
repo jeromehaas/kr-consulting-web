@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="body page page--dark js-page">
+<body class="body page page--dark {% if id is defined %} page__{{id}} {% endif %} js-page">
     {% include "03_organisms/mobile-navigation" %}
     {% include "03_organisms/desktop-navigation" with { dark: false } %}
     {% block main %} {% endblock %} 
