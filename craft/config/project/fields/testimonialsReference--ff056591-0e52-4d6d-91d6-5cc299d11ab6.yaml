@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 47eb7355-1057-4fe3-a2fe-b912bceca812 # Testimonials
+handle: testimonialsReference
+instructions: null
+name: 'Testimonials Reference'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_testimonialsreference}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

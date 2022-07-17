@@ -1,4 +1,4 @@
-dateModified: 1658060972
+dateModified: 1658087495
 elementSources:
   craft\elements\Entry:
     -
@@ -106,6 +106,7 @@ meta:
     23da331f-4f31-4d9e-8fdc-0ff080eba556: Address # Address
     24d6a6c1-e3ba-4502-8202-9046cda01144: 'Stats Counters' # Stats Counters
     47e94b3a-30ca-480e-aade-3be1b448c694: 'Data Privacy' # Data Privacy
+    47eb7355-1057-4fe3-a2fe-b912bceca812: Testimonials # Testimonials
     63ab7bb9-d043-4d70-b513-c1bd9d75d685: 'Teaser Image' # Teaser Image
     64e36b03-32f3-4b82-b976-a3eaef3f8705: Address # Address
     69f52402-22cf-4960-a42a-b404ccea0405: 'Stats Button Text' # Stats Button Text
@@ -114,6 +115,7 @@ meta:
     75b05fff-759a-42c7-9992-838ba424e9b2: 'Contact Infos' # Contact Infos
     75c6b6cf-12b2-45c1-a198-a12c9f0fb5a5: Avatars # Avatars
     77f88702-2981-4e43-9963-965cd0f6bcc8: 'Course Intro Long Copy Text ' # Course Intro Long Copy Text 
+    79d9bae6-9855-4997-b283-75914ab58005: Image # Image
     81f1ea57-8f3f-4a92-aa27-52460033d593: 'Hero Heading' # Hero Heading
     83d2d997-ad1f-49c6-901c-3663f63358f5: 'Course Intro Quote Role' # Course Intro Quote Role
     84babe93-8199-4bb0-8db8-7586bbc5e99c: Intro # Intro
@@ -128,11 +130,13 @@ meta:
     525e2697-fcdb-4800-8957-4e5199799947: Email # Email
     535b41e8-932f-49eb-80e0-a57aad52a713: Teaser # Teaser
     558dd3f0-e975-4199-aa7b-34620d3d8cb8: 'Connection Email' # Connection Email
+    562f5c5d-c13d-420a-8b0d-ced4ff3d6d97: Role # Role
     567b3a46-9655-43df-8e0d-02a52454e459: 'About Us' # About Us
     611a3848-5826-4e32-bb17-992fd9937ba8: 'Hero Button Text' # Hero Button Text
     0622be8b-b30f-4d45-8e51-c0449d675572: 'Meta Page Title' # Meta Page Title
     859fe36b-3d09-4575-90a8-7a8df52896ee: Introduction # Introduction
     967ce7fc-82b0-4640-b4fc-88a245b7585e: 'Course Intro Info  Button Text' # Course Intro Info  Button Text
+    1085dbf3-de89-4fa4-89bd-3152f254c3f5: Testimonials # Default
     1603d4ed-dff5-40eb-8f99-db85545a375e: Start # Start
     1996da9d-6afd-485e-9520-e734f9bef432: 'Services Long Copy' # Services Long Copy
     2335bc14-e769-484f-9f4f-9dc2f14e9db3: Services # Services
@@ -173,6 +177,9 @@ meta:
     be65d477-82c3-4ed6-bd1b-fbdb3916edac: 'Contact Card' # Contact Card
     c03fd4f8-9d29-48e8-871a-0640a9b29a06: General # General
     c2f319a5-193f-4bcf-8906-fbc7cf6f6a5d: Teaser # Teaser
+    c7ba05f6-a7e8-4156-8e13-4b8a2e21a521: 'Full Name' # Full Name
+    c9db1098-8537-4bff-b067-43e0df422abb: Testimonials # Testimonials
+    c34dedb5-ab5a-48f3-b616-9f0aecd4d1c4: Reference # Reference
     c157b61b-db87-471f-8609-c7f60ecf7283: Auth # Auth
     cf0c14ba-cc45-4b47-bdf2-24ae9f3fd86a: 'Image Alt Tag' # Image Alt Tag
     cf05b8dd-8dfa-47ae-a86d-e19e315bd668: 'Data Privacy' # Data Privacy
@@ -210,12 +217,14 @@ meta:
     f02756b0-2a21-4a86-a44f-d8b2b9cb67af: Image # Image
     f6c273e6-1de9-44f8-964e-74d5586d58cd: 'Services Heading' # Services Heading
     f9dc201a-1d70-41de-addd-45fd5fafb195: 'Investment Advisory' # Investment Advisory
+    f79b0cf6-11fc-4478-b1c3-0cec66339830: Text # Text
     f303fc4f-2747-4682-8b40-3259a9821000: Heading # Heading
     f989ecb4-faa8-4859-9890-1f9f818af555: Label # Label
     f77929a1-2499-4ef1-8c31-545e3d547cb4: 'Legal Information Item' # Legal Information Item
     f801348c-e2d6-42fe-ada9-e25d66e99e0d: Persona # Persona
     fb774718-6b6d-4033-8391-c1e5225d7442: 'CTA Button Href' # CTA Button Href
     fd65c4ec-0039-4c4e-b49c-3627453a832f: 'Contact Infos Teaser Contact Email' # Contact Infos Teaser Contact Email
+    ff056591-0e52-4d6d-91d6-5cc299d11ab6: 'Testimonials Reference' # Testimonials Reference
 plugins:
   redactor:
     edition: standard
