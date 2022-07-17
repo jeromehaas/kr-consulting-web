@@ -1,10 +1,7 @@
 .intro {
     position: relative;
 	margin-top: -80px;
-    // grid-template: auto /  minmax(96px, 0) minmax(auto,1400px) minmax(96px, 0px) !important;
-    // justify-content: stretch !important;
-    // align-items: center;
-    // 
+
     &__inner {
         
         &--center {
@@ -66,9 +63,6 @@
     }
 
 
-        &__content {
-            // padding: 120px 0 120px 0;
-        }
 
         &__symbol {
             height: 100%;
@@ -81,22 +75,14 @@
 		}
 
   
-		@media (max-width: 1000px) {
-  
-	overflow: h
-  			// &__inner {
-			// 	padding-right: 64px;
-			// 	padding-left: 64px;
-			// }
-			
-		}
+
 
 		@media (max-width: 900px) {
 
 			&__content, .content {
 
 				&__text {
-					margin-left: 0;
+					margin-left: 80px;
 				}
 
 			}
