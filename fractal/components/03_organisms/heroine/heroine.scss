@@ -5,13 +5,12 @@
 	&__inner {
 
 		&--center {
-
 			min-height: 100vh;
 			height: 100%;
-			display: flex;
-			align-items: column;
-			justify-content: center;
-			align-items: center;
+			// display: flex;
+			// align-items: column;
+			// justify-content: center;
+			// align-items: center;
 		}
 		
 	}
@@ -54,8 +53,9 @@
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto;
 		margin-top: 120px;
-		grid-gap: 32px;
-		
+		grid-gap: 80px;
+			margin-top: 400px;
+
 		&__heading {
 			margin-top: -24px;
 		}

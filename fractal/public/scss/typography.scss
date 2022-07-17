@@ -75,6 +75,7 @@
 .highlight {
 	font-weight: inherit;
 	font-family: inherit;
+	font-family: "Plaifair Display"
 }
 
 .button__text {
@@ -153,6 +154,10 @@
 	line-height: 1;
 }
 
+.heroine .content__heading {
+		font-size: 64px;
+}
+
 @media (max-width: 950px) {
 
 	.heading--h1 {
@@ -165,6 +170,10 @@
 
 	.heading--h3 {
 		font-size: 24px;
+	}
+
+	.heroine .content__heading {
+		font-size: 60px;
 	}
 
 
@@ -183,6 +192,12 @@
 	.heading--h3 {
 		font-size: 20px;
 	}
+
+	.heroine .content__heading {
+		font-size: 40px;
+	}
+
+	
 
 }
 
