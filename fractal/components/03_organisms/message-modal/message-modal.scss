@@ -81,7 +81,8 @@
 	}
 
 	&__input-submit {
-		margin: 0 auto;
+		// margin: 0 auto;
+		align-self: flex-end;
 	}
 
 	&__status-message, .status-message {
@@ -158,6 +159,7 @@
 		top: 96px;
 		right: 96px;	
 		font-size: 64px;
+		cursor: pointer;
 	}
 
 

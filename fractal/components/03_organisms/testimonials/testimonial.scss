@@ -1,18 +1,22 @@
 .testimonials {
-	background-color: transparentize($beige-100, 0.6);
+	background-color: $grey-20;
 	overflow: visible;
-	position: relative;
-
+    
     &__inner {
-        padding-top: 80px;
-        padding-bottom: 120px;
+        
+        &--center {
+            position: relative;
+            padding-top: 80px;
+            padding-bottom: 120px;
+        }
+
     }
 
     &__symbol {
         height: 100%;
         position: absolute;
-        right:  calc(100% - 240px);
-        top: 10%;
+        left: 60%;
+        top: 0;
         z-index: 5;
     }
 
@@ -28,6 +32,13 @@
             margin-left: 80px;
         }
 
+    }
+
+    @media (max-width: 700px) {
+
+    &__symbol {
+            left: -300px;
+        }
     }
 
     @media (max-width: 650px) {

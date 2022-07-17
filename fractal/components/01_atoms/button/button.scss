@@ -16,6 +16,10 @@
     &__text {
         color: $white;
         z-index: 5;
+        position: relative;
+        transition: all 0.3s ease
+        ;
+        left: 0;
     }
 
     &__icon {
@@ -56,6 +60,10 @@
         & .button__overlay {
            width: calc(200% + 32px); 
            right: -32px;
+        }
+
+        & .button__text {
+            left: 8px;
         }
 
         & .button__icon {

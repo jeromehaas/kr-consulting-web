@@ -1,8 +1,9 @@
-.start {
+.page__start {
+
 
     & .cta {
         // background-color: transparentize($beige-100, 0.6);
-        background-color: red !important;
+        background-color: $grey-20 ;
     }
 
 }

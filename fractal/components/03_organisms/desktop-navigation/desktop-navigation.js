@@ -13,7 +13,6 @@ class DesktopNavigation {
     };
 
     addEventListeners = () => {
-        console.log(this.elements.links);
         this.elements.links.forEach((link) => {
             link.addEventListener('mouseenter', (event) => {
                 const target = event.target;
