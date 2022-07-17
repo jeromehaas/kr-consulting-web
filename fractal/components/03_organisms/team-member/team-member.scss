@@ -5,93 +5,99 @@
         &--center {
             padding-left: 0 !important;
             padding-right: 0 !important;
+            display: flex;
+            flex-direction: row; 
+            margin-bottom: 80px !important;
         }
 		
 	} 
     
-    &__member, .member {
-        display: flex;
-        flex-direction: row;
         
         &__image {
         display: block;
-        width: 50%;
+        width: 560px;
+        max-width: 50%;
         object-fit: cover;
     }
 
-    &__infos, .infos {
-        width: 50%;
-        padding: 96px;
+        &__infos, .infos {
+            width: auto;
+            padding: 96px;
 
-        &__heading { 
-            margin-bottom: 4px;
-        }
+            &__heading { 
+                margin-bottom: 4px;
+            }
 
-        &__subheading {
-            margin-bottom: 32px;
-        }
+            &__subheading {
+                margin-bottom: 32px;
+                }
 
-        &__text {
-            margin-bottom: 32px;
-        }
-        
-        &__email {
-            padding-bottom: 2px;
-            display: inline-block;
-            border-bottom: 1px solid $blue-60;
-        }
+            &__text {
+                margin-bottom: 32px;
+            }
+            
+            &__email {
+                padding-bottom: 2px;
+                display: inline-block;
+                border-bottom: 1px solid $blue-60;
+            }
 
-    }
+        }
 
     &--reversed {
-        flex-direction: row-reverse;
+
+        & .team-member {
+            
+            &__inner {
+
+                &--center {
+                    flex-direction: row-reverse;
+                }
+
+            }
+
+        }
+
     }
 
-}
-
+    
     @media (max-width: 950px) {
-
-        &__member, .member {
-
-            
-            &__infos, .infos {
-                padding: 64px;
-            }
         
-        }
-        
-    }
-
-     @media (max-width: 650px) {
-
-        &__member, .member {
-
-            &__infos, .infos {
-                padding-left: 32px;
-                padding-right: 32px;
-            }
-
-        }
-
-    }
-
-    @media (max-width: 750px) {
-
-        &__member, .member {
-
-            flex-direction: column !important;
+        &__inner {
             
+            &--center {   
+                flex-direction: column !important;
+            }
+     
+        }
+     
+        &__infos, .infos {
+    
+            padding: 64px;
+        }
+                
             &__image { 
-                width: 100%;
-                height: 70vw;
-            }
+                    width: 100%;
+                    height: 70vw;
+                    max-width: unset;
+
+                }
             
             &__infos, .infos {
                 width: 100%;
             }
             
+            
         }
 
-    }
+        @media (max-width: 650px) {
+    
+    
+               &__infos, .infos {
+                   padding-left: 32px;
+                   padding-right: 32px;
+               }
+    
+       }
     
 }

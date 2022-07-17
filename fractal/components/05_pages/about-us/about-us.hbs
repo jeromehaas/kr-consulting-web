@@ -1,4 +1,6 @@
-{{ render '@heroine' }}
-{{ render '@about-us'}}
-{{ render '@statement' }}
-{{ render '@cta' }}
+{{#>@dark id="about-us"}}
+    {{ render '@heroine' }}
+    {{ render '@team-member'}}
+    {{ render '@statement' }}
+    {{ render '@cta' }}
+{{/@dark}}

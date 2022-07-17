@@ -1,5 +1,5 @@
 name: Input Textarea
 status: "wip"
-preview: "@barebone"
+preview: "@default"
 context: 
   label: Label

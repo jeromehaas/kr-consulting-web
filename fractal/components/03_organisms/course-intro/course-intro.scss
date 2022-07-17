@@ -39,9 +39,11 @@
         &__article, .article {
             margin-bottom: 96px;
 
-            &__content {
-                padding-right: 32px;
+            &__content,
+            &__heading {
+                padding-right: 64px;
             }
+            
         }
 
         &__quote, .quote {

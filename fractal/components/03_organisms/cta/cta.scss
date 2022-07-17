@@ -10,7 +10,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 32px;
+        padding: 64px;
         gap: 40px;
         z-index: 10;
   
@@ -38,7 +38,6 @@
 
         &__heading  {
             height: 100%;
-            margin-bottom: 32px;
             hyphens: unset;
             z-index: 5;
         }

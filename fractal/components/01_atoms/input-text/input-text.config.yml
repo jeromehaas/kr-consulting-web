@@ -1,6 +1,6 @@
 name: Input Text
 status: "wip"
-preview: "@barebone"
+preview: "@default"
 context:
   label: Label
   name: email
