@@ -24,3 +24,6 @@ new Counters().init();
 
 import DesktopNavigation from '../../components/03_organisms/desktop-navigation/desktop-navigation';
 new DesktopNavigation().init();
+
+import TestimonialSlider from '../../components/02_molecules/testimonial-slider/testimonial-slider';
+new TestimonialSlider().init();
