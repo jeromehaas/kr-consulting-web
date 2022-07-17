@@ -1,17 +1,31 @@
 .long-copy {
 	background-color: $blue-80;
-	padding: 64px;
+	padding: 64px 64px 64px 0;
+	position: relative;
 
 	&__heading {
 		margin-bottom: 32px;
 	}
 
 
-	@media (max-width: 650px) {
-			padding: 32px;
+	@media (max-width: 950px) {
+		padding: 64px;
 	}
 
+	@media (max-width: 950px) {
+		padding: 64px 32px;
+	}
 
+	&::after {
+		content: "";
+		width: 100vw;
+		height: 100%;
+		background-color: $blue-80;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 100%;
+	}
 
 
 }

@@ -16,6 +16,12 @@
 			& .quote__avatar {
 				display: none;
 			}
+
+
+			& .quote__content .content__text {
+				margin-bottom: 0;
+			}
+
 	}
 
 	&__avatar {

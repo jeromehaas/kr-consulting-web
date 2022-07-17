@@ -5,11 +5,16 @@
     
     &__inner {
 
+        &--right {
+            background-color: $grey-20;
+        }
+
         &--center {
             display: grid;
-            grid-template-columns: auto 320px;
+            grid-template-columns: auto 360px;
             margin-right: 96px;
             overflow: unset;
+            padding-right: 0 !important;
             justify-content: center;
         }
 
@@ -17,7 +22,8 @@
 
     &__sidepanel, .sidepanel {
         width: 360px;
-        padding: 32px 0 32px 32px;
+        padding: 32px 96px 32px 32px;
+        background-color: $grey-20;
 
         &__contact-card {
             position: sticky;
@@ -28,7 +34,7 @@
 
     &__container, .container {
         background-color: $white;
-        max-width: calc($max-section-width - 320px);
+        max-width: calc($max-section-width - 360px);
         
         &__article, .article {
             margin-bottom: 96px;
