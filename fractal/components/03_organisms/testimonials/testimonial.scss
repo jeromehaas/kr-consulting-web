@@ -1,15 +1,13 @@
 .testimonials {
-	background-color: $grey-20;
-	overflow: hiddenss;
-    
+    background-color: $grey-20;
+    overflow: hiddenss;
+
     &__inner {
-        
         &--center {
             position: relative;
             padding-top: 80px;
             padding-bottom: 120px;
         }
-
     }
 
     &__symbol {
@@ -22,30 +20,25 @@
 
     &__quote {
         margin-left: 160px;
-				z-index: 10;
-				position: relative;
+        z-index: 10;
+        position: relative;
     }
 
     @media (max-width: 950px) {
-
         &__quote {
             margin-left: 80px;
         }
-
     }
 
     @media (max-width: 700px) {
-
-    &__symbol {
+        &__symbol {
             left: -300px;
         }
     }
 
     @media (max-width: 650px) {
-
         &__quote {
             margin-left: 0;
         }
     }
-
 }

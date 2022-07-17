@@ -1,27 +1,24 @@
 .quote {
 	display: grid;
 	grid-template-rows: auto auto;
-	grid-template-columns: 120px 1fr; 	
-	grid-template-areas: 
+	grid-template-columns: 120px 1fr;
+	grid-template-areas:
 		"avatar content"
 		"avatar content";
 	grid-gap: 48px;
 
 	&--no-avatar {
-		grid-template-columns: 1fr; 	
-		grid-template-rows: auto; 	
-		grid-template-areas: 
-			"content";
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "content";
 
-			& .quote__avatar {
-				display: none;
-			}
+		& .quote__avatar {
+			display: none;
+		}
 
-
-			& .quote__content .content__text {
-				margin-bottom: 0;
-			}
-
+		& .quote__content .content__text {
+			margin-bottom: 0;
+		}
 	}
 
 	&__avatar {
@@ -33,71 +30,63 @@
 		display: block;
 		align-self: end;
 	}
-	
-	&__content, .content {
+
+	&__content,
+	.content {
 		grid-area: content;
 
-		
 		&__icon {
 			font-size: 80px;
 			color: $blue-80;
 			margin-bottom: 32px;
 		}
-	
+
 		&__text {
 			margin-bottom: 32px;
 		}
 
-		&__author, .author {
-
+		&__author,
+		.author {
 			&__name,
-			&__role, 
+			&__role,
 			&__separator {
 				display: inline;
 				color: $blue-80;
 			}
 
 			&__name {
-				
 			}
-			
+
 			&__separator {
 				margin: 0 8px;
 			}
-			
 		}
-		
 	}
 
 	@media (max-width: 950px) {
-
 	}
 
 	@media (max-width: 550px) {
-		
 		grid-template-rows: auto;
-		grid-template-columns: auto; 	
-		grid-template-areas: 
-		 	"navigation"
+		grid-template-columns: auto;
+		grid-template-areas:
+			"navigation"
 			"avatar"
 			"content"
 			"content";
 		grid-gap: 0;
-		
+
 		&__avatar {
 			max-width: 160px;
 			margin: 0 auto 24px auto;
 		}
 
-		&__content, .content {
-			
+		&__content,
+		.content {
 			&__icon {
 				font-size: 40px;
 				margin-bottom: 16px;
 			}
-
 		}
-			
 	}
-
 }

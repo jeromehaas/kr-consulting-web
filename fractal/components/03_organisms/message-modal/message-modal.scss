@@ -13,34 +13,33 @@
 	&--visible {
 		bottom: 0%;
 	}
-	
+
 	&__inner {
-		
 		&--center {
 			position: relative;
 			display: grid;
-			grid-template-areas: 
-			"header ."
-			"contact-form infos";
+			grid-template-areas:
+				"header ."
+				"contact-form infos";
 			grid-template-columns: 1fr auto;
 			grid-template-rows: auto auto;
 			grid-gap: 64px;
 			padding-top: 160px;
 			padding-bottom: 96px;
 		}
-
 	}
 
 	&__header {
 		grid-area: header;
 	}
 
-	&__contact-form, .contact-form {
+	&__contact-form,
+	.contact-form {
 		grid-area: contact-form;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		
+
 		&__input-text-wrapper {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
@@ -48,139 +47,136 @@
 			margin-bottom: 32px;
 			margin-bottom: 32px;
 		}
-		
+
 		&__input-checkbox {
 			margin-bottom: 16px;
 		}
-		
+
 		&__input-textarea {
 			margin-bottom: 16px;
 		}
-		
-		&__disclaimer, .disclaimer {
-		margin-bottom: 32px;
-		display: block;
 
-		&__text, .paragraph {
-			color: $black;
+		&__disclaimer,
+		.disclaimer {
+			margin-bottom: 32px;
+			display: block;
 
-			&__link, a {
-				color: $blue-60;
-				text-decoration: none;
-				font-size: inherit;
-				cursor: pointer;
-			}
-		}
+			&__text,
+			.paragraph {
+				color: $black;
 
-		&__link {
-			color: white;
-			text-decoration: underline;
-			font-weight: inherit;
-		}
-
-	}
-
-	&__input-submit {
-		// margin: 0 auto;
-		align-self: flex-end;
-	}
-
-	&__status-message, .status-message {
-
-		&--success, 
-		&--error {
-			display: none;
-			color: $white;
-			position: relative;	
-
-			&::after {
-				content: "";
-				position: absolute;
-				width: 4px;
-				height: 4px;
-				top: 12px;
-				display: inline-block;
-				margin-left: 8px;
-				background-color: $red-100;
-				border-radius: 50%;
-			}
-
-		}
-
-		&--success::after { background-color: $blue-60; }
-		&--error::after { background-color: $red-100; }
-		&--active { display: block }
-
-	}
-
-	}
-
-	&__infos, .infos {
-		grid-area: infos;
-		margin-top: 48px;
-
-		&__connection, .connection {
-            
-			&__heading {
-					display: block;
-					color: $blue-100;
-					margin-bottom: 8px;
+				&__link,
+				a {
+					color: $blue-60;
+					text-decoration: none;
+					font-size: inherit;
+					cursor: pointer;
+				}
 			}
 
 			&__link {
-					display: block;
-					color: $blue-100;
+				color: white;
+				text-decoration: underline;
+				font-weight: inherit;
+			}
+		}
+
+		&__input-submit {
+			// margin: 0 auto;
+			align-self: flex-end;
+		}
+
+		&__status-message,
+		.status-message {
+			&--success,
+			&--error {
+				display: none;
+				color: $white;
+				position: relative;
+
+				&::after {
+					content: "";
+					position: absolute;
+					width: 4px;
+					height: 4px;
+					top: 12px;
+					display: inline-block;
+					margin-left: 8px;
+					background-color: $red-100;
+					border-radius: 50%;
+				}
 			}
 
+			&--success::after {
+				background-color: $blue-60;
+			}
+			&--error::after {
+				background-color: $red-100;
+			}
+			&--active {
+				display: block;
+			}
+		}
 	}
 
-	&__address, .address {
-		margin-bottom: 32px;
+	&__infos,
+	.infos {
+		grid-area: infos;
+		margin-top: 48px;
 
-		
-		&__heading {
-			display: block;
-			color: $blue-100;
-			margin-bottom: 8px;
+		&__connection,
+		.connection {
+			&__heading {
+				display: block;
+				color: $blue-100;
+				margin-bottom: 8px;
+			}
+
+			&__link {
+				display: block;
+				color: $blue-100;
+			}
 		}
-		
-		&__item {
-			display: block;
-			color: $blue-100;
+
+		&__address,
+		.address {
+			margin-bottom: 32px;
+
+			&__heading {
+				display: block;
+				color: $blue-100;
+				margin-bottom: 8px;
+			}
+
+			&__item {
+				display: block;
+				color: $blue-100;
+			}
 		}
-
-}
-
-
 	}
 
 	&__close-icon {
-		position: absolute; 
+		position: absolute;
 		top: 96px;
-		right: 96px;	
+		right: 96px;
 		font-size: 64px;
 		cursor: pointer;
 	}
 
-
 	@media (max-width: 950px) {
-
 		&__inner {
-
 			&--center {
-
 				display: grid;
-				grid-template-areas: 
-				"header"
-				"contact-form"
-				"infos";
+				grid-template-areas:
+					"header"
+					"contact-form"
+					"infos";
 				grid-template-columns: 1fr;
 				grid-template-rows: auto auto auto;
 				grid-gap: 32px;
 				padding-top: 160px;
 			}
-
-		}	
+		}
 
 		&__close-icon {
 			top: 64px;
@@ -194,25 +190,22 @@
 			gap: 16px;
 			margin-bottom: 32px;
 		}
-		
 	}
 
 	@media (max-width: 650px) {
-
 		&__inner {
-
 			&--center {
 				padding-top: 120px;
 			}
+		}
 
-		}	
-
-		&__contact-form, .contact-form {
+		&__contact-form,
+		.contact-form {
 			grid-area: contact-form;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			
+
 			&__input-text-wrapper {
 				display: grid;
 				grid-template-columns: 1fr;
@@ -220,7 +213,6 @@
 				margin-bottom: 32px;
 				margin-bottom: 32px;
 			}
-
 		}
 
 		&__close-icon {
@@ -228,7 +220,5 @@
 			right: 24px;
 			font-size: 32px;
 		}
-
 	}
-
 }

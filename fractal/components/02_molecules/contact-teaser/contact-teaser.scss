@@ -13,20 +13,20 @@
 		max-width: 640px;
 	}
 
-	&__contact-details, .contact-details {
+	&__contact-details,
+	.contact-details {
 		grid-area: contact-details;
 
-		&__item, .item {
-
+		&__item,
+		.item {
 			&__heading {
-			margin-bottom: 4px;
+				margin-bottom: 4px;
 			}
 		}
 
 		&__item:not(:last-child) {
 			margin-bottom: 48px;
 		}
-
 	}
 
 	&__button {
@@ -37,9 +37,8 @@
 		grid-template-areas:
 			"text"
 			"button"
-			"contact-details"	;
+			"contact-details";
 		grid-template-columns: auto;
 		grid-template-rows: auto auto auto;
 	}
-
 }

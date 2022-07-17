@@ -10,7 +10,7 @@ class Counters {
     };
 
     init = () => {
-        // this.countUp();
+		if (!document.querySelector(`.js-${this.name}`)) return;
         this.setupScrollTrigger();
     };
 

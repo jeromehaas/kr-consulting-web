@@ -2,9 +2,7 @@
 	background-color: $white;
 	position: relative;
 
-	
 	&--light {
-    
 		& .desktop-navigation {
 			background-color: $white;
 			position: static;
@@ -18,7 +16,6 @@
 			&__partnerlogin {
 				color: $blue-80;
 			}
-			
 		}
 
 		& .mobile-navigation {
@@ -27,9 +24,6 @@
 			&__bar {
 				background-color: $blue-80 !important;
 			}
-			
 		}
-
 	}
-
 }

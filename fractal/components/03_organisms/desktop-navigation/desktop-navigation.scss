@@ -1,24 +1,20 @@
 .desktop-navigation {
     height: auto;
     position: absolute;
-	z-index: 15;
+    z-index: 15;
     background-color: transparent;
 
     &__inner {
-
         &--center {
-
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-end;
             margin: 64px auto;
-            padding-top: 32px ;
-            padding-bottom: 32px ;
+            padding-top: 32px;
+            padding-bottom: 32px;
         }
-        
     }
-
 
     &__logo {
         height: 40px;
@@ -38,7 +34,7 @@
             opacity: 0.5;
         }
     }
-    
+
     &__partnerlogin {
         margin: 8px 0 4px 16px;
     }
@@ -54,14 +50,10 @@
         & .desktop-navigation__partnerlogin {
             color: $blue-80;
         }
-        
-
-
     }
 
     &--block {
         position: static;
         padding-bottom: 95px;
     }
-
 }

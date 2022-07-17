@@ -1,6 +1,6 @@
 .icon {
   display: inline-block;
-  font: normal normal normal 32px 'Icon';
+  font: normal normal normal 32px "Icon";
   color: inherit;
   flex-shrink: 0;
   text-transform: none;
@@ -8,19 +8,49 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon--small { font-size: 12px; }
-.icon--medium { font-size: 16px; }
-.icon--large { font-size: 20px; }
-.icon--large { font-size: 20px; }
-.icon--big { font-size: 32px; }
+.icon--small {
+  font-size: 12px;
+}
+.icon--medium {
+  font-size: 16px;
+}
+.icon--large {
+  font-size: 20px;
+}
+.icon--large {
+  font-size: 20px;
+}
+.icon--big {
+  font-size: 32px;
+}
 
-.icon--caret::before { content: "\ea02"; }
-.icon--chat::before { content: "\ea04"; }
-.icon--kr-symbol::before { content: "\ea05"; }
-.icon--info::before { content: "\ea06"; }
-.icon--hamburger::before { content: "\ea07"; }
-.icon--close::before { content: "\ea08"; }
-.icon--checkmark::before { content: "\ea09"; }
-.icon--calendar::before { content: "\ea0a"; }
-.icon--arrow::before { content: "\ea0b"; }
-.icon--quote::before { content: "\ea0c"; }
+.icon--caret::before {
+  content: "\ea02";
+}
+.icon--chat::before {
+  content: "\ea04";
+}
+.icon--kr-symbol::before {
+  content: "\ea05";
+}
+.icon--info::before {
+  content: "\ea06";
+}
+.icon--hamburger::before {
+  content: "\ea07";
+}
+.icon--close::before {
+  content: "\ea08";
+}
+.icon--checkmark::before {
+  content: "\ea09";
+}
+.icon--calendar::before {
+  content: "\ea0a";
+}
+.icon--arrow::before {
+  content: "\ea0b";
+}
+.icon--quote::before {
+  content: "\ea0c";
+}

@@ -1,9 +1,8 @@
 .intro {
     position: relative;
-	margin-top: -80px;
+    margin-top: -80px;
 
     &__inner {
-        
         &--center {
             display: grid;
             padding-right: 0 !important;
@@ -11,7 +10,6 @@
             grid-template-rows: auto;
             grid-gap: 96px;
         }
-
     }
 
     &__symbol {
@@ -19,50 +17,43 @@
         height: 100%;
         bottom: 0;
         left: 0;
-        z-index: -5
+        z-index: -5;
     }
 
-    &__content, .content {
+    &__content,
+    .content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-				padding: 160px 0 120px 0;
+        padding: 160px 0 120px 0;
 
-        
         &__heading {
             max-width: 680px;
             margin-bottom: 32px;
         }
-        
+
         &__text {
             max-width: 680px;
             margin-left: 160px;
         }
-        
     }
 
-    &__image, .image {
+    &__image,
+    .image {
         width: 400px;
         height: auto;
         display: block;
-        object-fit: cover; 
+        object-fit: cover;
     }
-
-
 
     @media (max-width: 1000px) {
-
-    &__inner {
-        
-        &--center {
-            padding-right: 96px !important;
-            grid-template-columns: auto;
+        &__inner {
+            &--center {
+                padding-right: 96px !important;
+                grid-template-columns: auto;
+            }
         }
-
-    }
-
-
 
         &__symbol {
             height: 100%;
@@ -71,39 +62,27 @@
         &__image {
             display: none;
         }
-			
-		}
+    }
 
-  
-
-
-		@media (max-width: 950px) {
-
-			&__content, .content {
-
-				&__text {
-					margin-left: 80px;
-				}
-
-			}
-
-		}
-
+    @media (max-width: 950px) {
+        &__content,
+        .content {
+            &__text {
+                margin-left: 80px;
+            }
+        }
+    }
 
     @media (max-width: 550px) {
-
-        &__symbol  {
+        &__symbol {
             display: none;
         }
 
-        &__content, .content {
-
+        &__content,
+        .content {
             &__text {
-                margin-left:  0;
+                margin-left: 0;
             }
-
         }
-
     }
-
 }

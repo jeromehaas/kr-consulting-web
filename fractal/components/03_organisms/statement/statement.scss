@@ -25,27 +25,19 @@
 	}
 
 	@media (max-width: 1200px) {
-
 		&__quote {
 			padding-left: 48px;
 		}
-
 	}
 
 	@media (max-width: 950px) {
-
 		&__quote {
 			padding-left: 0;
 			padding-left: 0;
 		}
-
 	}
 
-
-
-
 	@media (max-width: 550px) {
-
 		&__symbol {
 			display: none;
 		}
@@ -53,7 +45,5 @@
 		&__quote {
 			padding: 64px 0;
 		}
-
 	}
-
 }

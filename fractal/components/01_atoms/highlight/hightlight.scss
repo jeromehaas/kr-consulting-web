@@ -1,9 +1,14 @@
 .highlight {
-	color: $black;
+  color: $black;
   font-size: inherit;
 
-  &--black { color: $black; }
-  &--blue{ color: $blue-40; }
-	&--white { color: $white; }
-
+  &--black {
+    color: $black;
+  }
+  &--blue {
+    color: $blue-40;
+  }
+  &--white {
+    color: $white;
+  }
 }

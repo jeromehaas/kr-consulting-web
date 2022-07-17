@@ -1,57 +1,69 @@
 .animated-link {
-    position: relative;
-    color: $blue-60 !important;
+  position: relative;
+  color: $blue-60 !important;
 
-    &::before, &::after {
-        position: absolute;
-        content: "";
-        left: 0;
-        bottom: -0.1rem;
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: $blue-60;
-        transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
-      }
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -0.1rem;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $blue-60;
+    transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+  }
 
-      &::before {
-        transform: scaleX(0);
-        transform-origin: left;
-      }
-        
-        &::after {
-        transform-origin: right;
-        transition-delay: 0.25s;
+  &::before {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  &::after {
+    transform-origin: right;
+    transition-delay: 0.25s;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+    transition-delay: 0.25s;
+  }
+
+  &:hover::after {
+    transform: scaleX(0);
+    transition-delay: 0s;
+  }
+
+  &--blue {
+    color: $blue-60;
+    &::before,
+    &::after {
+      background-color: $blue-60;
     }
+  }
 
-    &:hover::before {
-        transform: scaleX(1);
-        transition-delay: 0.25s;
-      }
+  &--lightblue {
+    color: $blue-40;
+    &::before,
+    &::after {
+      background-color: $blue-40;
+    }
+  }
 
-    &:hover::after {
-        transform: scaleX(0);
-        transition-delay: 0s;
-      }
+  &--white {
+    color: $white;
+    &::before,
+    &::after {
+      background-color: $white;
+    }
+  }
 
-    &--blue { 
-		 color: $blue-60;
-		 &::before, &::after {background-color: $blue-60; }
-	}
-
-	&--lightblue { 
-		color: $blue-40;
-		 &::before, &::after {background-color: $blue-40; }
-	}
-
-	&--white { 
-		color: $white; 
-		 &::before, &::after {background-color: $white; }
-	}
-	
-	&--black { 
-		color: $black; 
-		 &::before, &::after {background-color: $black; }
-	}
-
-   }
+  &--black {
+    color: $black;
+    &::before,
+    &::after {
+      background-color: $black;
+    }
+  }
+}

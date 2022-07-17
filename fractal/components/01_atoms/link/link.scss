@@ -1,24 +1,26 @@
- .link {
-	 color: $blue-60;
-	 transition: color 0.1s ease;
-	 
-	 &--blue { 
-		 color: $blue-60;
-		 &:hover { color: darken($blue-60, 10%) }
+.link {
+	color: $blue-60;
+	transition: color 0.1s ease;
+
+	&--blue {
+		color: $blue-60;
+		&:hover {
+			color: darken($blue-60, 10%);
+		}
 	}
 
-	&--lightblue { 
+	&--lightblue {
 		color: $blue-40;
-		 &:hover { color: lighten($blue-40, 10%) }
+		&:hover {
+			color: lighten($blue-40, 10%);
+		}
 	}
 
-	&--white { 
-		color: $white; 
-	}
-	
-	&--black { 
-		color: $black; 
+	&--white {
+		color: $white;
 	}
 
-
- }
+	&--black {
+		color: $black;
+	}
+}

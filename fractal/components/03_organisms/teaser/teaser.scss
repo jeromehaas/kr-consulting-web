@@ -3,7 +3,6 @@
     background-color: $blue-80;
 
     &__inner {
-        
         &--center {
             padding-right: 0 !important;
             padding-top: 96px;
@@ -12,7 +11,6 @@
             grid-template-rows: auto;
             grid-gap: 96px;
         }
-
     }
 
     &__symbol {
@@ -22,19 +20,19 @@
         right: 0px;
     }
 
-    &__content, .content {
+    &__content,
+    .content {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         z-index: 5;
 
-        
         &__heading {
             max-width: 680px;
             margin-bottom: 32px;
         }
-        
+
         &__text {
             max-width: 680px;
             margin-bottom: 64px;
@@ -43,21 +41,20 @@
         &__button {
             margin-left: 160px;
         }
-        
     }
 
-    &__image, .image {
+    &__image,
+    .image {
         width: 640px;
         margin-top: 64px;
         height: auto;
         height: 400px;
         display: block;
-        object-fit: cover; 
-				max-width: 100%;
+        object-fit: cover;
+        max-width: 100%;
     }
 
     @media (max-width: 950px) {
-
         &__inner {
             padding-bottom: 96px;
             display: grid;
@@ -66,8 +63,8 @@
             grid-gap: 96px;
         }
 
-        &__content, .content {
-            
+        &__content,
+        .content {
             &__button {
                 margin-left: 80px;
             }
@@ -80,15 +77,11 @@
         &__image {
             display: none;
         }
-
     }
 
     @media (max-width: 750px) {
-
-        &__symbol  {
+        &__symbol {
             display: none;
         }
-
     }
-
 }

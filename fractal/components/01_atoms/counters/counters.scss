@@ -6,25 +6,25 @@
     gap: 48px;
     flex-wrap: wrap;
 
-    &__item, .item {
-
+    &__item,
+    .item {
         &__wrapper {
             white-space: nowrap;
         }
 
-        &__icon { 
+        &__icon {
             color: $blue-60;
             font-size: 32px;
-        } 
-
-        &__icon, 
-        &__value, 
-        &__plus {
-            display: inline-block;
-            line-height: 1; 
         }
 
-        &__value   {
+        &__icon,
+        &__value,
+        &__plus {
+            display: inline-block;
+            line-height: 1;
+        }
+
+        &__value {
             text-align: right;
         }
 
@@ -32,11 +32,14 @@
             margin-top: 8px;
         }
 
-        
-        &:nth-child(1) .item__value { width: 60px; }
-        &:nth-child(2) .item__value { width: 80px; }
-        &:nth-child(3) .item__value { width: 60px; }
-
+        &:nth-child(1) .item__value {
+            width: 60px;
+        }
+        &:nth-child(2) .item__value {
+            width: 80px;
+        }
+        &:nth-child(3) .item__value {
+            width: 60px;
+        }
     }
-
 }

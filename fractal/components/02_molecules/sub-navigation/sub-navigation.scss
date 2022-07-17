@@ -1,5 +1,4 @@
 .sub-navigation {
-
     &__item {
         display: list-item;
         position: relative;
@@ -7,7 +6,7 @@
         list-style: none;
         line-height: 2;
         color: $blue-80;
-				cursor: pointer;
+        cursor: pointer;
 
         &::before {
             content: "";
@@ -20,17 +19,23 @@
             top: calc(10px);
             border-radius: 50%;
         }
-
     }
 
     &--dark {
-        .sub-navigation__item { color: $blue-80; }
-        .sub-navigation__item::before { background-color: $blue-80; }
+        .sub-navigation__item {
+            color: $blue-80;
+        }
+        .sub-navigation__item::before {
+            background-color: $blue-80;
+        }
     }
 
     &--light {
-        .sub-navigation__item { color: $white; }
-        .sub-navigation__item::before { background-color: $white; }
+        .sub-navigation__item {
+            color: $white;
+        }
+        .sub-navigation__item::before {
+            background-color: $white;
+        }
     }
-
 }

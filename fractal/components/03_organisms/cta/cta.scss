@@ -1,10 +1,9 @@
 .cta {
     position: relative;
     border: 0px solid transparent;
-    
-    
-    
-    &__content, .content {
+
+    &__content,
+    .content {
         position: relative;
         display: flex;
         flex-direction: row;
@@ -13,7 +12,7 @@
         padding: 64px;
         gap: 40px;
         z-index: 10;
-  
+
         &__image {
             position: absolute;
             top: 0;
@@ -25,7 +24,7 @@
             height: 100%;
             object-fit: cover;
         }
-    
+
         &__overlay {
             position: absolute;
             top: 0;
@@ -36,7 +35,7 @@
             z-index: 5;
         }
 
-        &__heading  {
+        &__heading {
             height: 100%;
             hyphens: unset;
             z-index: 5;
@@ -45,7 +44,6 @@
         &__button {
             min-width: 320px;
         }
-
     }
 
     &__background {
@@ -56,53 +54,40 @@
         bottom: 0;
         left: 0;
         background-color: $blue-80;
-        
-
     }
 
     @media (max-width: 1200px) {
-
-        &__content, .content {
+        &__content,
+        .content {
             flex-direction: column;
 
             &__button {
                 align-self: flex-end;
             }
-
         }
-
     }
 
     @media (max-width: 1050px) {
-
-        &__content, .content {
-
+        &__content,
+        .content {
             &__button {
                 align-self: center;
             }
-
         }
-
     }
 
-
-
     @media (max-width: 750px) {
-
-        &__content, .content {
-
+        &__content,
+        .content {
             &__button {
                 align-self: flex-start;
             }
-
         }
-
     }
 
     @media (max-width: 650px) {
-
-        &__content, .content {
-
+        &__content,
+        .content {
             &__heading {
                 margin-bottom: 0;
             }
@@ -110,12 +95,6 @@
             &__button {
                 min-width: unset;
             }
-
         }
-
     }
-
-
-   
-
 }

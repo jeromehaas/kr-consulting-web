@@ -19,3 +19,6 @@ fractal.web.set('static.path', path.join(__dirname, '/public'));
 
 // PREVIEW DIRECTORY
 fractal.components.set('default.preview', '@skeletton');
+
+// BUILD DIRECTORY
+fractal.web.set('builder.dest', __dirname + '/build');

@@ -1,17 +1,17 @@
 import cookies from 'js-cookie';
 
-class Login {
+class LoginForm {
 
   constructor() {
-    this.name = "login";
+    this.name = "login-form";
     this.dial = {
       input: '',
     },
     this.elements = {
-      dial: document.querySelector('.login__form .dial' ),
-      dialButtons: document.querySelectorAll('.dial__button'),
-      dots: document.querySelector('.login__form .dots'),
-      dotsItems: document.querySelectorAll('.login__form .dots__item')
+      dial: document.querySelector('.login-form__form .dial' ),
+      dialButtons: document.querySelectorAll('.login-form .dial__button'),
+      dots: document.querySelector('.login-form .dots'),
+      dotsItems: document.querySelectorAll('.login-form__form .dots__item')
     };
   };
 
@@ -83,4 +83,4 @@ class Login {
 
 };
 
-export default Login;
+export default LoginForm;

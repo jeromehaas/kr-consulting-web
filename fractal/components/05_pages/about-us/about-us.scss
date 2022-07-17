@@ -1,11 +1,8 @@
-
 .page__about-us {
-
     .team-member:not(.team-member--reversed) {
-
         & .team-member__infos {
             position: relative;
-            
+
             &::after {
                 content: "";
                 position: absolute;
@@ -19,19 +16,13 @@
                 width: calc(100% + 320px);
                 z-index: -5;
             }
-
         }
 
         & .team-member__inner {
-
             &--right {
-                    background-color: $grey-20;
+                background-color: $grey-20;
             }
-
         }
-
-
-        
     }
 
     .cta {
@@ -39,12 +30,10 @@
     }
 
     @media (max-width: 950px) {
-
         .team-member:not(.team-member--reversed) {
-
             & .team-member__infos {
                 position: relative;
-                
+
                 &::after {
                     content: "";
                     position: absolute;
@@ -58,12 +47,7 @@
                     width: 100%;
                     z-index: -5;
                 }
-    
             }
-    
-            
         }
-
     }
-
 }

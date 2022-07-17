@@ -6,19 +6,18 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 16px  40px 16px 32px;
+    padding: 16px 40px 16px 32px;
     position: relative;
     cursor: pointer;
     overflow: hidden;
     transition: all 0.3s ease;
-		justify-self: baseline;
+    justify-self: baseline;
 
     &__text {
         color: $white;
         z-index: 5;
         position: relative;
-        transition: all 0.3s ease
-        ;
+        transition: all 0.3s ease;
         left: 0;
     }
 
@@ -30,7 +29,7 @@
         position: relative;
         left: 0;
     }
-    
+
     &__overlay {
         position: absolute;
         top: 0;
@@ -45,21 +44,27 @@
     }
 
     &--white {
-        .button__text { color: $white; }
-        .button__icon { color: $white; }
+        .button__text {
+            color: $white;
+        }
+        .button__icon {
+            color: $white;
+        }
     }
 
     &--blue {
-       .button__text { color: $blue-100; }
-       .button__icon { color: $blue-100; }
+        .button__text {
+            color: $blue-100;
+        }
+        .button__icon {
+            color: $blue-100;
+        }
     }
-    
 
     &:hover {
-        
         & .button__overlay {
-           width: calc(200% + 32px); 
-           right: -32px;
+            width: calc(200% + 32px);
+            right: -32px;
         }
 
         & .button__text {
@@ -70,5 +75,4 @@
             left: 8px;
         }
     }
-    
 }

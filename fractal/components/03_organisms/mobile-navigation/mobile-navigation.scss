@@ -1,12 +1,13 @@
 .mobile-navigation {
-		z-index: 500;
-		position: relative;
-		display: none;
+    z-index: 500;
+    position: relative;
+    display: none;
 
     &__inner {
     }
 
-    &__bar, .bar {
+    &__bar,
+    .bar {
         position: fixed;
         top: 0;
         right: 0;
@@ -15,21 +16,21 @@
         background-color: $blue-80;
         transition: all 0.3s ease;
         z-index: 5;
-				
+
         &--hidden {
-					top: -64px !important;
+            top: -64px !important;
         }
 
-				&--transparent {
-					background-color: transparentize($blue-80, 1) !important;
-				}
-				
-				&__inner {
-					display: flex;
-					flex-direction: row;
-					justify-content: space-between;
-					padding: 16px 96px;
-				}
+        &--transparent {
+            background-color: transparentize($blue-80, 1) !important;
+        }
+
+        &__inner {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 16px 96px;
+        }
 
         &__logo {
             height: 32px;
@@ -41,8 +42,9 @@
         }
     }
 
-    &__menu, .menu {
-        padding: 128px 64px 64px 64px ;
+    &__menu,
+    .menu {
+        padding: 128px 64px 64px 64px;
         flex-direction: column;
         min-height: 100vh;
         position: fixed;
@@ -53,7 +55,7 @@
         background-color: $blue-80;
         transition: all 0.3s ease;
         display: flex;
-        
+
         &--active {
             left: 0% !important;
         }
@@ -62,33 +64,23 @@
             color: $white;
             margin-bottom: 16px;
         }
-
     }
 
+    @media (max-width: 950px) {
+        &__bar,
+        .bar {
+            &__inner {
+                padding: 16px 64px;
+            }
+        }
+    }
 
-
-		@media (max-width: 950px) {
-
-			&__bar, .bar {
-				
-				&__inner {
-					padding: 16px 64px;
-				}
-
-		}
-
-	}
-
-	@media (max-width: 650px) {
-
-		&__bar, .bar {
-			
-			&__inner {
-				padding: 16px 32px;
-			}
-
-	}
-
-}
-
+    @media (max-width: 650px) {
+        &__bar,
+        .bar {
+            &__inner {
+                padding: 16px 32px;
+            }
+        }
+    }
 }

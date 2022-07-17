@@ -1,9 +1,8 @@
 .responsibles {
-
     &__heading {
         margin-bottom: 48px;
     }
-    
+
     &__content {
         margin-left: 120px;
         margin-bottom: 120px;
@@ -16,15 +15,11 @@
 
     &__commercial-register {
         margin-bottom: 32px;
-
     }
 
     @media (max-width: 650px) {
-
         &__content {
             margin-left: 0px;
         }
-
     }
-
 }

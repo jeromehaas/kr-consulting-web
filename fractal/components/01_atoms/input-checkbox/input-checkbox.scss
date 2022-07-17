@@ -1,19 +1,18 @@
 .input-checkbox {
-	
-	&__option {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		align-items: flex-start;
-	}
+    &__option {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 
-	&__input {
+    &__input {
         margin-top: 6px;
-		width: 16px;
+        width: 16px;
         height: 16px;
-		min-width: 16px;
-		min-height: 16px;
-		background-color: $white;
+        min-width: 16px;
+        min-height: 16px;
+        background-color: $white;
         appearance: none;
         vertical-align: bottom;
         margin-right: 16px;
@@ -25,7 +24,7 @@
 
         &:checked::after {
             content: "\ea09";
-            font: normal normal normal 32px 'Icon';
+            font: normal normal normal 32px "Icon";
             color: $white;
             font-size: 12px;
             text-align: center;
@@ -34,12 +33,10 @@
             width: 100%;
             height: 100%;
         }
+    }
 
-	}
-
-	&__label {
+    &__label {
         margin-top: 2px;
-		line-height: 1.5;
-	}
-
+        line-height: 1.5;
+    }
 }

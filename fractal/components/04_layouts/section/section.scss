@@ -1,50 +1,41 @@
 .section {
-	width: 100vw;
+    width: 100vw;
     overflow: hidden;
     display: grid;
     grid-template: auto / minmax(0, auto) minmax(auto, $max-section-width) minmax(0, auto);
-    justify-content: stretch;;
-    
+    justify-content: stretch;
+
     &__inner {
-	width: 100%;
-	margin: 0 auto;
+        width: 100%;
+        margin: 0 auto;
 
-    &--left {
-    };
+        &--left {
+        }
 
-    &--center {
-        padding-left: 96px;
-        padding-right: 96px;
+        &--center {
+            padding-left: 96px;
+            padding-right: 96px;
+        }
+
+        &--right {
+        }
     }
-
-    &--right {
-    }
-
-}
 
     @media (max-width: 950px) {
-
         &__inner {
-
             &--center {
                 padding-left: 64px;
                 padding-right: 64px;
             }
-            
         }
-
     }
 
     @media (max-width: 650px) {
-
         &__inner {
-
             &--center {
                 padding-left: 32px;
                 padding-right: 32px;
             }
-            
         }
-
     }
 }
