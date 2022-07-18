@@ -1,5 +1,6 @@
 {% set contact = craft.entries.section('contact').one() %}
 {% extends "04_layouts/page/dark" %}
+{% set id = 'contact' %}
 
 {% block main %}
     {% include "03_organisms/heroine" with { heading: contact.heroineHeading, text: contact.heroineText } %}
