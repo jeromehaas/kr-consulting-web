@@ -1,0 +1,19 @@
+columnSuffix: arkeptto
+contentColumnType: text
+fieldGroup: 26c4a3d0-6e18-40fb-a36d-253b9ff5ea5b # Statement
+handle: statementFullName
+instructions: null
+name: 'Statement Full Name'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

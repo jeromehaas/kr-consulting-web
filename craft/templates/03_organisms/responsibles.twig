@@ -9,18 +9,18 @@
 
             <address class="responsibles__address address">
                 <p class="paragraph   paragraph--bold  address__header">
-                    KR Consulting GmbH
+                    {{ address.addressCompany }}
                 </p>
                 <p class="paragraph   address__item">
-                    Surenthalstrassee 10
+                    {{ address.addressStreet }}
                 </p>
                 <p class="paragraph   address__item">
-                    6210 Sursee
+                    {{ address.addressCity }}
                 </p>
                 <p class="paragraph   address__item">
-                    Schweiz
+                    {{ address.addressCountry }}
                 </p> <a class="link address__item    address__item" href="">
-                    kretz@krconsulting.ch
+                    {{ connection.connectionEmail}}
                 </a>
             </address>
 

@@ -11,9 +11,9 @@ settings:
   code: false
   columnType: null
   initialRows: 4
-  multiline: false
+  multiline: true
   placeholder: null
-  uiMode: normal
+  uiMode: enlarged
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText

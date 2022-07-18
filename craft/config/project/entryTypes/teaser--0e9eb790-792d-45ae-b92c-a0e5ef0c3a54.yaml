@@ -44,6 +44,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 7e98ac50-cfc1-42c5-901f-5a01378be6c0 # Teaser Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 71b93f8a-f43f-4df5-a7cb-51472f658c73
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: dfc00c2f-8e40-41cf-8181-3df7d8cd37ca # Teaser Button Text
             instructions: null
             label: null

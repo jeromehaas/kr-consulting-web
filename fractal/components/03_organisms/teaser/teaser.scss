@@ -61,6 +61,11 @@
             grid-template-columns: auto;
             grid-template-rows: auto;
             grid-gap: 96px;
+
+            &--center {
+                padding-right: 64px !important;
+            }
+
         }
 
         &__content,
@@ -80,8 +85,28 @@
     }
 
     @media (max-width: 750px) {
+
+        &__content,
+        .content {
+            &__button {
+                margin-left: 0;
+            }
+        }
         &__symbol {
             display: none;
         }
     }
+
+    @media (max-width: 650px) {
+
+        &__inner {
+
+            &--center {
+                padding-right: 32px !important;
+            }
+
+        }
+
+    }
+
 }

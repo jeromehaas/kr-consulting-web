@@ -1,0 +1,19 @@
+columnSuffix: kclzenee
+contentColumnType: text
+fieldGroup: 1bf79331-40d8-4de6-b642-5f86dced3327 # Services Overview
+handle: servicesOverviewHeading
+instructions: null
+name: 'Services Overview Heading'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

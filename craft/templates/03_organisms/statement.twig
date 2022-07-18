@@ -1,3 +1,5 @@
+{% set statement = craft.entries.section('statement').one() %}
+
 <section class="statement section  js-statement ">
     <div class="statement__inner statement__inner--left section__inner section__inner--right"></div>
     <div class="statement__inner statement__inner--center section__inner section__inner--center">
@@ -7,11 +9,9 @@
             <img class="quote__avatar" src="/media/images/avatars/roger-kretz.webp" alt="">
             <div class="quote__content content">
                 <i class="content__icon icon icon--quote"></i>
-                <p class="content__text">Egal ob Investments in Immobilien, interessante Zweitmarkt-Policen oder klassische Anlagen, wir empfehlen nur, was wir selbst auch kaufen. Diese Erfahrungen und dieses Wissen stecken in unseren bewährten Anlagelösungen. Und diese machen wir unseren Kundinnen und Kunden zugänglich – und zwar allen.</p>
+                <p class="content__text">{{ statement.statementText }}</p>
                 <span class="content__author author">
-                    <p class="author__name">Max Mustermann</p>
-                    <p class="author__separator">-</p>
-                    <p class="author__role">Moonshot Investor Network</p>
+                    <p class="author__name">{{ statement.statementFullName }}</p>
                 </span>
             </div>
         </div>

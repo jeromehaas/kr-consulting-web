@@ -79,7 +79,8 @@
 .highlight {
 	font-weight: inherit;
 	font-family: inherit;
-	font-family: "Plaifair Display"
+	font-family: "Playfair-Display";
+	font-style: italic;
 }
 
 .button__text {
@@ -162,6 +163,24 @@
 		font-size: 64px;
 }
 
+.message-modal .disclaimer__text {
+	font-style: italic;
+}
+
+.footer .address__item, 
+.footer .address__heading {
+	font-size: 16px;
+}
+
+.footer .links__item,
+.footer .links__link {
+	font-size: 16px;
+}
+
+.footer .connection__link {
+	font-size: 16px;
+}
+
 @media (max-width: 950px) {
 
 	.heading--h1 {
@@ -190,15 +209,15 @@
 	}
 
 	.heading--h2 {
-		font-size: 32px;
+		font-size: 40px;
 	}
 
 	.heading--h3 {
-		font-size: 20px;
+		font-size: 32px;
 	}
 
 	.heroine .content__heading {
-		font-size: 40px;
+		font-size: 32px;
 	}
 
 	
@@ -207,6 +226,21 @@
 
 @media (max-width: 650px) {
 	.cta .content__heading {
-		font-size: 20px;
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 500px) {
+
+	.heroine .content__heading {
+		font-size: 32px;
+	}
+
+
+}
+
+@media (max-width: 450px) {
+	.cta .content__heading {
+		font-size: 24px;
 	}
 }

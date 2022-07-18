@@ -1,9 +1,9 @@
-columnSuffix: ldfvbair
+columnSuffix: idzqqpnq
 contentColumnType: text
-fieldGroup: d6fab119-06a5-434f-bab0-8836d0bebef0 # Course Intro
-handle: courseIntroQuoteName
+fieldGroup: 26c4a3d0-6e18-40fb-a36d-253b9ff5ea5b # Statement
+handle: statementText
 instructions: null
-name: 'Course Intro Quote Name'
+name: 'Statement Text'
 searchable: false
 settings:
   byteLimit: null
@@ -11,9 +11,9 @@ settings:
   code: false
   columnType: null
   initialRows: 4
-  multiline: false
+  multiline: true
   placeholder: null
-  uiMode: normal
+  uiMode: enlarged
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText
