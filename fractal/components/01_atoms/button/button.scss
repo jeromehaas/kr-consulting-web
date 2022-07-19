@@ -74,5 +74,10 @@
         & .button__icon {
             left: 8px;
         }
+
+    }
+
+    @media (max-width: 450px) {
+        padding: 16px;
     }
 }

@@ -44,7 +44,7 @@
 
     &__menu,
     .menu {
-        padding: 128px 64px 64px 64px;
+        padding: 128px 96px 64px 96px;
         flex-direction: column;
         min-height: 100vh;
         position: fixed;
@@ -72,7 +72,12 @@
             &__inner {
                 padding: 16px 64px;
             }
+
         }
+            &__menu,
+            .menu {
+                    padding: 128px 64px 64px 64px;
+                }
     }
 
     @media (max-width: 650px) {
@@ -81,6 +86,13 @@
             &__inner {
                 padding: 16px 32px;
             }
+        }
+    }
+
+    @media (max-width: 650px) {
+        &__menu,
+        .menu {
+            padding: 128px 32px 64px 32px;
         }
     }
 }

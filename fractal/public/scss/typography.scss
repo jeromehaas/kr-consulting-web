@@ -159,9 +159,9 @@
 	line-height: 1;
 }
 
-.heroine .content__heading {
-		font-size: 64px;
-}
+// .heroine .content__heading {
+// 		font-size: 64px;
+// }
 
 .message-modal .disclaimer__text {
 	font-style: italic;
@@ -181,6 +181,13 @@
 	font-size: 16px;
 }
 
+@media (max-width: 1400px) {
+
+.heading--h1 {
+		font-size: 60px;
+	}
+}
+
 @media (max-width: 950px) {
 
 	.heading--h1 {
@@ -195,9 +202,9 @@
 		font-size: 24px;
 	}
 
-	.heroine .content__heading {
-		font-size: 60px;
-	}
+	// .heroine .content__heading {
+	// 	font-size: 60px;
+	// }
 
 
 }
@@ -216,31 +223,52 @@
 		font-size: 32px;
 	}
 
-	.heroine .content__heading {
-		font-size: 32px;
-	}
-
-	
-
-}
-
-@media (max-width: 650px) {
-	.cta .content__heading {
-		font-size: 32px;
-	}
-}
-
-@media (max-width: 500px) {
-
-	.heroine .content__heading {
-		font-size: 32px;
-	}
-
-
-}
-
 @media (max-width: 450px) {
-	.cta .content__heading {
+
+	.heading--h1 {
+		font-size: 32px;
+	}
+
+	.heading--h2 {
+		font-size: 28px;
+	}
+
+	.heading--h3 {
 		font-size: 24px;
 	}
+
+	.paragraph, p {
+		font-size: 16px;
+
+		&--small { font-size: 12px; }
+		&--big { font-size: 32px; }
+		&--extrabig { font-size: 40px; }
+	}
+	
+	.link, a {
+		font-size: 16px;
+	}
+
+	.list__item {
+		font-size: 16px;
+	}
+
+	.button__text {
+		font-size: 12px;
+	}
+
+}
+	
+@media (max-width: 350px) {
+
+	.heading--h1 {
+		font-size: 24px;
+	}
+
+	.heading--h2 {
+		font-size: 24px;
+	}
+		
+}
+
 }

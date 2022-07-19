@@ -31,13 +31,13 @@ img {
 	-webkit-user-drag: none;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1350px) {
 	.desktop-navigation { display: none !important; }
 	.desktop-navigation__spacer { display: none !important; }
 	.mobile-navigation { display: block !important; }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1350px) {
 	.mobile-navigation { display: none !important; }
 }
 

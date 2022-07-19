@@ -79,6 +79,8 @@
     @media (max-width: 750px) {
         &__content,
         .content {
+            padding: 32px;
+            
             &__button {
                 align-self: flex-start;
             }
@@ -88,6 +90,7 @@
     @media (max-width: 650px) {
         &__content,
         .content {
+
             &__heading {
                 margin-bottom: 0;
             }
