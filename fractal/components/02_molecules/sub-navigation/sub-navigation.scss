@@ -5,8 +5,13 @@
         margin-left: 24px;
         list-style: none;
         line-height: 2;
-        color: $blue-80;
         cursor: pointer;
+        color: transparentize($blue-80, 0.5);
+        transition: color 0.3s ease 0.3s;
+
+        &--active {
+            color: $blue-80;
+        }
 
         &::before {
             content: "";
