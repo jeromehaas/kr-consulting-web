@@ -36,16 +36,30 @@
 	.container {
 		&__article,
 		.article {
+
+			&__wrapper {
+				grid-template-columns: auto 1fr !important;
+				grid-column-gap: 0;
+			}
+
 			&__content,
 			.content {
 				margin-top: 40px;
 				padding-left: 32px;
 				padding-right: 96px;
-
+				
+				&__article, .article {
+				}
+				
 				&__heading {
 					margin-bottom: 16px;
 				}
 			}
+
+			&:last-child { 
+				margin-bottom: 160px;
+			}
+			
 		}
 	}
 
