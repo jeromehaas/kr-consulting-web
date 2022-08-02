@@ -63,7 +63,7 @@ class Services {
 
 	setActiveLink = (link) => {
 		if (link) link.classList.add('sub-navigation__item--active');
-	}
+	};
 
 };
 

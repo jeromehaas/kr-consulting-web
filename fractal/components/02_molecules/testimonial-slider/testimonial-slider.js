@@ -21,17 +21,17 @@ class TestimonialSlider {
                 modules: [Navigation, Autoplay, Pagination],
                 speed: 400,
                 loop: false,
-                direction: 'vertical',
                 slidesPerView: 1,
-                spaceBetween: 160,
+                spaceBetween: 320,
                 autoplay: {
 					delay: 6000,
 					pauseOnMouseEnter: true,
                     stopOnLastSlide: true,
 				},
         		navigation: {
-					nextEl: '.testimonial-slider .arrow--down',
-					prevEl: '.testimonial-slider .arrow--up'
+					nextEl: '.testimonial-slider .arrow--next',
+					prevEl: '.testimonial-slider .arrow--previous',
+                    disabledClass: 'arrow--disabled'
 				},
             },
         };
