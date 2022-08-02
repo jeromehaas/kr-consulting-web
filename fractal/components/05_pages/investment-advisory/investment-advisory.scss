@@ -1,0 +1,21 @@
+.page__investment-advisory {
+    & .cta {
+
+        &__inner {
+
+            &--left {
+                background-color: $grey-20;
+            }
+        }
+
+        @media (max-width: 950px) {
+            &__inner {
+
+                &--left {
+                    background-color: $white;
+                }
+            }
+        }
+
+    }
+}

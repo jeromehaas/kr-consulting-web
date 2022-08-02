@@ -1,6 +1,17 @@
 .cta {
     position: relative;
     border: 0px solid transparent;
+    display: grid;
+    grid-template: auto/minmax(96px,auto) minmax(auto, calc(1440px - (2 * 96px))) minmax(96px,auto) !important;
+
+    &__inner {
+
+        &--center {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+    }
 
     &__content,
     .content {
@@ -12,6 +23,7 @@
         padding: 64px;
         gap: 40px;
         z-index: 10;
+        margin: 0 auto;
 
         &__image {
             position: absolute;
@@ -76,6 +88,10 @@
         }
     }
 
+    @media (max-width: 950px) {
+        grid-template: auto/minmax(64px,auto) minmax(auto, calc(1440px - (2 * 64px))) minmax(64px,auto) !important;
+    }
+
     @media (max-width: 750px) {
         &__content,
         .content {
@@ -88,6 +104,7 @@
     }
 
     @media (max-width: 650px) {
+        grid-template: auto/minmax(32px,auto) minmax(auto, calc(1440px - (2 * 32px))) minmax(32px,auto) !important;
         &__content,
         .content {
 
