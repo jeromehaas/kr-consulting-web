@@ -27,3 +27,6 @@ new DesktopNavigation().init();
 
 import TestimonialSlider from '../../components/02_molecules/testimonial-slider/testimonial-slider';
 new TestimonialSlider().init();
+
+import InputDate from '../../components/01_atoms/input-date/input-date';
+new InputDate().init();

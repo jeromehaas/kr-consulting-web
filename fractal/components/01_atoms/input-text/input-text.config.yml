@@ -1,6 +1,6 @@
 name: Input Text
 status: "wip"
-preview: "@default"
+preview: "@component"
 context:
   label: Label
   name: email

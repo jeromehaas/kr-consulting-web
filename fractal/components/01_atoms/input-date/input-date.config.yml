@@ -1,0 +1,6 @@
+name: Input Date
+status: "wip"
+preview: "@component"
+context:
+  label: Wunschdatum
+  name: date

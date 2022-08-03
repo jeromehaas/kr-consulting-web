@@ -1,0 +1,31 @@
+<div class="input-date {{ class }}">
+        <input class="input-date__input" spellcheck="false" type="text" placeholder=" "/>
+    <label class="input-date__label">{{ label }}</label>
+    <p class="input-date__error-message">{{ error-text }}</p>
+
+    <div class="input-date__calendar calendar">
+     
+        <div class="calendar__header header">
+            <i class="header__arrow arrow--previous icon icon--caret icon--extralarge"></i>
+            <div class="header__date date">
+                <p class="date__month"></p>
+                <p class="date__year"></p>
+            </div>
+            <i class="header__arrow arrow--next icon icon--caret icon--extralarge"></i>
+        </div>
+     
+        <div class="calendar__weekdays weekdays">
+            <p class="weekdays__item">M</p>
+            <p class="weekdays__item">D</p>
+            <p class="weekdays__item">M</p>
+            <p class="weekdays__item">D</p>
+            <p class="weekdays__item">F</p>
+            <p class="weekdays__item">S</p>
+            <p class="weekdays__item">S</p>
+        </div>
+     
+        <div class="calendar__dates dates"></div>
+
+    </div>
+
+</div>
