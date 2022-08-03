@@ -1,6 +1,7 @@
 .input-date {
 	width: 100%;
 	position: relative;
+	z-index: 10;
 
 	&__input {
 		width: 100%;
@@ -135,6 +136,7 @@
 		padding: 16px 8px;
         display: grid;
         place-items: center;
+		cursor: pointer;
 
         &--today {
           background-color: $blue-100 !important;

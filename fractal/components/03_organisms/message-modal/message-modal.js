@@ -44,6 +44,12 @@ class MessageModal {
 				isRequired: false,
 				validationSchema: '',
 			},
+			date: {
+				name: 'date',
+				element: document.querySelector('.contact-form__input-date--date input'),
+				isRequired: false,
+				validationSchema: '',
+			},
 			message: {
 				name: 'message',
 				element: document.querySelector('.contact-form__input-textarea--message textarea'),
@@ -136,6 +142,7 @@ class MessageModal {
 				lastname: this.inputs.lastname.element.value,
 				email: this.inputs.email.element.value,
 				phone: this.inputs.phone.element.value,
+				date: this.inputs.date.element.value,
 				message: this.inputs.message.element.value,
 			}, process.env.EMAILJS_PUBLICKEY);
 			if (res.status === 200) {

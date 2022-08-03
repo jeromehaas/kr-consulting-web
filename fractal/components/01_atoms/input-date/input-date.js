@@ -22,6 +22,7 @@ class InputDate {
 			weekdays: ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'],
         };
         this.elements = {
+            body: document.querySelector('.body'),
             calendar: document.querySelector('.calendar'),
 			dates: {
 				container: document.querySelector('.calendar__dates'),
@@ -121,7 +122,6 @@ class InputDate {
                 this.selected.dates.push({ date: null, index: null }) 
             };
         }
-        console.log(this.selected.firstDayOfMonthWeekday);
 		for (let index = 1; index < this.selected.amountOfDaysInMonth + 1; index++) { 
             const date = dayjs(`${this.selected.year}-${this.selected.month}-${index}`).format('YYYY-MM-DD');
             const weekday = dayjs(`${this.selected.year}-${this.selected.month}-${index}`).weekday();

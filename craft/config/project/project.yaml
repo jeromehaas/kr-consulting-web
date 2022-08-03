@@ -1,5 +1,51 @@
-dateModified: 1658151432
+dateModified: 1659538886
 elementSources:
+  craft\elements\Asset:
+    -
+      disabled: false
+      key: 'volume:0b60c779-bb71-4367-82ad-f7f1db120c6c' # Services
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
+    -
+      disabled: false
+      key: 'volume:c03fd4f8-9d29-48e8-871a-0640a9b29a06' # General
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
+    -
+      disabled: false
+      key: 'volume:75c6b6cf-12b2-45c1-a198-a12c9f0fb5a5' # Avatars
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
+    -
+      disabled: false
+      key: 'folder:1e509573-0358-478f-8e2c-10a8582f981c'
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
+    -
+      disabled: false
+      key: 'volume:9e8eb58d-2f95-4250-afb1-6107732b2334' # Logos
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
   craft\elements\Entry:
     -
       disabled: false
@@ -50,6 +96,13 @@ fs:
       path: ./uploads/general
     type: craft\fs\Local
     url: ./uploads/general
+  logos:
+    hasUrls: true
+    name: Logos
+    settings:
+      path: ./uploads/logos
+    type: craft\fs\Local
+    url: ./uploads/logos
   services:
     hasUrls: true
     name: Services
@@ -104,6 +157,7 @@ meta:
     9b20354d-0990-4f36-bd10-d236944601e3: Intro # Intro
     9ca332d8-ae84-4fd6-a910-86840be2a2ad: 'Course Intro Quote Text ' # Course Intro Quote Text 
     9d822dff-c1c0-4211-933b-31fb7ad99fac: Hero # Hero
+    9e8eb58d-2f95-4250-afb1-6107732b2334: Logos # Logos
     9f90e5bc-9157-4526-8dde-681edb929c58: 'Retirement Solutions' # Retirement Solutions
     010edfe8-bf11-404d-ac0e-d609cb946713: CTA # CTA
     11a04655-b47f-4799-821e-6d092d9f1fc4: Statement # Statement
