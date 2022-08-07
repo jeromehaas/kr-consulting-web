@@ -9,21 +9,22 @@
 
             <div class="testimonial-slider__slider slider swiper-wrapper">
 
-{% for reference in testimonials.testimonialsReference.all() %}
-    
-                <div class="slider__item item cell swiper-slide" href="#" data-key="1">
-                    <img class="item__avatar" src="/media/images/avatars/roger-kretz.webp" alt="">
-                    <div class="item__content content">
-                        <i class="content__icon icon icon--quote"></i>
-                        <p class="content__text">{{ reference.text }}</p>
-                        <span class="content__author author">
-                            <p class="author__name">{{ reference.fullName }}</p>
-                            <p class="author__separator">-</p>
-                            <p class="author__role">{{ reference.role }}</p>
-                        </span>
+                {% for reference in testimonials.testimonialsReference.all() %}
+                    <div class="slider__item item cell swiper-slide" href="#" data-key="1">
+                        <img class="item__avatar" src="{{ reference.image.one().url() }}" alt="">
+                        <div class="item__content content">
+                            <i class="content__icon icon icon--quote"></i>
+                            <p class="content__text">{{ reference.text }}</p>
+                            <span class="content__author author">
+                                <p class="author__name">{{ reference.fullName }}</p>
+                                {% if reference.role|length %}
+                                    <p class="author__separator">-</p>
+                                    <p class="author__role">{{ reference.role }}</p>
+                                {% endif %}
+                            </span>
+                        </div>
                     </div>
-                </div>
-{% endfor %}
+                {% endfor %}
 
             </div>
 

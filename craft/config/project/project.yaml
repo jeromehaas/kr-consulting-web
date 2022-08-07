@@ -1,4 +1,4 @@
-dateModified: 1659538886
+dateModified: 1659877402
 elementSources:
   craft\elements\Asset:
     -
@@ -88,28 +88,28 @@ fs:
     settings:
       path: ./uploads/avatars
     type: craft\fs\Local
-    url: ./uploads/avatars
+    url: /uploads/avatars
   general:
     hasUrls: true
     name: General
     settings:
       path: ./uploads/general
     type: craft\fs\Local
-    url: ./uploads/general
+    url: /uploads/general
   logos:
     hasUrls: true
     name: Logos
     settings:
       path: ./uploads/logos
     type: craft\fs\Local
-    url: ./uploads/logos
+    url: /uploads/logos
   services:
     hasUrls: true
     name: Services
     settings:
       path: ./uploads/services
     type: craft\fs\Local
-    url: ./uploads/services
+    url: /uploads/services
 meta:
   __names__:
     0a7888cb-4004-44b3-841e-522126ec3c16: 'Contact Infos Location Button Text' # Contact Infos Location Button Text
