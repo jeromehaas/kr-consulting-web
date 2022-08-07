@@ -9,8 +9,8 @@ class MessageModal {
 			form: document.querySelector('.contact-form'),
 			submitButton: document.querySelector('.contact-form__input-submit'),
 			statusMessage: {
-				success: document.querySelector('.status-message--success'),
-				error: document.querySelector('.status-message--error'),
+				success: document.querySelector('.status-message__item--success'),
+				error: document.querySelector('.status-message__item--error'),
 			}, 
 			triggers: document.querySelectorAll('[data-trigger="message-modal"]'),
 			closeIcon: document.querySelector('.message-modal__close-icon'),
@@ -155,13 +155,13 @@ class MessageModal {
 	};
 
 	showSuccessMessage = () => {
-		this.elements.statusMessage.error.classList.remove('status-message--active');
-		this.elements.statusMessage.success.classList.add('status-message--active');
+		this.elements.statusMessage.error.classList.remove('status-message__item--active');
+		this.elements.statusMessage.success.classList.add('status-message__item--active');
 	};
 
 	showErrorMessage = () => {
-		this.elements.statusMessage.success.classList.remove('status-message--active');
-		this.elements.statusMessage.error.classList.add('status-message--active');
+		this.elements.statusMessage.success.classList.remove('status-message__item--active');
+		this.elements.statusMessage.error.classList.add('status-message__item--active');
 	};
 
 	resetForm = () => {

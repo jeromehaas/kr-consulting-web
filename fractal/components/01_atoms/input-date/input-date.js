@@ -29,6 +29,7 @@ class InputDate {
 				items: null,
 			},
 			header: {
+				close: document.querySelector('.calendar__header .header__close'),
 				month: document.querySelector('.calendar__header .date__month'), 
 				year: document.querySelector('.calendar__header .date__year'), 
 				arrows: {
@@ -85,6 +86,7 @@ class InputDate {
 		this.elements.header.arrows.previous.addEventListener('click', () => this.updateCurrentMonth('previous'));
 		this.elements.header.arrows.next.addEventListener('click', () => this.updateCurrentMonth('next'));
 		this.elements.input.handle.addEventListener('click', this.toggleCalendar);
+		this.elements.header.close.addEventListener('click', this.closeCalendar);
 	};
 
 	chooseDate = () => {
@@ -102,6 +104,11 @@ class InputDate {
 
 	toggleCalendar = () => {
 		this.elements.calendar.classList.contains('calendar--active') ? this.elements.calendar.classList.remove('calendar--active') : this.elements.calendar.classList.add('calendar--active');
+	};
+
+	closeCalendar = () => {
+		console.log('close');
+		 this.elements.calendar.classList.remove('calendar--active');
 	};
 
 	getFirstDayOfSelectedMonthWeekday = () => {

@@ -32,10 +32,31 @@
                     <label class="input-text__label">Firma</label>
                     <p class="input-text__error-message"></p>
                 </div>
-                <div class="input-text contact-form__input-text contact-form__input-text--company">
-                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" ">
-                    <label class="input-text__label">Wunschtermin</label>
-                    <p class="input-text__error-message"></p>
+                <div class="input-date contact-form__input-date contact-form__input-date--date">
+                    <input class="input-date__input" spellcheck="false" type="text" placeholder=" " />
+                    <label class="input-date__label">Wunschtermin</label>
+                    <p class="input-date__error-message"></p>
+                        <div class="input-date__calendar calendar">
+                            <div class="calendar__header header">
+                                <i class="header__close icon icon--close icon--medium"></i>
+                                <i class="header__arrow arrow--previous icon icon--caret icon--extralarge"></i>
+                                <div class="header__date date">
+                                    <p class="date__month"></p>
+                                    <p class="date__year"></p>
+                                </div>
+                                <i class="header__arrow arrow--next icon icon--caret icon--extralarge"></i>
+                            </div>
+                            <div class="calendar__weekdays weekdays">
+                                <p class="weekdays__item">M</p>
+                                <p class="weekdays__item">D</p>
+                                <p class="weekdays__item">M</p>
+                                <p class="weekdays__item">D</p>
+                                <p class="weekdays__item">F</p>
+                                <p class="weekdays__item">S</p>
+                                <p class="weekdays__item">S</p>
+                            </div>
+                        <div class="calendar__dates dates"></div>
+                    </div>
                 </div>
             </span>
             <div class="input-checkbox contact-form__input-checkbox">
@@ -59,8 +80,8 @@
                 <figure class="button__overlay"></figure>
             </button>
             <div class="contact-form__status-message status-message">
-                <p class="status-message--success">Ihre Nachricht wurde versendet.</p>
-                <p class="status-message--error">Ein Fehler ist aufgetreten - die Nachricht konnte nicht gesendet werden.</p>
+                <p class="status-message__item status-message__item--success">Ihre Nachricht wurde versendet!</p>
+                <p class="status-message__item status-message__item--error">Ein Fehler ist aufgetreten - die Nachricht konnte nicht gesendet werden!</p>
             </div>
         </form>
 

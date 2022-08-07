@@ -7,7 +7,7 @@
 	z-index: 25;
 	align-items: flex-start;
 	overflow: scroll !important;
-	transition: left 0.6s ease;
+	transition: left 0.3s ease;
 
 	&--visible {
 		left: 0%;
@@ -81,41 +81,47 @@
 		}
 
 		&__input-submit {
-			// margin: 0 auto;
 			align-self: flex-end;
+			margin-bottom: 32px;
 		}
 
 		&__status-message,
 		.status-message {
-			&--success,
-			&--error {
-				display: none;
-				color: $white;
-				position: relative;
 
-				&::after {
-					content: "";
-					position: absolute;
-					width: 4px;
-					height: 4px;
-					top: 12px;
-					display: inline-block;
-					margin-left: 8px;
-					background-color: $red-100;
-					border-radius: 50%;
+			
+			&__item {
+				padding: 32px;
+				border: 1px solid transparentize($black, 0.3);
+				color: $grey-80 !important;
+				text-align: center;
+
+				&--success,
+				&--error {
+					display: none;
+					color: $white;
 				}
+
+				&--success::before, 
+				&--error::before {
+					content: "";
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					display: inline-block; 
+					margin: 2px 8px 2px 0;
+				}
+
+				&--success::before { background-color: $green-100; }
+				&--error::before { background-color: $red-100; }
+
+				&--active {
+					display: block;
+				}
+				
 			}
 
-			&--success::after {
-				background-color: $blue-60;
-			}
-			&--error::after {
-				background-color: $red-100;
-			}
-			&--active {
-				display: block;
-			}
 		}
+
 	}
 
 	&__infos,

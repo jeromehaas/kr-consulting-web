@@ -52,7 +52,7 @@
 
     &__links,
     .links {
-        align-self: end;
+        align-self: flex-end;
         grid-area: links;
         display: flex;
         flex-direction: row;
@@ -69,8 +69,8 @@
 
     &__partners,
     .partners {
-        align-self: end;
-        justify-self: end;
+        align-self: flex-end;
+        justify-self: flex-end;
         display: flex;
         flex-direction: row;
         gap: 32px;
