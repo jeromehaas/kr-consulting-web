@@ -34,3 +34,5 @@ new InputDate().init();
 import Follower from '../../components/02_molecules/follower/follower';
 new Follower().init();
 
+import ContactShortcuts from '../../components/02_molecules/contact-shortcuts/contact-shortcuts';
+new ContactShortcuts().init();

@@ -3,7 +3,9 @@
 {% set id = 'retirement-solutions' %}
 
 {% block main %}
-{% include "03_organisms/heroine" with { heading: page.heroineHeading, text: page.heroineText } %}
-{% include "03_organisms/course-intro" %}
-{% include "03_organisms/cta" %}
+    {% include "03_organisms/heroine" with { heading: page.heroineHeading, text: page.heroineText } %}
+    {% include "03_organisms/course-intro" %}
+    {% include "03_organisms/cta" %}
+    {% include "02_molecules/follower" %}
+    {% include "02_molecules/contact-shortcuts" %}
 {% endblock %}

@@ -136,6 +136,14 @@
         }
     }
 
+    @media (max-width: 600px) {
+
+        &__inner {
+            padding-bottom: 120px;
+        }
+
+    }
+
     @media (max-width: 350px) {
         &__infos,
         .infos {

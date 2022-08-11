@@ -16,7 +16,7 @@ class Follower {
     showFollower = () => {
         setTimeout(() => {  
             this.elements.follower.classList.remove('follower--hidden');
-        }, 3000);
+        }, 5000);
     };
 
 };
