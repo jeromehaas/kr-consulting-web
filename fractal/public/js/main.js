@@ -7,7 +7,7 @@ new ServicesSlider().init();
 import LoginForm from '../../components/03_organisms/login-form/login-form';
 new LoginForm().init();
 
-import SessionCheck from '../../components/03_organisms/login-form/session-check';
+// import SessionCheck from '../../components/03_organisms/login-form/session-check';
 // new SessionCheck().init();
 
 import MobileNavigation from '../../components/03_organisms/mobile-navigation/mobile.navigation';
@@ -30,3 +30,7 @@ new TestimonialSlider().init();
 
 import InputDate from '../../components/01_atoms/input-date/input-date';
 new InputDate().init();
+
+import Follower from '../../components/02_molecules/follower/follower';
+new Follower().init();
+
