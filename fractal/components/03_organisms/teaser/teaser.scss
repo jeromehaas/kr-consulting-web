@@ -15,9 +15,9 @@
 
     &__symbol {
         position: absolute;
-        height: 200%;
+        height: 125%;
         bottom: 0;
-        right: 0px;
+        right: 5%;
     }
 
     &__content,
@@ -66,10 +66,20 @@
             }
         }
 
-            &__image,
-    .image {
-        width: 400px;
+        &__image,
+        .image {
+            width: 400px;
+        }
+
     }
+
+    @media (max-width: 1050px) {
+        &__symbol {
+            position: absolute;
+            height: 125%;
+            bottom: 0;
+            right: -35%;
+        }
     }
 
     @media (max-width: 950px) {
@@ -83,7 +93,6 @@
             &--center {
                 padding-right: 64px !important;
             }
-
         }
 
         &__content,
@@ -104,7 +113,6 @@
     }
 
     @media (max-width: 750px) {
-
         &__content,
         .content {
             &__button {
@@ -117,15 +125,10 @@
     }
 
     @media (max-width: 650px) {
-
         &__inner {
-
             &--center {
                 padding-right: 32px !important;
             }
-
         }
-
     }
-
 }
