@@ -36,7 +36,6 @@ class LegalInformation {
 		const articles = gsap.utils.toArray(this.elements.articles);
 		const links = gsap.utils.toArray(this.elements.links);
 
-		console.log(articles);
 		articles.forEach((article, i) =>  {
 			ScrollTrigger.create({
 				trigger: article, 

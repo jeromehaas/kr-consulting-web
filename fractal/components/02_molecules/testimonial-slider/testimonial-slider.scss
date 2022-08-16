@@ -27,10 +27,12 @@
 
       &--previous {
         transform: rotate(180deg);
+        margin-right: 24px;
       }
 
       &--next {
         transform: rotate(0deg);
+        margin-left: 24px;
       }
 
       &--disabled {
@@ -47,6 +49,7 @@
       width: 40px;
       height: 2px;
       background-color: $blue-80;
+      margin: 0 8px;
     }
   }
 
@@ -64,7 +67,7 @@
       grid-template-columns: 120px 1fr;
       grid-template-areas: "avatar content";
       grid-gap: 48px;
-
+      
       &__avatar {
         grid-area: avatar;
         width: 120px;
@@ -74,11 +77,12 @@
         display: block;
         align-self: flex-end;
       }
-
+      
       &__content,
       .content {
         grid-area: content;
         align-self: flex-start;
+        max-width: 750px;
 
         &__icon {
           font-size: 80px;

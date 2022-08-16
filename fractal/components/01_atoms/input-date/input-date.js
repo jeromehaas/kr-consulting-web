@@ -107,7 +107,6 @@ class InputDate {
 	};
 
 	closeCalendar = () => {
-		console.log('close');
 		 this.elements.calendar.classList.remove('calendar--active');
 	};
 

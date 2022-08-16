@@ -4,12 +4,17 @@
         position: relative;
         margin-left: 24px;
         list-style: none;
-        line-height: 2;
         cursor: pointer;
         color: transparentize($blue-80, 0.5);
-        transition: color 0.3s ease 0.3s;
+        transition: color 0.3s ease 0s;
+        margin-bottom: 12px;
 
         &--active {
+            color: $blue-80;
+            transition: color 0.3s ease 0.3s;
+        }
+
+        &:hover {
             color: $blue-80;
         }
 
@@ -21,7 +26,7 @@
             display: block;
             position: absolute;
             left: -24px;
-            top: calc(10px);
+            top: calc(6px);
             border-radius: 50%;
         }
     }

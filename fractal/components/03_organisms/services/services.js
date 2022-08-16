@@ -38,13 +38,12 @@ class Services {
 		const articles = gsap.utils.toArray(this.elements.articles);
 		const links = gsap.utils.toArray(this.elements.links);
 
-		console.log(articles);
 		articles.forEach((article, i) =>  {
 			ScrollTrigger.create({
 				trigger: article, 
-				start: "top 75%",
-				end: "top 75%",
-				markers: false,
+				start: "top 50%",
+				end: "top 50%",
+				markers: true,
 				onEnter: () => {
 					this.removeAcvitveLink();
 					this.setActiveLink(this.elements.links[i]);
