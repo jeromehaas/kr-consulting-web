@@ -1,6 +1,7 @@
 .animated-link {
   position: relative;
-  color: $blue-60 !important;
+  color: $blue-80 !important;
+  padding-bottom: 4px;
 
   &::before,
   &::after {
@@ -11,7 +12,7 @@
     display: block;
     width: 100%;
     height: 2px;
-    background-color: $blue-60;
+    background-color: $blue-80;
     transition: all 1.1s cubic-bezier(0.19, 1, 0.22, 1);
   }
 
@@ -39,7 +40,7 @@
     color: $blue-60;
     &::before,
     &::after {
-      background-color: $blue-60;
+      background-color: $blue-80;
     }
   }
 

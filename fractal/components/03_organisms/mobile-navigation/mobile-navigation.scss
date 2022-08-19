@@ -16,13 +16,17 @@
         background-color: $blue-80;
         transition: all 0.3s ease;
         z-index: 5;
+        box-shadow: 0 0 4px 0px $blue-100;
 
         &--hidden {
             top: -64px !important;
+            box-shadow: unset !important;
         }
 
         &--transparent {
             background-color: transparentize($blue-80, 1) !important;
+            box-shadow: unset !important;
+
         }
 
         &__inner {

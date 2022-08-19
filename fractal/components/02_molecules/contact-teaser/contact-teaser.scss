@@ -31,7 +31,15 @@
 
 	&__button {
 		grid-area: button;
+		margin-left: 80px;
 	}
+
+    @media (max-width: 750px) {
+        &__button {
+            margin-left: 0;
+        }
+    }
+
 
 	@media (max-width: 650px) {
 		grid-template-areas:

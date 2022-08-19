@@ -2,7 +2,7 @@
     position: fixed;
     width: 280px;
     bottom: 96px;
-    left: calc(100% - 280px);
+    left: calc(100% - 240px);
     height: 48px;
     align-items: center;
     z-index: 25;
@@ -41,7 +41,7 @@
         bottom: 64px;
 
         &:hover, &--active {
-            left: calc(100% - 280px);
+            left: calc(100% - 240px);
         }
 
     }

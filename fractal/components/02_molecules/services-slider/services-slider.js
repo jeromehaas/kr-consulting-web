@@ -35,7 +35,7 @@ class ServicesSlider {
 					pauseOnMouseEnter: true,
 				},
 				breakpoints: {
-					350: { slidesPerView: 1, spaceBetween: 0 },
+					350: { slidesPerView: 1.2, spaceBetween: 0 },
 					650: { slidesPerView: 1.5, spaceBetween: 0 },
 					950: { slidesPerView: 2.5, spaceBetween: 0 },
 					1250: { slidesPerView: 3.5, spaceBetween: 0 },
@@ -62,10 +62,10 @@ class ServicesSlider {
 		const images = document.querySelectorAll('.services-slider .background__image')
 		items.forEach((item) =>  {
 			item.addEventListener('mouseenter', () => {
-				images.forEach((image) => gsap.to(image, { opacity: 0, delay: 0.3 }));
+				images.forEach((image) => gsap.to(image, { opacity: 0, delay: 0.15 }));
 				images.forEach((image) => {
 					if (image.getAttribute('data-key') === item.getAttribute('data-key')) {
-						gsap.to(image, { opacity: 0.3, delay: 0.3 });
+						gsap.to(image, { opacity: 0.3, delay: 0.15 });
 					};
 				});
 			});

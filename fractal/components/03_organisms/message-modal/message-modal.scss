@@ -10,12 +10,11 @@
 	transition: left 0.3s ease;
 
 	&--visible {
-		left: 0%;
+		left: 0;
 	}
 
 	&__inner {
 		&--center {
-			position: relative;
 			display: grid;
 			grid-template-areas:
 				"header ."
@@ -133,13 +132,13 @@
 		.connection {
 			&__heading {
 				display: block;
-				color: $blue-100;
+				color: $grey-80;
 				margin-bottom: 8px;
 			}
 
 			&__link {
 				display: block;
-				color: $blue-100;
+				color: $grey-80;
 			}
 		}
 
@@ -149,13 +148,13 @@
 
 			&__heading {
 				display: block;
-				color: $blue-100;
+				color: $grey-80;
 				margin-bottom: 8px;
 			}
 
 			&__item {
 				display: block;
-				color: $blue-100;
+				color: $grey-80;
 			}
 		}
 	}
@@ -166,6 +165,7 @@
 		right: 96px;
 		font-size: 64px;
 		cursor: pointer;
+		color: $blue-60;
 	}
 
 	@media (max-width: 950px) {

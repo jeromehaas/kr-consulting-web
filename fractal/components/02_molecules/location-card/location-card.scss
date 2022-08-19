@@ -45,9 +45,6 @@
 			margin-bottom: 40px;
 		}
 
-		&__button {
-			align-self: center;
-		}
 	}
 
 	@media (max-width: 950px) {
@@ -78,10 +75,11 @@
 		}
 	}
 
-	@media (max-width: 950px) {
+	@media (max-width: 750px) {
 		&__content,
 		.content {
 			padding: 32px;
 		}
+
 	}
 }

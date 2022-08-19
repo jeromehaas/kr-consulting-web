@@ -7,7 +7,7 @@
         cursor: pointer;
         color: transparentize($blue-80, 0.5);
         transition: color 0.3s ease 0s;
-        margin-bottom: 12px;
+        margin-bottom: 16px;
 
         &--active {
             color: $blue-80;

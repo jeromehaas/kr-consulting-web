@@ -37,7 +37,7 @@
 		font-family: 'Open-Sans';
 		text-transform: uppercase;
 		letter-spacing: 8%;
-}
+}a
 
 .heading--p {
 	font-size: 18px;
@@ -155,7 +155,7 @@
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 600;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
 .contact-card__phone, 
@@ -211,7 +211,8 @@
 }
 
 
-.message-modal .disclaimer__text {
+.message-modal .disclaimer__text, 
+.message-modal .disclaimer__link {
 	font-style: italic;
 }
 
