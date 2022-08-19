@@ -39,8 +39,8 @@ class LegalInformation {
 		articles.forEach((article, i) =>  {
 			ScrollTrigger.create({
 				trigger: article, 
-				start: "top 5%",
-				end: "top 5%",
+				start: "top 50%",
+				end: "top 50%",
 				markers: false,
 				onEnter: () => {
 					this.removeAcvitveLink();

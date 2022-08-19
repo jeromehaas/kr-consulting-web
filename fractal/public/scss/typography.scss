@@ -170,17 +170,20 @@
 	line-height: 1;
 }
 
+.statement__quote .content__text,
 .testimonial-slider .content__text {
 	font-family: 'Playfair-Display';
 	font-size: 24px;
 	line-height: 1.5;
 }
 
+.statement__quote .author__name,
 .testimonial-slider .author__name {
 	font-size: 16px;
 	font-weight: 600;
 }
 
+.statement__quote .author__role,
 .testimonial-slider .author__role {
 	font-size: 16px;
 	font-weight: 400;
