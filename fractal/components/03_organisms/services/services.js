@@ -43,7 +43,7 @@ class Services {
 				trigger: article, 
 				start: "top 80px",
 				end: "top 80px",
-				markers: true,
+				markers: false,
 				onEnter: () => {
 					this.removeAcvitveLink();
 					this.setActiveLink(this.elements.links[i]);
