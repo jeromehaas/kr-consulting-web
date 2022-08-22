@@ -50,6 +50,12 @@ class MessageModal {
 				isRequired: false,
 				validationSchema: '',
 			},
+			course: {
+				name: 'course',
+				element: document.querySelector('.contact-form__input-checkbox--course input'),
+				isRequired: false,
+				validationSchema: '',
+			},
 			message: {
 				name: 'message',
 				element: document.querySelector('.contact-form__input-textarea--message textarea'),
@@ -143,6 +149,7 @@ class MessageModal {
 				email: this.inputs.email.element.value,
 				phone: this.inputs.phone.element.value,
 				date: this.inputs.date.element.value,
+				course: this.inputs.course.element.checked ? 'Ja' : 'Nein',
 				message: this.inputs.message.element.value,
 			}, process.env.EMAILJS_PUBLICKEY);
 			if (res.status === 200) {
