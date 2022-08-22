@@ -43,7 +43,7 @@ class Services {
 				trigger: article, 
 				start: "top 50%",
 				end: "top 50%",
-				markers: false,
+				markers: true,
 				onEnter: () => {
 					this.removeAcvitveLink();
 					this.setActiveLink(this.elements.links[i]);
