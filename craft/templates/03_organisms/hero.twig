@@ -4,10 +4,10 @@
     <div class="hero__inner hero__inner--left section__inner section__inner--right"></div>
     <div class="hero__inner hero__inner--center section__inner section__inner--center">
         <div class="desktop-navigation__background background">
-            <img class="background__image" src="/media/images/various/meeting.webp" alt="Meeting">
-            <div class="background__overlay"></div>
+        <img class="background__image" src="{{ hero.heroImage.one().url() }}" alt="{{ hero.heroImage.one().alt }}">
+        <div class="background__overlay"></div>
         </div>
-        <img class="hero__symbol" src="/media/graphics/logos/logo-kr-consulting-symbol-dark.svg"></figure>
+        <img class="hero__symbol" src="/media/graphics/logos/logo-kr-consulting-symbol-dark.svg" alt="KR Consulting Logo Symbol"></figure>
         <div class="hero__content content">
 					{{ hero.heroHeading }}
 					<a class="button content__button  button--white" href="{{ hero.heroButtonHref }}">

@@ -42,9 +42,10 @@
     &__image,
     .image {
         width: 400px;
-        height: auto;
+        height: 100%;
         display: block;
         object-fit: cover;
+        object-position: 35% center;
     }
 
     @media (max-width: 1050px) {

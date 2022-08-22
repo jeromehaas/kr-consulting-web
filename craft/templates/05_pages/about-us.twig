@@ -3,7 +3,7 @@
 {% set aboutUs = craft.entries.section('aboutUs').one() %}
 
 {% block main %}
-    {% include "03_organisms/heroine" with { heading: aboutUs.heroineHeading, text: aboutUs.heroineText } %}
+    {% include "03_organisms/heroine" with { heading: aboutUs.heroineHeading, text: aboutUs.heroineText, image: aboutUs.heroineImage.one().url() } %}
     {% include "03_organisms/team-member" %}
     {% include "03_organisms/statement" %}
     {% include "03_organisms/cta" %}

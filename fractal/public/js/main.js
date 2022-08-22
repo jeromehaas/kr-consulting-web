@@ -7,8 +7,8 @@ new ServicesSlider().init();
 import LoginForm from '../../components/03_organisms/login-form/login-form';
 new LoginForm().init();
 
-// import SessionCheck from '../../components/03_organisms/login-form/session-check';
-// new SessionCheck().init();
+import SessionCheck from '../../components/03_organisms/login-form/session-check';
+new SessionCheck().init();
 
 import MobileNavigation from '../../components/03_organisms/mobile-navigation/mobile.navigation';
 new MobileNavigation().init();

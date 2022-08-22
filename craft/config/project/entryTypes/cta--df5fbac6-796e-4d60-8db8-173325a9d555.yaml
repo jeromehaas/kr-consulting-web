@@ -44,6 +44,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: b5f9dbb9-cb24-4642-a2d5-af42cd6e9761 # CTA Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b3f3334-5fa4-47cc-8d54-06dc38434151
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 3e0400fb-63d8-40fc-a7ee-b7b8c58befe2 # CTA Button Text
             instructions: null
             label: null

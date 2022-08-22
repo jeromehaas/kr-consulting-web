@@ -3,7 +3,7 @@
 <section class="teaser section  js-teaser ">
     <div class="teaser__inner teaser__inner--left section__inner section__inner--right"></div>
     <div class="teaser__inner teaser__inner--center section__inner section__inner--center">
-        <img class="teaser__symbol" src="/media/graphics/logos/logo-kr-consulting-symbol-gradient.svg" />
+        <img class="teaser__symbol" src="/media/graphics/logos/logo-kr-consulting-symbol-gradient.svg" alt="KR Consulting Logo Symbol" />
         <div class="teaser__content">
             <h3 class="heading  heading--h3   heading--white  content__heading js-heading">{{ teaser.teaserHeading }}</h3> 
             <p class="paragraph  paragraph--white content__text">{{ teaser.teaserText }}</p>
@@ -13,8 +13,7 @@
                 <figure class="button__overlay"></figure>
             </a>
         </div>
-        <img class="teaser__image" src="/media/images/various/brainstorming.webp" alt="Person" />
-
+        <img class="teaser__image" src="{{ teaser.teaserImage.one().url() }}" alt="{{ teaser.teaserImage.one().alt }}" />
     </div>
     <div class="teaser__inner teaser__inner--right section__inner section__inner--left"></div>
 </section>

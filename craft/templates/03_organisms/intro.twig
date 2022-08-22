@@ -4,7 +4,7 @@
     <div class="intro__inner intro__inner--left section__inner section__inner--right"></div>
     <div class="intro__inner intro__inner--center section__inner section__inner--center">
 
-        <img class="intro__symbol" src="/media/graphics/logos/logo-kr-consulting-symbol-light.svg" />
+        <img class="intro__symbol" src="/media/graphics/logos/logo-kr-consulting-symbol-light.svg" alt="KR Consulting Logo Symbol" />
         <div class="intro__content">
             <h2 class="heading  heading--h2   heading--black  content__heading js-heading">
 							{{ intro.introHeading }}
@@ -13,7 +13,7 @@
 							{{ intro.introText }}
             </p>
         </div>
-        <img class="intro__image" src="/media/images/various/person.webp" alt="Person">
+        <img class="intro__image" src="{{ intro.introImage.one().url() }}" alt="{{ intro.introImage.one().url() }}">
 
     </div>
     <div class="intro__inner intro__inner--right section__inner section__inner--left"></div>

@@ -6,7 +6,6 @@
    <div class="course-intro__container container">
       
       <div class="article article">
-         <img class="article__image" src="/media/images/services/classic-investments.webp" alt="">
          <div class="article__wrapper">
                <h2 class="heading  heading--h2   article__heading js-heading">{{ courseIntro.courseIntroArticleHeading }}</h2>
                {% if courseIntro.courseIntroArticleLabel %}
@@ -36,7 +35,7 @@
       </div>
       
       <div class="article article">
-         <img class="article__image" src="/media/images/services/classic-investments.webp" alt="">
+         <img class="article__image" src="{{ courseIntro.courseIntroArticleImage.one().url() }}" alt="{{ courseIntro.courseIntroArticleImage.one().alt }}">
          <div class="article__wrapper">
                <h2 class="heading  heading--h2   article__heading js-heading">{{ courseIntro.courseIntroInfoHeading }}</h2>
                <div class="article__content content">

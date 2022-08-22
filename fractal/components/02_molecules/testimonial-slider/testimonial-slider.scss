@@ -75,7 +75,8 @@
         object-fit: cover;
         border-radius: 50%;
         display: block;
-        align-self: flex-end;
+        align-self: flex-start;
+        margin-top: 120px;
       }
       
       &__content,

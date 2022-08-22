@@ -1,4 +1,4 @@
-dateModified: 1659877402
+dateModified: 1660947267
 elementSources:
   craft\elements\Asset:
     -
@@ -226,6 +226,7 @@ meta:
     ac664f09-a9af-40d3-a60f-889403d18d91: kr-consulting # kr-consulting
     aea1317d-1e20-4ed7-9ff3-2aa3adc44925: 'Stats Peaker' # Stats Peaker
     af78bb5f-d02a-42d9-b97f-9aa6b4c077fd: 'Stats Button Href' # Stats Button Href
+    b5f9dbb9-cb24-4642-a2d5-af42cd6e9761: 'CTA Image' # CTA Image
     b577bd63-5d61-4855-bc46-c9b942083cf8: amount # amount
     b645bed4-42c3-4a07-adae-f918e4d05e24: 'Course Intro Long Copy Heading' # Course Intro Long Copy Heading
     b6338b26-4732-4e95-bd2f-d6ce9da766ca: Hero # Hero
@@ -280,6 +281,7 @@ meta:
     f0ebffef-9df5-4d56-b7f4-799aea188304: Connection # Connection
     f02756b0-2a21-4a86-a44f-d8b2b9cb67af: Image # Image
     f6c273e6-1de9-44f8-964e-74d5586d58cd: 'Services Heading' # Services Heading
+    f7d9c151-0020-45d7-8ebd-18da8e76afac: 'Heroine Image' # Heroine Image
     f9dc201a-1d70-41de-addd-45fd5fafb195: 'Investment Advisory' # Investment Advisory
     f79b0cf6-11fc-4478-b1c3-0cec66339830: Text # Text
     f303fc4f-2747-4682-8b40-3259a9821000: Heading # Heading

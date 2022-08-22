@@ -3,7 +3,7 @@
 {% set id = 'contact' %}
 
 {% block main %}
-    {% include "03_organisms/heroine" with { heading: contact.heroineHeading, text: contact.heroineText } %}
+    {% include "03_organisms/heroine" with { heading: contact.heroineHeading, text: contact.heroineText, image: contact.heroineImage.one().url() } %}
     {% include "03_organisms/contact-infos" %}
     {% include "03_organisms/cta" %}
     {% include "02_molecules/follower" %}

@@ -43,7 +43,7 @@
             right: 0;
             bottom: 0;
             left: 0;
-            background-color: transparentize($blue-100, 0.75);
+            background: linear-gradient(0deg,rgba(0,76,130,.8),rgba(0,76,130,.8));
             z-index: 5;
         }
 
@@ -53,8 +53,13 @@
             z-index: 5;
         }
 
-        &__button {
+        &__button, .button {
             min-width: 320px;
+
+            &__overlay {
+                background-color: $white !important;
+                opacity: 1;
+            }
         }
     }
 

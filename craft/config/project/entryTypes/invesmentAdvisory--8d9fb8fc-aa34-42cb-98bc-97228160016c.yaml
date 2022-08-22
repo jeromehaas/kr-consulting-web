@@ -54,6 +54,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: f7d9c151-0020-45d7-8ebd-18da8e76afac # Heroine Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a791b19-4684-4734-82cc-966ae5f466a8
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: a0e41219-97d9-4074-8962-33c80bfd16f1
         userCondition: null

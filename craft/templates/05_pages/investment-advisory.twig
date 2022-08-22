@@ -3,7 +3,7 @@
 {% set id = 'investment-advisory' %}
 
 {% block main %}
-	{% include "03_organisms/heroine" with { heading: page.heroineHeading, text: page.heroineText } %}
+	{% include "03_organisms/heroine" with { heading: page.heroineHeading, text: page.heroineText, image: page.heroineImage.one().url() } %}
 	{% include "03_organisms/services" %}
 	{% include "03_organisms/cta" %}
     {% include "02_molecules/follower" %}
