@@ -41,8 +41,8 @@ class Services {
 		articles.forEach((article, i) =>  {
 			ScrollTrigger.create({
 				trigger: article, 
-				start: "top 50%",
-				end: "top 50%",
+				start: "top 80px",
+				end: "top 80px",
 				markers: true,
 				onEnter: () => {
 					this.removeAcvitveLink();

@@ -91,12 +91,10 @@
                 padding: 16px 32px;
             }
         }
-    }
-
-    @media (max-width: 650px) {
         &__menu,
         .menu {
             padding: 128px 32px 64px 32px;
         }
     }
+
 }
