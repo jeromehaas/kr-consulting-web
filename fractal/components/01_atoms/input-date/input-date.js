@@ -19,7 +19,7 @@ class InputDate {
         };
         this.labels = {
             month: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
-			weekdays: ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'],
+					weekdays: ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'],
         };
         this.elements = {
             body: document.querySelector('.body'),
@@ -92,8 +92,14 @@ class InputDate {
 	chooseDate = () => {
 		const element = event.target;
 		const date = event.target.getAttribute('data-date');
-		element.classList.contains('dates__item--choosen') ? element.classList.remove('dates__item--choosen') : element.classList.add('dates__item--choosen');
-		this.choosenDates.includes(date) ? this.choosenDates = this.choosenDates.filter((item) =>  item !== date) : this.choosenDates.push(date);
+		if	(this.choosenDates.includes(date)) {
+			element.classList.remove('dates__item--choosen')
+			this.choosenDates = this.choosenDates.filter((item) =>  item !== date) 
+		} else {
+			if (this.choosenDates.length > 2) return;
+			element.classList.add('dates__item--choosen')
+			this.choosenDates.push(date);
+		}
 		this.updateInput();
 	};
 
