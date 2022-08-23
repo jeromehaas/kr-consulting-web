@@ -8,33 +8,33 @@
         <form class="message-modal__contact-form contact-form">
             <span class="contact-form__input-text-wrapper">
                 <div class="input-text contact-form__input-text contact-form__input-text--lastname">
-                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" ">
-                    <label class="input-text__label">Nachname*</label>
+                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" " id="lastname">
+                    <label class="input-text__label" for="lastname">Nachname*</label>
                     <p class="input-text__error-message">Bitte geben Sie Ihren Nachnamen an</p>
                 </div>
                 <div class="input-text contact-form__input-text contact-form__input-text--firstname">
-                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" ">
-                    <label class="input-text__label">Vorame*</label>
+                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" " id="firstname" >
+                    <label class="input-text__label" for="firstname">Vorame*</label>
                     <p class="input-text__error-message">Bitte geben Sie Ihren Vornamen an</p>
                 </div>
                 <div class="input-text contact-form__input-text contact-form__input-text--email">
-                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" ">
-                    <label class="input-text__label">E-Mail*</label>
+                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" " id="email">
+                    <label class="input-text__label" for="email">E-Mail*</label>
                     <p class="input-text__error-message">Bitte geben Sie eine gültige E-Mail-Adresse an</p>
                 </div>
                 <div class="input-text contact-form__input-text contact-form__input-text--phone">
-                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" ">
-                    <label class="input-text__label">Telefon</label>
+                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" " id="phone">
+                    <label class="input-text__label" for="phone">Telefon</label>
                     <p class="input-text__error-message"></p>
                 </div>
                 <div class="input-text contact-form__input-text contact-form__input-text--company">
-                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" ">
-                    <label class="input-text__label">Firma</label>
+                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" " id="company">
+                    <label class="input-text__label" for="company">Firma</label>
                     <p class="input-text__error-message"></p>
                 </div>
                 <div class="input-date contact-form__input-date contact-form__input-date--date">
-                    <input class="input-date__input" spellcheck="false" type="text" placeholder=" " />
-                    <label class="input-date__label">Wunschtermin</label>
+                    <input class="input-date__input" spellcheck="false" type="text" placeholder=" " id="date">
+                    <label class="input-date__label" for="date">Wunschtermin</label>
                     <p class="input-date__error-message"></p>
                         <div class="input-date__calendar calendar">
                             <div class="calendar__header header">
@@ -61,17 +61,17 @@
             </span>
             <div class="input-checkbox contact-form__input-checkbox contact-form__input-checkbox--course">
                 <span class='input-checkbox__option'>
-                    <input class='input-checkbox__input' name="course" id="course" type='checkbox' value="" />
+                    <input class='input-checkbox__input' name="course" id="course" type='checkbox' value="" id="course" />
                     <label class="input-checkbox__label" for="course">Ich interessiere mich für eine Schulung</label>
                 </span>
             </div>
             <div class="input-textarea contact-form__input-textarea contact-form__input-textarea--message">
-                <textarea class="input-textarea__input" spellcheck="false" rows="4" placeholder=" "></textarea>
-                <label class="input-textarea__label">Erzählen Sie uns von Ihrem Projekt*</label>
+                <textarea class="input-textarea__input" spellcheck="false" rows="4" placeholder=" " id="message"></textarea>
+                <label class="input-textarea__label" for="message">Erzählen Sie uns von Ihrem Projekt*</label>
                 <p class="input-textarea__error-message">Bitte verfassen Sie eine Nachricht</p>
             </div> <span class="contact-form__disclaimer disclaimer">
                 <p class="disclaimer__text">
-                    Mit dem Senden sind Sie mit unserer <a class="disclaimer__link">Datenschutzerklärung</a> einverstanden.
+                    Mit dem Senden sind Sie mit unserer <a class="disclaimer__link" href="/datenschutz">Datenschutzerklärung</a> einverstanden.
                 </p>
             </span>
             <button class="button contact-form__input-submit  button--blue">

@@ -2,7 +2,7 @@
 
 	<div class="services-slider__background background">
 {% for service in services %}
-    <img class="background__image" src="{{ service.servicesImage.one().url() }}" data-key="{{ service.servicesId }}" />
+    <img class="background__image" src="{{ service.servicesImage.one().url() }}" data-key="{{ service.servicesId }}" alt="{{ service.servicesImage.one().alt }}" />
 {% endfor %}
   </div>
 

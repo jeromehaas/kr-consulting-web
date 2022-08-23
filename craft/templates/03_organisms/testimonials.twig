@@ -11,7 +11,7 @@
 
                 {% for reference in testimonials.testimonialsReference.all() %}
                     <div class="slider__item item cell swiper-slide" href="#" data-key="1">
-                        <img class="item__avatar" src="{{ reference.image.one().url() }}" alt="">
+                        <img class="item__avatar" src="{{ reference.image.one().url() }}" alt="reference.fullName" width="160" height="160">
                         <div class="item__content content">
                             <i class="content__icon icon icon--quote"></i>
                             <p class="content__text">{{ reference.text }}</p>
