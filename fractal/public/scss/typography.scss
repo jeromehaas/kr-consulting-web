@@ -38,7 +38,7 @@
 		font-family: 'Open-Sans';
 		text-transform: uppercase;
 		letter-spacing: 8%;
-}a
+}
 
 .heading--p {
 	font-size: 18px;
@@ -66,15 +66,20 @@
 	line-height: 1.5;
 	text-decoration: none;
 	font-weight: 400;
+	letter-spacing: 1px;
 }
 
 .external-link {
 	font-weight: 600;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
+
+
 
 .animated-link {
 	font-weight: 600;
+	letter-spacing: 0px;
 }
 
 .highlight {

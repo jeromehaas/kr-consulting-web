@@ -39,7 +39,7 @@ class ServicesSlider {
 					650: { slidesPerView: 1.5, spaceBetween: 0 },
 					950: { slidesPerView: 2.5, spaceBetween: 0 },
 					1250: { slidesPerView: 3.5, spaceBetween: 0 },
-					1440: { slidesPerView: 4, spaceBetween: 0 },
+					1480: { slidesPerView: 4, spaceBetween: 0 },
 				},	
 
 			}
