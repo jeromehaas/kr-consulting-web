@@ -9,7 +9,7 @@
 
         &--center {
             display: grid;
-            grid-template-columns: auto 360px;
+            grid-template-columns: auto 386px;
             margin-right: 96px;
             overflow: unset;
             padding-right: 0 !important;
@@ -19,7 +19,7 @@
 
     &__sidepanel,
     .sidepanel {
-        width: 360px;
+        width: 386px;
         padding: 32px 96px 32px 32px;
         background-color: $grey-20;
 
@@ -32,7 +32,7 @@
     &__container,
     .container {
         background-color: $white;
-        max-width: calc($max-section-width - 360px);
+        max-width: calc($max-section-width - 386px);
 
         &__article,
         .article {
