@@ -20,7 +20,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 64px;
+        padding: 64px 104px;
         gap: 40px;
         z-index: 10;
         margin: 0 auto;
@@ -96,6 +96,12 @@
 
     @media (max-width: 950px) {
         grid-template: auto/minmax(64px,auto) minmax(auto, calc(1440px - (2 * 64px))) minmax(64px,auto) !important;
+
+				&__content,
+				.content {
+					padding: 64px;
+				}
+				
     }
 
     @media (max-width: 750px) {
