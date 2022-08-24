@@ -73,6 +73,7 @@
     @media (max-width: 950px) {
         &__bar,
         .bar {
+					height: 72px;
             &__inner {
                 padding: 16px 64px;
             }
