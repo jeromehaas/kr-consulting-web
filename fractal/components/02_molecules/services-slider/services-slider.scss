@@ -84,7 +84,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    display: block;
+    display: none;
 
     &__icon {
       width: 32px;
@@ -139,6 +139,13 @@
       z-index: 4;
     }
   }
+
+	@media (max-width: 1480px) {
+		&__arrows,
+		.arrows {
+			display: block;	
+		 }
+	}
 
   @media (max-width: 950px) {
     max-width: calc(100vw - 64px);
