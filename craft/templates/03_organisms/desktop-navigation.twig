@@ -11,10 +11,10 @@
         </a>
 
         <span class="desktop-navigation__link-wrapper">
-            <a class="desktop-navigation__link" href="/anlageloesungen">Anlagelösungen</a>
-            <a class="desktop-navigation__link" href="/vorsorgeloesungen">Vorsorgelösungen</a>
-            <a class="desktop-navigation__link" href="/ueber-uns">Über Uns</a>
-            <a class="desktop-navigation__link" href="/kontakt">Kontakt</a>
+            <a class="desktop-navigation__link {% if entry.slug == 'anlageloesungen' %} desktop-navigation__link--active {% endif %}" href="/anlageloesungen">Anlagelösungen</a>
+            <a class="desktop-navigation__link {% if entry.slug == 'vorsorgeloesungen' %} desktop-navigation__link--active {% endif %}" href="/vorsorgeloesungen">Vorsorgelösungen</a>
+            <a class="desktop-navigation__link {% if entry.slug == 'ueber-uns' %} desktop-navigation__link--active {% endif %}" href="/ueber-uns">Über Uns</a>
+            <a class="desktop-navigation__link {% if entry.slug == 'kontakt' %} desktop-navigation__link--active {% endif %}" href="/kontakt">Kontakt</a>
         </span>
 
         <a class="external-link  desktop-navigation__partnerlogin" target="_blank" href="https://www.fog-lifesettlements.ch/">
