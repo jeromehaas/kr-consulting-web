@@ -1,4 +1,4 @@
-name: kr-consulting
+name: kr-consulting-web
 type: php
 docroot: web 
 php_version: "8.0"
@@ -15,4 +15,4 @@ use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
 nodejs_version: "16"
-host_db_port: "32230"
+host_db_port: "32244"
