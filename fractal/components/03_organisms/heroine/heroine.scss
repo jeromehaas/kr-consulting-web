@@ -48,7 +48,7 @@
 	&__content,
 	.content {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1.25fr 1fr;
 		grid-template-rows: auto;
 		margin-top: calc(50vh - 100px);
 		padding-top: 100px;
