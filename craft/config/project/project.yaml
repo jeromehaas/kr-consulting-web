@@ -1,4 +1,4 @@
-dateModified: 1662236643
+dateModified: 1663566606
 elementSources:
   craft\elements\Asset:
     -
@@ -45,6 +45,9 @@ elementSources:
         - size
         - dateModified
         - link
+      type: native
+    -
+      key: 'volume:88729bd5-8298-43de-9fa3-6c00cda20fec' # Team Member
       type: native
   craft\elements\Entry:
     -
@@ -107,6 +110,13 @@ fs:
       path: ./uploads/services
     type: craft\fs\Local
     url: /uploads/services
+  teamMember:
+    hasUrls: true
+    name: 'Team Member'
+    settings:
+      path: ./uploads/team-member
+    type: craft\fs\Local
+    url: /uploads/team-member
 meta:
   __names__:
     0a7888cb-4004-44b3-841e-522126ec3c16: 'Contact Infos Location Button Text' # Contact Infos Location Button Text
@@ -204,6 +214,7 @@ meta:
     57477ea0-4de8-4b6a-8864-f6afc2f25a7c: 'Contact Card Phone' # Contact Card Phone
     78139d94-7a12-4f02-a8e4-8608aee5ea55: 'Contact Card Role' # Contact Card Role
     78967eb2-4573-48b8-830b-07fc6954c961: 'Teaser Heading' # Teaser Heading
+    88729bd5-8298-43de-9fa3-6c00cda20fec: 'Team Member' # Team Member
     476265c7-1460-4f45-bfa0-b3fc7be50365: 'Team Member' # Team Member
     672102ad-6fcd-499c-be23-64c8512e979f: 'Team Member' # Team Member
     01907158-7087-433f-a781-b6f78c024142: 'Hero Image' # Hero Image
