@@ -1,4 +1,4 @@
-dateModified: 1660947267
+dateModified: 1662236643
 elementSources:
   craft\elements\Asset:
     -
@@ -64,9 +64,6 @@ elementSources:
         - slug
         - type
       type: native
-    -
-      heading: ''
-      type: heading
     -
       disabled: false
       key: 'section:6ef04a00-5ae7-4cb6-a2b7-1d1ad0acf651' # Services
@@ -291,6 +288,7 @@ meta:
     fb774718-6b6d-4033-8391-c1e5225d7442: 'CTA Button Href' # CTA Button Href
     fd65c4ec-0039-4c4e-b49c-3627453a832f: 'Contact Infos Teaser Contact Email' # Contact Infos Teaser Contact Email
     fdb0e106-0211-4916-9994-786896c7b8ef: 'Services Overview' # Services Overview
+    fed2bd05-78ed-43e6-b426-8d9b489406d6: 'Course Intro Info Teaser' # Course Intro Info Teaser
     ff056591-0e52-4d6d-91d6-5cc299d11ab6: 'Testimonials Reference' # Testimonials Reference
 plugins:
   redactor:

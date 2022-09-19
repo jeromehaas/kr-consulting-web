@@ -180,6 +180,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: fed2bd05-78ed-43e6-b426-8d9b489406d6 # Course Intro Info Teaser
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0b1c6161-feb1-4ca5-a3aa-c699053952f3
+            userCondition: null
+            warning: null
+            width: 100
         name: Info
         uid: 76541af3-c4ac-418b-b127-837c0af59651
         userCondition: null
@@ -225,30 +237,6 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 21055343-1db1-4eaa-bfef-a7fb376e4e35
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 7efc5e3b-a65c-4408-a215-896492dd1aea
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 6aaf7d45-5fbb-4b34-afb8-a66e9aa9498c
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 83d2d997-ad1f-49c6-901c-3663f63358f5
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b134883f-c73d-4141-bebe-e0480354114f
             userCondition: null
             warning: null
             width: 100
