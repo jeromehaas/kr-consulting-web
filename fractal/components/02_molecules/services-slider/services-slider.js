@@ -6,6 +6,7 @@ class ServicesSlider {
 	constructor() {
 		this.name = 'services-slider';
 		this.elements = {
+			slider: document.querySelector('.services__slider'),
 			background: {
 				image: document.querySelectorAll('.services-slider .background__image')
 			},
@@ -33,6 +34,7 @@ class ServicesSlider {
 				autoplay: {
 					delay: 6000,
 					pauseOnMouseEnter: true,
+					disableOnInteraction: false,
 				},
 				breakpoints: {
 					350: { slidesPerView: 1.2, spaceBetween: 0 },
@@ -51,6 +53,12 @@ class ServicesSlider {
 		this.createCarousel();
 		this.changeBackgroundImage();
 		this.updateBackgroundImage();
+	};
+
+	appendAutoplayListeners = () => {
+		console.log(this.slider);
+		this.elements.slider.addEventListener('mouseenter', () => this.slider.autoplay.stop());
+		this.elements.slider.addEventListener('mouseleave', () => this.slider.autoplay.start());
 	};
 
 	createCarousel = () => {
