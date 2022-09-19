@@ -16,4 +16,18 @@
             color: $blue-60;
         }
     }
+
+    @media (max-width: 450px) {
+        
+        &__item {
+
+            
+            &::before {
+                font: normal normal normal 24px "Icon";
+            }
+            
+        }
+
+    }
+
 }

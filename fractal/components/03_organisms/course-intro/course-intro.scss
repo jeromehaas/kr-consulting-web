@@ -51,6 +51,11 @@
         &__quote,
         .quote {
             margin-bottom: 96px;
+
+            &__content, 
+            .content {
+                padding-right: 64px;
+            }
         }
     }
 
@@ -70,6 +75,7 @@
 
         &__container,
         .container {
+
             &__article,
             .article {
                 margin-bottom: 64px;
@@ -79,7 +85,8 @@
                     padding-left: 64px;
                 }
 
-                &__content {
+                &__content,
+                .content {
                     padding-right: 64px;
                     padding-left: 64px;
                 }
@@ -89,6 +96,11 @@
             .quote {
                 padding-right: 64px;
                 padding-left: 64px;
+
+                &__content, 
+                .content {
+                    padding-right: 0;
+                }
             }
         }
     }

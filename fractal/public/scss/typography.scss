@@ -177,7 +177,8 @@
 }
 
 .statement__quote .content__text,
-.testimonial-slider .content__text {
+.testimonial-slider .content__text,
+.course-intro .quote .content__text {
 	font-family: 'Playfair-Display';
 	font-size: 24px;
 	line-height: 1.5;
@@ -283,6 +284,8 @@
 		font-size: 32px;
 	}
 
+}
+
 @media (max-width: 450px) {
 
 	.heading--h1 {
@@ -303,6 +306,12 @@
 		&--small { font-size: 12px; }
 		&--big { font-size: 32px; }
 		&--extrabig { font-size: 40px; }
+	}
+
+	.statement__quote .content__text,
+	.testimonial-slider .content__text,
+	.course-intro .quote .content__text {
+		font-size: 20px;
 	}
 	
 	.link, a {
@@ -335,4 +344,3 @@
 		
 }
 
-}
