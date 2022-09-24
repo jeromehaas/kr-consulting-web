@@ -1,0 +1,19 @@
+columnSuffix: zimhpmfq
+contentColumnType: text
+fieldGroup: 71b88c97-dd6f-493c-a1d7-f2f6761c3afa # Connection
+handle: connectionLinkedin
+instructions: null
+name: 'Connection LinkedIn'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

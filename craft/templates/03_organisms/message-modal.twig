@@ -1,0 +1,114 @@
+<section class="message-modal  section  js-message-modal  ">
+    <div class="message-modal__inner message-modal__inner--left section__inner section__inner--right"></div>
+    <div class="message-modal__inner message-modal__inner--center section__inner section__inner--center">
+
+        <h2 class="heading  heading--h2   heading--black  message-modal__header js-heading">
+            Kontaktieren Sie uns oder vereinbaren Sie einen Termin
+        </h2>
+        <form class="message-modal__contact-form contact-form">
+            <span class="contact-form__input-text-wrapper">
+                <div class="input-text contact-form__input-text contact-form__input-text--lastname">
+                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" " id="lastname">
+                    <label class="input-text__label" for="lastname">Nachname*</label>
+                    <p class="input-text__error-message">Bitte geben Sie Ihren Nachnamen an</p>
+                </div>
+                <div class="input-text contact-form__input-text contact-form__input-text--firstname">
+                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" " id="firstname" >
+                    <label class="input-text__label" for="firstname">Vorame*</label>
+                    <p class="input-text__error-message">Bitte geben Sie Ihren Vornamen an</p>
+                </div>
+                <div class="input-text contact-form__input-text contact-form__input-text--email">
+                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" " id="email">
+                    <label class="input-text__label" for="email">E-Mail*</label>
+                    <p class="input-text__error-message">Bitte geben Sie eine gültige E-Mail-Adresse an</p>
+                </div>
+                <div class="input-text contact-form__input-text contact-form__input-text--phone">
+                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" " id="phone">
+                    <label class="input-text__label" for="phone">Telefon</label>
+                    <p class="input-text__error-message"></p>
+                </div>
+                <div class="input-text contact-form__input-text contact-form__input-text--company">
+                    <input class="input-text__input" spellcheck="false" type="text" placeholder=" " id="company">
+                    <label class="input-text__label" for="company">Firma</label>
+                    <p class="input-text__error-message"></p>
+                </div>
+                <div class="input-date contact-form__input-date contact-form__input-date--date">
+                    <input class="input-date__input" spellcheck="false" type="text" placeholder=" " id="date">
+                    <label class="input-date__label" for="date">Wunschtermin</label>
+                    <p class="input-date__error-message"></p>
+                        <div class="input-date__calendar calendar">
+                            <div class="calendar__header header">
+                                <i class="header__close icon icon--close icon--medium"></i>
+                                <i class="header__arrow arrow--previous icon icon--caret icon--extralarge"></i>
+                                <div class="header__date date">
+                                    <p class="date__month"></p>
+                                    <p class="date__year"></p>
+                                </div>
+                                <i class="header__arrow arrow--next icon icon--caret icon--extralarge"></i>
+                            </div>
+                            <div class="calendar__weekdays weekdays">
+                                <p class="weekdays__item">M</p>
+                                <p class="weekdays__item">D</p>
+                                <p class="weekdays__item">M</p>
+                                <p class="weekdays__item">D</p>
+                                <p class="weekdays__item">F</p>
+                                <p class="weekdays__item">S</p>
+                                <p class="weekdays__item">S</p>
+                            </div>
+                        <div class="calendar__dates dates"></div>
+                    </div>
+                </div>
+            </span>
+            <div class="input-checkbox contact-form__input-checkbox contact-form__input-checkbox--course">
+                <span class='input-checkbox__option'>
+                    <input class='input-checkbox__input' name="course" id="course" type='checkbox' value="" id="course" />
+                    <label class="input-checkbox__label" for="course">Ich interessiere mich für eine Schulung</label>
+                </span>
+            </div>
+            <div class="input-textarea contact-form__input-textarea contact-form__input-textarea--message">
+                <textarea class="input-textarea__input" spellcheck="false" rows="4" placeholder=" " id="message"></textarea>
+                <label class="input-textarea__label" for="message">Erzählen Sie uns von Ihrem Projekt*</label>
+                <p class="input-textarea__error-message">Bitte verfassen Sie eine Nachricht</p>
+            </div> <span class="contact-form__disclaimer disclaimer">
+                <p class="disclaimer__text">
+                    Mit dem Senden sind Sie mit unserer <a class="disclaimer__link" href="/datenschutz">Datenschutzerklärung</a> einverstanden.
+                </p>
+            </span>
+            <button class="button contact-form__input-submit  button--blue">
+                <span class="button__text">Senden</span>
+                <i class="button__icon icon icon--arrow"></i>
+                <figure class="button__overlay"></figure>
+            </button>
+            <div class="contact-form__status-message status-message">
+                <p class="status-message__item status-message__item--success">Ihre Nachricht wurde versendet!</p>
+                <p class="status-message__item status-message__item--error">Ein Fehler ist aufgetreten - die Nachricht konnte nicht gesendet werden!</p>
+            </div>
+        </form>
+
+        <div class="message-modal__infos infos">
+            <address class="infos__address address">
+                <h5 class="heading  heading--h5   address__heading js-heading">
+                    Adresse
+                </h5>
+                <p class="paragraph   address__item">
+                    {{ address.addressStreet }}
+                </p>
+                <p class="paragraph   address__item">
+                    {{ address.addressCity }}
+                </p>
+            </address>
+            <div class="infos__connection connection">
+                <h5 class="heading  heading--h5   connection__heading js-heading">
+                    Kontakt
+                </h5> <a class="link connection__link    connection__link" href="mailto:{{ connection.connectionEmail }}">
+                    {{ connection.connectionEmail }}
+                </a> <a class="link connection__link    connection__link" href="tel:{{ connection.connectionPhone|replace(' ', '') }}">
+                    {{ connection.connectionPhone }}
+                </a>
+            </div>
+        </div>
+        <i class="message-modal__close-icon icon icon--close"></i>
+
+    </div>
+    <div class="message-modal__inner message-modal__inner--right section__inner section__inner--left"></div>
+</section>

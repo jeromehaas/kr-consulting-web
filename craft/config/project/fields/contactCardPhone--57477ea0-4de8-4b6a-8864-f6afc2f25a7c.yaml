@@ -1,0 +1,19 @@
+columnSuffix: cgmglxns
+contentColumnType: text
+fieldGroup: be65d477-82c3-4ed6-bd1b-fbdb3916edac # Contact Card
+handle: contactCardPhone
+instructions: null
+name: 'Contact Card Phone'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

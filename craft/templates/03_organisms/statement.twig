@@ -1,0 +1,20 @@
+{% set statement = craft.entries.section('statement').one() %}
+
+<section class="statement section  js-statement ">
+    <div class="statement__inner statement__inner--left section__inner section__inner--right"></div>
+    <div class="statement__inner statement__inner--center section__inner section__inner--center">
+
+        <img class="statement__symbol" src="/media/graphics/logos/logo-kr-consulting-symbol-dark.svg" alt="">
+        <div class="quote statement__quote">
+            <img class="quote__avatar" src="/media/images/avatars/roger-kretz.webp" alt="">
+            <div class="quote__content content">
+                <i class="content__icon icon icon--quote"></i>
+                <p class="content__text">{{ statement.statementText }}</p>
+                <span class="content__author author">
+                    <p class="author__name">{{ statement.statementFullName }}</p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="statement__inner statement__inner--right section__inner section__inner--left"></div>
+</section>

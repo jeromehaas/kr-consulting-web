@@ -1,0 +1,85 @@
+.location-card {
+	display: flex;
+	flex-direction: row;
+	display: flex;
+	position: relative;
+	margin-bottom: 80px;
+
+	&__background {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: -80px;
+		left: 240px;
+		background-color: $grey-20;
+		z-index: -5;
+	}
+
+	&__image {
+		max-width: 400px;
+		width: 100%;
+		object-fit: cover;
+		display: block;
+	}
+
+	&__content,
+	.content {
+		margin-left: 64px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		max-width: calc(100% - 400px);
+		max-width: 400px;
+		padding-right: 64px;
+
+		&__label {
+			margin-bottom: 40px;
+		}
+
+		&__heading {
+			margin-bottom: 24px;
+		}
+
+		&__address {
+			margin-bottom: 40px;
+		}
+
+	}
+
+	@media (max-width: 950px) {
+		flex-direction: column !important;
+
+		&__image {
+			max-width: unset;
+			max-height: 320px;
+		}
+
+		&__background {
+			left: 0;
+			bottom: 0;
+		}
+
+		&__content,
+		.content {
+			margin-left: 0 !important;
+			padding: 64px;
+
+			&__label {
+				margin-bottom: 24px;
+			}
+
+			&__button {
+				align-self: flex-start;
+			}
+		}
+	}
+
+	@media (max-width: 750px) {
+		&__content,
+		.content {
+			padding: 32px;
+		}
+
+	}
+}

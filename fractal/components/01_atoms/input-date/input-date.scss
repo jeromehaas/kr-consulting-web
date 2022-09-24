@@ -1,0 +1,169 @@
+.input-date {
+	width: 100%;
+	position: relative;
+	z-index: 10;
+
+	&__input {
+		width: 100%;
+		height: 48px;
+		color: $black;
+		padding: 8px 0;
+		outline: none;
+		border: none;
+		border-radius: 0;
+		border-bottom: 1px solid transparentize($black, 0.3);
+		padding: 0;
+		background-color: transparent;
+		margin-top: 41px;
+
+
+		&:focus + .input-date__label,
+		&:not(:placeholder-shown) + .input-date__label,
+		&--active + .input-date__label {
+			transform: translate(-16px, -16px);
+			font-size: 12px;
+		}
+
+		&--error {
+			& ~ .input-date__error-message {
+				display: block;
+
+				&::after {
+					content: "";
+					height: 6px;
+					border-radius: 50%;
+					width: 6px;
+					background-color: $red-100;
+					right: 16px;
+					top: 56px;
+					position: absolute;
+				}
+			}
+		}
+	}
+
+	&__label {
+		position: absolute;
+		color: transparentize($black, 0.3);
+		top: 48px;
+		left: 16px;
+		transition: all 0.2s ease;
+		pointer-events: none;
+	}
+
+	&__error-message {
+		color: $red-100;
+		padding-top: 8px;
+		display: none;
+	}
+
+	&__calendar, .calendar {
+		position: absolute;
+		top: 120px;
+		left: 0;
+		right: 0;
+		background-color: $white;
+    	width: 100%;
+    	border: 1px solid $black;
+		display: none;
+
+		&--active { 
+			display: block;
+		}
+
+		
+		&__header,
+		.header {
+			display: grid;
+			grid-template-columns: 50px 1fr 50px;
+			height: 50px;
+			position: relative;
+
+			&__close {
+				content: "";
+				position: absolute;
+				top: -24px;
+				right: 0;
+			}
+
+      &__date,
+      .date {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        place-content: center;
+
+        &__month {
+          color: $grey-80;
+          display: inline-block;
+        }
+
+        &__year {
+          color: $grey-80;
+          display: inline-block;
+        }
+
+      }
+
+      &__arrow, .arrow {
+        color: $grey-80;
+        display: grid;
+        place-items: center;
+
+		&--previous {
+			transform: rotate(180deg);
+		}
+
+		&--next {
+			transform: rotate(0deg);
+		}
+
+      }
+
+    }
+
+    &__weekdays,
+    .weekdays {
+			border-top: 1px solid $grey-80;
+			border-bottom: 1px solid $grey-80;
+			padding: 8px 0;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+
+      &__item {
+        text-align: center;
+      }
+    }
+
+    &__dates,
+    .dates {
+      background-color: white;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+
+      &__item {
+		padding: 16px 8px;
+        display: grid;
+        place-items: center;
+		cursor: pointer;
+
+        &--today {
+          background-color: $blue-100 !important;
+		  color: $white;
+        }
+
+        &--past {
+			color: lightgrey;
+        }
+
+        &--choosen {
+			background-color: transparentize($blue-40, 0.5);
+        }
+
+      }
+
+    }
+
+  }
+
+}

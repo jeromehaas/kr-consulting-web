@@ -1,0 +1,7 @@
+name: Input Text
+status: "wip"
+preview: "@component"
+context:
+  label: Label
+  name: email
+  errorMessage: "Dies ist ein Plichtfeld"

@@ -1,0 +1,63 @@
+.statement {
+	background-color: $grey-20;
+	overflow: visible;
+
+	&__inner {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
+	&__symbol {
+		position: absolute;
+		top: 0px;
+		left: 320px;
+		height: 175%;
+		opacity: 0.5;
+		overflow: hidden;
+	}
+
+	&__quote {
+		padding: 96px;
+		padding-left: 160px;
+		position: relative;
+	}
+
+	@media (max-width: 1200px) {
+		&__quote {
+			padding-left: 48px;
+		}
+
+		&__symbol {
+			left: 120px;
+			height: 175%;
+		}
+
+	}
+
+	@media (max-width: 950px) {
+		&__quote {
+			padding-left: 0;
+			padding-left: 0;
+		}
+		&__symbol {
+			left: unset;
+			right: -80px;
+			height: 125%;
+			opacity: 0.5;
+		}
+	}
+
+	@media (max-width: 800px) {
+		&__symbol {
+			display: none;
+		}
+	}
+
+	@media (max-width: 550px) {
+		&__quote {
+			padding: 64px 0;
+		}
+	}
+}

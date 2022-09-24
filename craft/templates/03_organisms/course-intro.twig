@@ -1,0 +1,66 @@
+{% set courseIntro = craft.entries.section('courseIntro').one() %}
+
+<section class="course-intro section  js-course-intro ">
+   <div class="course-intro__inner course-intro__inner--left section__inner section__inner--right"></div>
+   <div class="course-intro__inner course-intro__inner--center section__inner section__inner--center">
+   <div class="course-intro__container container">
+      
+      <div class="article article">
+         <div class="article__wrapper">
+               <h2 class="heading  heading--h2   article__heading js-heading">{{ courseIntro.courseIntroArticleHeading }}</h2>
+               {% if courseIntro.courseIntroArticleLabel %}
+                  <p class="paragraph  paragraph--blue   paragraph--bold  content__subheading">{{ courseIntro.courseIntroArticleLabel }}</p>
+               {% endif %}
+               <div class="article__content content">
+                  <p class="paragraph  paragraph--black   content__text">{{ courseIntro.courseIntroArticleText }}</p>
+                  <p class="paragraph  paragraph--black   paragraph--bold  content__outro">{{ courseIntro.courseIntroArticleOutro }}</p>
+               </div>
+         </div>
+      </div>
+      
+      <div class="quote content__quote quote--no-avatar">
+         <div class="quote__content content">
+            <i class="content__icon icon icon--quote"></i>
+            <p class="content__text">{{ courseIntro.courseIntroQuoteText }} </p>
+         </div>
+      </div>
+      
+      <div class="long-copy">
+         <h5 class="heading  heading--h5   heading--white  long-copy__heading js-heading">
+            {{ courseIntro.courseIntroLongCopyHeading }}
+         </h5>
+         <p class="paragraph  paragraph--white   long-copy__text">
+            {{ courseIntro.courseIntroLongCopyText }}
+         </p>
+      </div>
+      
+      <div class="article article">
+         <img class="article__image" src="{{ courseIntro.courseIntroArticleImage.one().url() }}" alt="{{ courseIntro.courseIntroArticleImage.one().alt }}">
+         <div class="article__wrapper">
+               <h2 class="heading  heading--h2   article__heading js-heading">{{ courseIntro.courseIntroInfoHeading }}</h2>
+               <div class="article__content content">
+                  <p class="paragraph  paragraph--black   content__text">{{ courseIntro.courseIntroInfoText }}</p>
+                  <h5 class="heading  heading--h5 content__peaker">{{ courseIntro.courseIntroInfoPeaker }}</h5>
+                  <ul class="list content__list">
+                      {% for item in courseIntro.courseIntroInfoList.all() %}
+                       <li class="list__item">{{ item.text }}</li>
+                      {% endfor %}
+                  </ul>
+                  <p class="paragraph  paragraph--black  content__text">{{ courseIntro.courseIntroInfoTeaser }}</p>
+                  <button class="button content__button  button--blue" data-trigger="message-modal">
+				      <span class="button__text">Schulung anfragen</span>
+					   <i class="button__icon icon icon--arrow"></i>
+					   <figure class="button__overlay"></figure>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="course-intro__sidepanel sidepanel">
+				{% include "02_molecules/contact-card" with { class: "sidepanel__contact-card" } %}
+      </div>
+
+   </div>
+   <div class="course-intro__inner course-intro__inner--right section__inner section__inner--left"></div>
+</section>

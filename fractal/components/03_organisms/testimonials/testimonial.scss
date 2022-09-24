@@ -1,0 +1,27 @@
+.testimonials {
+    background-color: $beige-80;
+    overflow: hiddenss;
+
+    &__inner {
+        &--center {
+            position: relative;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+
+    &__symbol {
+        height: 100%;
+        position: absolute;
+        left: 60%;
+        top: 0;
+        z-index: 5;
+    }
+
+    &__quote {
+        margin-left: 160px;
+        z-index: 10;
+        position: relative;
+    }
+
+}

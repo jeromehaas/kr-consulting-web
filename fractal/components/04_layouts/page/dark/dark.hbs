@@ -1,0 +1,10 @@
+<body class="body page page--dark {{#if id }} page__{{id}} {{/if}}">
+    {{> @mobile-navigation }}
+    {{> @desktop-navigation dark="true" }}
+    {{#>@partial-block}}
+    {{/@partial-block}}
+    {{> @footer }}
+    {{> @message-modal }}
+	<div class="page__transition-layer"></div>
+  <script src="/js/main.build.js"></script>
+</body>

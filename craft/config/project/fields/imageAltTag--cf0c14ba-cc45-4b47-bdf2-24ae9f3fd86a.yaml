@@ -1,0 +1,19 @@
+columnSuffix: oybixzdk
+contentColumnType: text
+fieldGroup: f02756b0-2a21-4a86-a44f-d8b2b9cb67af # Image
+handle: imageAltTag
+instructions: null
+name: 'Image Alt Tag'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

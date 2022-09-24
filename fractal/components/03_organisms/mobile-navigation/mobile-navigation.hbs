@@ -1,0 +1,21 @@
+{{#>@section id="mobile-navigation" js="true" tag="nav" }}
+    <div class="mobile-navigation__bar mobile-navigation__bar--transparent bar">
+        <div class="bar__inner">
+            <a class="bar__logo-link" href="#">
+                {{#if light}}
+                    <img class="bar__logo" src="/media/graphics/logos/logo-kr-consulting-small-dark.svg" alt="KR Consulting"/>
+                {{ else }}
+                    <img class="bar__logo" src="/media/graphics/logos/logo-kr-consulting-small-light.svg" alt="KR Consulting"/>
+                {{/if}}
+            </a>
+            <div class="bar__hamburger"></div>
+        </div>
+    </div>
+    <div class="mobile-navigation__menu menu">
+        <a class="menu__link" href="">Anlagelösungen</a>
+        <a class="menu__link" href="">Vorsorgelösungen</a>
+        <a class="menu__link" href="">Über Uns</a>
+        <a class="menu__link" href="">Kontakt</a>
+    </div>
+{{/@section}}
+<div class="mobile-navigation__spacer"></div>

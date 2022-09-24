@@ -1,0 +1,33 @@
+{% set services = craft.entries.section('services').all() %}
+
+<section class="services section  js-services ">
+    <div class="services__inner services__inner--left section__inner section__inner--right"></div>
+    <div class="services__inner services__inner--center section__inner section__inner--center">
+
+        <div class="services__sidepanel sidepanel">
+            <nav class="sub-navigation sidepanel__sub-navigation ">
+						{% for service in services %}
+                <a class="sub-navigation__item" href="./#{{ service.servicesId }}">{{ service.servicesHeading }}</a>
+						{% endfor %}
+            </nav>
+        </div>
+
+        <div class="services__container container">
+        {% for service in services %}
+        <div class="article container__article" id="{{ service.servicesId }}">
+          <img class="article__image" src="{{ service.servicesImage.one().url() }}" alt="{{ service.servicesImage.one().alt }}">
+          <div class="article__wrapper">
+                <h2 class="heading  heading--h2   article__heading js-heading">{{ service.servicesHeading }}</h2>
+                <p class="paragraph  paragraph--blue   paragraph--bold article__subheading">{{ service.servicesLabel }}</p>
+                <div class="article__content content">
+                  <p class="paragraph  paragraph--black   content__text">{{ service.servicesLongCopy|nl2br }}</p>
+                  <p class="paragraph  paragraph--black   paragraph--bold  content__outro">{{ service.servicesTeaser }}</p>
+              </div>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+
+    </div>
+    <div class="services__inner services__inner--right section__inner section__inner--left"></div>
+</section>

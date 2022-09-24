@@ -1,0 +1,25 @@
+name: Paragraph
+status: "wip"
+context: 
+  content: Paragraph
+variants: 
+  - name: small
+    context: 
+      content: Pararaph (small)
+      style: small
+  - name: normal
+    context: 
+      content: Pararaph (normal)
+      style: normal
+  - name: bold
+    context: 
+      content: Pararaph (bold)
+      style: bold
+  - name: big
+    context: 
+      content: Pararaph (big)
+      style: big
+  - name: serif
+    context: 
+      content: Pararaph (serif)
+      style: serif

@@ -1,0 +1,46 @@
+<footer class="footer section  js-footer ">
+    <div class="footer__inner footer__inner--left section__inner section__inner--right"></div>
+    <div class="footer__inner footer__inner--center section__inner section__inner--center">
+
+        <div class="footer__infos infos">
+            <img class="infos__logo" src="/media/graphics/logos/logo-kr-consulting.svg" alt="KR Consulting" width="240" height="48" />
+            <address class="infos__address address">
+                <h5 class="heading  heading--h5 address__heading">Adresse</h5>
+                <p class="paragraph   address__item">{{ address.addressStreet }}</p>
+                <p class="paragraph   address__item">{{ address.addressCity }}</p>
+            </address>
+            <div class="infos__connection connection">
+                <a class="link link--lightblue connection__link contact__link" href="mailto:{{ connection.connectionEmail }}">{{ connection.connectionEmail }}</a>
+                <a class="link link--lightblue connection__link" href="tel:{{ connection.connectionPhone|replace(' ', '') }}">{{ connection.connectionPhone }}</a>
+                <a class="link link--lightblue connection__link" target="_blank" href="{{ connection.connectionLinkedin }}">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="footer__links links">
+            <p class="paragraph   links__item">
+                © 2022,
+                {{ address.addressCompany }}
+            </p>
+            <a class="link link--lightblue links__link    links__link" href="/impressum">
+                Impressum
+            </a>
+            <a class="link link--lightblue links__link    links__link" href="/datenschutz">
+                Datenschutz
+            </a>
+        </div>
+
+        <div class="footer__partners partners">
+            <a class="partners__item" href="https://www.sfbv.ch/" target="_blank" >
+                <img class="partners__logo" src="/media/graphics/logos/logo-sbf.svg" alt="SFBV Schweizerischer Finanzberaterverband" width="180" height="40" />
+            </a>
+            <a class="partners__item" href="https://www.kaderverband.ch/de/" target="_blank" >
+                <img class="partners__logo" src="/media/graphics/logos/logo-schweizer-kaderverband.svg" alt="Schweizerischer Kaderverband" width="180" height="40" />
+            </a>
+            <a class="partners__item" href="https://www.ofdl.ch/" target="_blank" >
+                <img class="partners__logo" src="/media/graphics/logos/logo-ombudsstelle.svg" alt="Ombudstelle" width="180" height="40" />
+            </a>
+        </div>
+
+    </div>
+    <div class="footer__inner footer__inner--right section__inner section__inner--left"></div>
+</footer>

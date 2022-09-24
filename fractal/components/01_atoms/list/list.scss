@@ -1,0 +1,33 @@
+.list {
+    &__item {
+        margin-left: 32px;
+        list-style: none;
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        &::before {
+            content: "\ea02";
+            font: normal normal normal 32px "Icon";
+            position: absolute;
+            right: 100%;
+            color: $blue-60;
+        }
+    }
+
+    @media (max-width: 450px) {
+        
+        &__item {
+
+            
+            &::before {
+                font: normal normal normal 24px "Icon";
+            }
+            
+        }
+
+    }
+
+}

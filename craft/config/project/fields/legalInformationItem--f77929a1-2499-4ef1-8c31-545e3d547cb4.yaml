@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 6f9e4970-bcc2-4757-8a80-ca6ae4106ca6 # Legal Information
+handle: legalInformationItem
+instructions: null
+name: 'Legal Information Item'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_legalinformationitem}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

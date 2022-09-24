@@ -1,0 +1,19 @@
+columnSuffix: mvoygspq
+contentColumnType: text
+fieldGroup: 2335bc14-e769-484f-9f4f-9dc2f14e9db3 # Services
+handle: servicesShortCopy
+instructions: null
+name: 'Services Short Copy'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

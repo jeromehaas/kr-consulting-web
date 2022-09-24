@@ -1,0 +1,32 @@
+name: Icon
+status: "wip"
+context: 
+  type: angle
+variants: 
+  - name: Caret
+    context:
+      type: caret
+  - name: Chat
+    context:
+      type: chat
+  - name: KR-Symbol
+    context:
+      type: kr-symbol
+  - name: Info
+    context:
+      type: info
+  - name: Hamburger
+    context:
+      type: hamburger
+  - name: Close
+    context:
+      type: close
+  - name: Checkmark
+    context:
+      type: checkmark
+  - name: Calendar
+    context:
+      type: calendar
+  - name: Arrow
+    context:
+      type: arrow

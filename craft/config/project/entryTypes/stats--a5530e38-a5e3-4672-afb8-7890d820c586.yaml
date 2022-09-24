@@ -1,0 +1,103 @@
+fieldLayouts:
+  7badacf8-a738-4596-a0d7-3146a16dbf68:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ff6805e4-e92a-451c-9266-9b469901fe7a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: aea1317d-1e20-4ed7-9ff3-2aa3adc44925 # Stats Peaker
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9592dfa8-32f8-41e1-9627-ea63d48e753f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e01f2cd6-6f33-4599-ab41-3d7481c412eb # Stats Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c3d1f720-186a-4a9d-a9b1-833d10ef2962
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 24d6a6c1-e3ba-4502-8202-9046cda01144 # Stats Counters
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 092936c6-54d7-4e5b-9428-9bb2f019b07f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 69f52402-22cf-4960-a42a-b404ccea0405 # Stats Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 897a0c9a-13ab-47b6-8c5d-6e01e5e03fc3
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: af78bb5f-d02a-42d9-b97f-9aa6b4c077fd # Stats Button Href
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4483f76a-72c1-44ae-97b3-d83e2e25d553
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 82aaac04-b9b1-47e4-b0ca-c7df4df8b540
+        userCondition: null
+handle: stats
+hasTitleField: false
+name: Stats
+section: 5a72f800-8d3a-401e-a06a-58040bae612a # Stats
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

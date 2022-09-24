@@ -1,0 +1,53 @@
+.follower {
+    position: fixed;
+    width: 280px;
+    bottom: 96px;
+    left: calc(100% - 240px);
+    height: 48px;
+    align-items: center;
+    z-index: 25;
+    padding: 8px 8px 8px 0;
+    background-color: $blue-60; 
+    cursor: pointer;   
+    display: grid;
+    grid-template-columns: 24px auto;
+    gap: 16px;
+    transition: all 0.3s ease;
+
+    &__text {
+        color: $white;
+    }
+
+    &__icon {
+        color: $white !important;
+    }
+
+    &--hidden {
+        bottom: -48px !important;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 100%;
+        bottom: 0;
+        border: 24px solid transparent;
+        border-right-color: $blue-60;
+        border-bottom-color: $blue-60;
+    }
+    
+    @media (max-width: 2200px) {
+        left: calc(100% - 32px);
+        bottom: 64px;
+
+        &:hover, &--active {
+            left: calc(100% - 240px);
+        }
+
+    }
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+
+}

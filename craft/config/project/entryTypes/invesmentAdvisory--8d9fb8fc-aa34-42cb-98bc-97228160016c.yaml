@@ -1,0 +1,109 @@
+fieldLayouts:
+  13971a86-ba0a-4c56-a2c6-35505dc88558:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 19d60be7-079a-4ffc-b168-93afdb8abb72
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2b4a9fe1-30b9-46eb-bf48-cf76750cbc76 # Heroine Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a2fd149-feeb-424e-844d-4231558a0bd9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e286f9b7-986e-4d00-a407-41b8c313cfa7 # Heroine Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f41e5418-97d9-4d16-afb0-e932fe423ae6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7d9c151-0020-45d7-8ebd-18da8e76afac # Heroine Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a791b19-4684-4734-82cc-966ae5f466a8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a0e41219-97d9-4074-8962-33c80bfd16f1
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0622be8b-b30f-4d45-8e51-c0449d675572 # Meta Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1cca9608-893c-41cd-9e78-5b6344c89da8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4c1b1937-b330-4172-b6b4-fe7f3bc8ebde # Meta Page Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4dd8a7d8-d9a9-4516-af3e-60fa3efe83d7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Meta
+        uid: f924dd6c-31af-4990-be68-f481b159eeb3
+        userCondition: null
+handle: invesmentAdvisory
+hasTitleField: true
+name: 'Investment Advisory'
+section: f9dc201a-1d70-41de-addd-45fd5fafb195 # Investment Advisory
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

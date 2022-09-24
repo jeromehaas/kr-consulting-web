@@ -1,0 +1,52 @@
+.contact-teaser {
+	display: grid;
+	grid-template-areas:
+		"text contact-details"
+		"button contact-details";
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	align-items: flex-start;
+	grid-gap: 64px;
+
+	&__text {
+		grid-area: text;
+		max-width: 640px;
+	}
+
+	&__contact-details,
+	.contact-details {
+		grid-area: contact-details;
+
+		&__item,
+		.item {
+			&__heading {
+				margin-bottom: 4px;
+			}
+		}
+
+		&__item:not(:last-child) {
+			margin-bottom: 48px;
+		}
+	}
+
+	&__button {
+		grid-area: button;
+		margin-left: 80px;
+	}
+
+    @media (max-width: 750px) {
+        &__button {
+            margin-left: 0;
+        }
+    }
+
+
+	@media (max-width: 650px) {
+		grid-template-areas:
+			"text"
+			"button"
+			"contact-details";
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto;
+	}
+}

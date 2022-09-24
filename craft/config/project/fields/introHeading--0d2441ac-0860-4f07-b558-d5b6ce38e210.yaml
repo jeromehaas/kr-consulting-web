@@ -1,0 +1,19 @@
+columnSuffix: amblkykz
+contentColumnType: text
+fieldGroup: dbd572db-9982-4f04-a380-7ede02769ab3 # Intro
+handle: introHeading
+instructions: null
+name: 'Intro Heading'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

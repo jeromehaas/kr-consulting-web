@@ -1,0 +1,73 @@
+fieldLayouts:
+  17cc3486-9bf3-43cb-a76c-53e44329528e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7fda213f-2987-40cf-9b80-b58d6bdf3897
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 54520c51-3799-4a0e-9705-2c84a0d4b541
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0622be8b-b30f-4d45-8e51-c0449d675572 # Meta Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 740fa059-b989-4dba-8e5e-6497aac8eb29
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4c1b1937-b330-4172-b6b4-fe7f3bc8ebde # Meta Page Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5b20f817-be41-41ed-a1ee-974d434fb3ec
+            userCondition: null
+            warning: null
+            width: 100
+        name: Meta
+        uid: 10232afe-c997-488c-9da6-3ea8b78ebaa5
+        userCondition: null
+handle: dataPrivacy
+hasTitleField: false
+name: 'Data Privacy'
+section: cf05b8dd-8dfa-47ae-a86d-e19e315bd668 # Data Privacy
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

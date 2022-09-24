@@ -1,0 +1,24 @@
+/* COLORS */
+$white: #FFFFFF;
+$black: #3F4756;
+$grey-20: #FBFBF7;
+$grey-80: #3F4756;
+$red-100: #8C211F;
+$beige-100: #F1F1E6;
+$beige-80: #FAFAF7;
+$blue-40: #A6D0FF;
+$blue-60: #4D7CB7;
+$blue-80: #004C82;
+$blue-100: #002757;
+$green-100: #00C29B;
+
+
+// GRADIENTS 
+$blue-gradient: linear-gradient(0deg, rgba(0, 76, 130, 0.8), rgba(0, 76, 130, 0.8));
+
+// LAYOUT CONFIGS
+$padding-page-vertical-big: 96px; // BIGGER THAN 950 PIXELS
+$padding-page-vertical-medium: 64px; // SMALLER THAN 950 PIXELS
+$padding-page-vertical-small: 32px; // SMALLER THAN 650 PIXELS
+
+$max-section-width: 1440px;

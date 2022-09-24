@@ -1,0 +1,19 @@
+{% set cta = craft.entries.section('cta').one() %}
+
+<section class="cta section  js-cta ">
+    <div class="cta__inner cta__inner--left section__inner section__inner--right"></div>
+    <div class="cta__inner cta__inner--center section__inner section__inner--center">
+        <div class="cta__background"></div>
+        <div class="cta__content content">
+            <div class="content__overlay"></div>
+            <img class="content__image" src="{{ cta.ctaImage.one().url() }}" alt="{{ cta.ctaImage.one().url() }}" />
+            <h2 class="heading  heading--h2   heading--white  content__heading js-heading">{{ cta.ctaHeading }}</h2> 
+			<a class="button content__button  button--white" href="{{ cta.ctaButtonHref }}" data-trigger="message-modal">
+            <span class="button__text">{{ cta.ctaButtonText }}</span>
+            <i class="button__icon icon icon--arrow"></i>
+            <figure class="button__overlay"></figure>
+            </a>
+        </div>
+    </div>
+    <div class="cta__inner cta__inner--right section__inner section__inner--left"></div>
+</section>

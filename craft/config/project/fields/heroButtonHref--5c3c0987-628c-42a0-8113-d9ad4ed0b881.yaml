@@ -1,0 +1,19 @@
+columnSuffix: gsucxulh
+contentColumnType: text
+fieldGroup: 146a4478-2537-438c-acbf-11cd3bf2bfa4 # Hero
+handle: heroButtonHref
+instructions: null
+name: 'Hero Button Href'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

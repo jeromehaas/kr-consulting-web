@@ -1,0 +1,19 @@
+columnSuffix: idzqqpnq
+contentColumnType: text
+fieldGroup: 26c4a3d0-6e18-40fb-a36d-253b9ff5ea5b # Statement
+handle: statementText
+instructions: null
+name: 'Statement Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

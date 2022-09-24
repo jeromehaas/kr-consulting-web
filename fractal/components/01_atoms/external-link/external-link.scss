@@ -1,0 +1,63 @@
+.external-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: $blue-40;
+    transition: color 0.1s ease;
+
+    &:hover {
+        color: lighten($blue-40, 10%);
+        & .external-link__icon {
+            color: lighten($blue-40, 10%);
+        }
+    }
+
+    &__icon {
+        transform: rotate(315deg);
+        color: $blue-40;
+        margin-left: 8px;
+    }
+
+    &--blue {
+        color: $blue-60;
+        &__icon {
+            color: $blue-60;
+        }
+
+        &:hover {
+            color: darken($blue-60, 10%);
+            & .external-link__icon {
+                color: darken($blue-60, 10%);
+            }
+        }
+    }
+
+    &--lightblue {
+        color: $blue-40;
+        &__icon {
+            color: $blue-40;
+        }
+
+        &:hover {
+            color: darken($blue-40, 10%);
+            & .external-link__icon {
+                color: darken($blue-40, 10%);
+            }
+        }
+    }
+
+    &--white {
+        color: $white;
+        &__icon {
+            color: $white;
+        }
+
+        &:hover {
+            color: darken($white, 10%);
+            & .external-link__icon {
+                color: darken($white, 10%);
+            }
+        }
+    }
+}

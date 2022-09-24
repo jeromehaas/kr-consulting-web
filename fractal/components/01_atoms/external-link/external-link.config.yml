@@ -1,0 +1,6 @@
+name: External Link
+preview: "@barbone"
+status: "ready"
+context: 
+  color: "blue"
+  content: "External Link"

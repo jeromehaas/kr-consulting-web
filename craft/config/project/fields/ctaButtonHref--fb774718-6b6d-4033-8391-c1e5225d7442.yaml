@@ -1,0 +1,19 @@
+columnSuffix: sntdwxzi
+contentColumnType: text
+fieldGroup: 6ae3604a-a79b-4d64-9f7c-069256175426 # CTA
+handle: ctaButtonHref
+instructions: null
+name: 'CTA Button Href'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,93 @@
+.button {
+    border: none;
+    background-color: unset;
+    outline: none;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px 40px 16px 32px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    justify-self: baseline;
+
+    &__text {
+        color: $white;
+        z-index: 5;
+        position: relative;
+        transition: all 0.3s ease;
+        left: 0;
+				letter-spacing: 1px;
+    }
+
+    &__icon {
+        padding-left: 16px;
+        color: $white;
+        z-index: 5;
+        transition: all 0.3s ease;
+        position: relative;
+        left: 0;
+    }
+
+    &__background {
+        background-color: red;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        right: calc(100% - 32px);
+        bottom: 0;
+        width: 100%;
+        background-color: $blue-40;
+        opacity: 0.3;
+        pointer-events: none;
+        transform: skew(-45deg);
+        transition: all 0.3s ease;
+    }
+
+    &--white {
+        .button__text {
+            color: $white;
+        }
+        .button__icon {
+            color: $white;
+        }
+    }
+
+    &--blue {
+        .button__text {
+            color: $blue-100;
+        }
+        .button__icon {
+            color: $blue-100;
+        }
+    }
+
+    &:hover {
+        & .button__overlay {
+            width: calc(200% + 32px);
+            right: -32px;
+        }
+
+        & .button__text {
+            left: 8px;
+        }
+
+        & .button__icon {
+            left: 8px;
+        }
+
+    }
+
+    @media (max-width: 450px) {
+        padding: 16px;
+    }
+}

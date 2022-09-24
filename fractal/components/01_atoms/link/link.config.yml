@@ -1,0 +1,7 @@
+name: Link
+status: "ready"
+preview: "@default"
+context: 
+  content: Link
+  href: '#'
+  color: blue

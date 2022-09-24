@@ -1,0 +1,73 @@
+fieldLayouts:
+  4bc60b16-7d28-41d7-bca2-8d41ce98de1e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: ea078790-27f3-4efc-8522-43a55be7f8e4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bdbba0a6-6e14-49aa-9d75-30959483a9a8
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0622be8b-b30f-4d45-8e51-c0449d675572 # Meta Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 05d0cdbc-d241-4b8f-ba89-bfec3d05bfe2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4c1b1937-b330-4172-b6b4-fe7f3bc8ebde # Meta Page Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2f0f91d9-77f3-43ae-a3f7-a0ed1a708a19
+            userCondition: null
+            warning: null
+            width: 100
+        name: Meta
+        uid: 411ade4e-cae3-4635-895d-b162dd5ed00b
+        userCondition: null
+handle: start
+hasTitleField: true
+name: Start
+section: 1603d4ed-dff5-40eb-8f99-db85545a375e # Start
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,19 @@
+columnSuffix: ffqkynro
+contentColumnType: text
+fieldGroup: 86baf79e-9a0e-4654-9494-66d604f2a4d4 # Heroine
+handle: heroineText
+instructions: null
+name: 'Heroine Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

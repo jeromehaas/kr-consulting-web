@@ -1,0 +1,19 @@
+columnSuffix: dcwpfnlh
+contentColumnType: text
+fieldGroup: 2335bc14-e769-484f-9f4f-9dc2f14e9db3 # Services
+handle: servicesId
+instructions: null
+name: 'Services ID'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

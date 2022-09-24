@@ -1,0 +1,31 @@
+{{#>@section id="footer" js="false" tag="footer"}}
+    <div class="footer__infos infos">
+        <img class="infos__logo" src="/media/graphics/logos/logo-kr-consulting.svg" alt="KR Consulting"/>
+        <address class="infos__address address">
+            {{> @heading class="address__heading" type="h5" content="Adresse"}}
+            {{> @paragraph class="address__item" content="Surenthalerstrasse 10" }}
+            {{> @paragraph class="address__item" content="6210 Sursee" }}
+        </address>
+        <div class="infos__connection connection">
+            {{> @link class="connection__link" color="lightblue" content="kretz@krconsulting.com" href="mailto:kretz@krconsulting.ch" }}
+            {{> @link class="connection__link" color="lightblue" content="+41 79 302 63 29" href="tel:+41793026329" }}
+            {{> @link class="connection__link" color="lightblue" content="LinkedIn" href="https://linkedin.com" }}
+        </div>
+    </div>
+    <div class="footer__links links">
+        {{> @paragraph class="links__item" content="© 2022, KR Consulting GmbH" }}
+        {{> @link class="links__link" color="lightblue" href="#" content="Impressum" }}
+        {{> @link class="links__link" color="lightblue" href="#" content="Datenschutz" }}
+    </div>
+    <div class="footer__partners partners">
+        <a class="partners__item" href="#">
+            <img class="partners__logo" src="/media/graphics/logos/logo-sbf.svg" alt=""/>
+        </a>
+        <a class="partners__item" href="#">
+            <img class="partners__logo" src="/media/graphics/logos/logo-schweizer-kaderverband.svg" alt=""/>
+        </a>
+        <a class="partners__item" href="#">
+            <img class="partners__logo" src="/media/graphics/logos/logo-ombudsstelle.svg" alt=""/>
+        </a>
+    </div>
+{{/@section}}

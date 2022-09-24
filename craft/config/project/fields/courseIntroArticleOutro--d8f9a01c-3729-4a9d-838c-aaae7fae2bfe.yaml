@@ -1,0 +1,19 @@
+columnSuffix: ektnzmyo
+contentColumnType: text
+fieldGroup: d6fab119-06a5-434f-bab0-8836d0bebef0 # Course Intro
+handle: courseIntroArticleOutro
+instructions: null
+name: 'Course Intro Article Outro'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

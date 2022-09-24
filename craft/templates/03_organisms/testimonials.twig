@@ -1,0 +1,42 @@
+{% set testimonials = craft.entries.section('testimonials').one() %}
+
+<section class="testimonials  section  js-testimonials  ">
+    <div class="testimonials__inner testimonials__inner--left section__inner section__inner--right"></div>
+    <div class="testimonials__inner testimonials__inner--center section__inner section__inner--center">
+
+        <img class="testimonials__symbol" src="/media/graphics/logos/logo-kr-consulting-symbol-light.svg" alt="">
+        <div class="testimonial-slider js-testimonial-slider">
+
+            <div class="testimonial-slider__slider slider swiper-wrapper">
+
+                {% for reference in testimonials.testimonialsReference.all() %}
+                    <div class="slider__item item cell swiper-slide" href="#" data-key="1">
+                        <img class="item__avatar" src="{{ reference.image.one().url() }}" alt="reference.fullName" width="160" height="160">
+                        <div class="item__content content">
+                            <i class="content__icon icon icon--quote"></i>
+                            <p class="content__text">{{ reference.text }}</p>
+                            <span class="content__author author">
+                                <p class="author__name">{{ reference.fullName }}</p>
+                                {% if reference.role|length %}
+                                    <p class="author__separator">-</p>
+                                    <p class="author__role">{{ reference.role }}</p>
+                                {% endif %}
+                            </span>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+
+            <div class="testimonial-slider__navigation navigation">
+                <i class="navigation__arrow arrow--previous icon icon--arrow"></i>
+                <p class="navigation__counter counter--current">01</p>
+                <figure class="navigation__line"></figure>
+                <p class="navigation__counter counter--total"></p>
+                <i class="navigation__arrow arrow--next icon icon--arrow"></i>
+            </div>
+
+        </div>
+    </div>
+    <div class="testimonials__inner testimonials__inner--right section__inner section__inner--left"></div>
+</section>

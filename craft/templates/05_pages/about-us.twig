@@ -1,0 +1,12 @@
+{% extends "04_layouts/page/dark" %}
+{% set id = 'about-us' %}
+{% set aboutUs = craft.entries.section('aboutUs').one() %}
+
+{% block main %}
+    {% include "03_organisms/heroine" with { heading: aboutUs.heroineHeading, text: aboutUs.heroineText, image: aboutUs.heroineImage.one().url() } %}
+    {% include "03_organisms/team-member" %}
+    {% include "03_organisms/statement" %}
+    {% include "03_organisms/cta" %}
+    {% include "02_molecules/follower" %}
+    {% include "02_molecules/contact-shortcuts" %}
+{% endblock %}

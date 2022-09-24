@@ -1,0 +1,60 @@
+{% set contactInfos = craft.entries.section('contactInfos').one() %}
+
+<section class="contact-infos section  js-contact-infos ">
+    <div class="contact-infos__inner contact-infos__inner--left section__inner section__inner--right"></div>
+    <div class="contact-infos__inner contact-infos__inner--center section__inner section__inner--center">
+
+        <div class="contact-teaser contact-infos__contact-teaser">
+            <p class="paragraph  paragraph--black   contact-teaser__text">
+                {{ contactInfos.contactInfosTeaserIntro }}
+            </p>
+            <div class="contact-teaser__contact-details contact-details">
+                <div class="contact-details__item item">
+                    <h5 class="heading  heading--h5   heading--black  item__heading js-heading">
+                        {{ contactInfos.contactInfosTeaserContactEmail }}
+                    </h5> <a class="animated-link item__text  link--blue    item__text" href="mailto:{{ connection.connectionEmail }}">
+                        {{ connection.connectionEmail }}
+                    </a>
+                </div>
+                <div class="contact-details__item item">
+                    <h5 class="heading  heading--h5   heading--black  item__heading js-heading">
+                        {{ contactInfos.contactInfosTeaserContactPhone }}
+                    </h5> <a class="animated-link item__text  link--blue    item__text" href="tel:{{ connection.connectionPhone }}">
+                        {{ connection.connectionPhone }}
+                    </a>
+                </div>
+            </div>
+            <button class="button contact-teaser__button  button--blue" data-trigger="message-modal">
+                <span class="button__text">{{ contactInfos.contactInfosTeaserButtonText }}</span>
+                <i class="button__icon icon icon--arrow"></i>
+                <figure class="button__overlay"></figure>
+            </button>
+        </div>
+        <div class="location-card">
+            <div class="location-card__background"></div>
+            <img class="location-card__image" src="{{ contactInfos.contactInfosLocationImage.one().url() }}" alt="{{ contactInfos.contactInfosLocationImage.one().alt }}" width="400" height="600">
+            <div class="location-card__content content">
+                <h5 class="heading  heading--h5   content__label js-heading">
+                    {{ contactInfos.contactInfosLocationHeading }}
+                </h5>
+                <h3 class="heading  heading--h3   content__headgin js-heading">
+                    {{ address.addressBuilding }}
+                </h3>
+                <div class="content__address address">
+                    <p class="paragraph  paragraph--black   address__item">
+                        {{ address.addressStreet }}
+                    </p>
+                    <p class="paragraph  paragraph--black   address__item">
+                        {{ address.addressCity }}
+                    </p>
+                </div>
+                <a class="button content__button  button--blue" target="_blank" href="{{ contactInfos.contactInfosLocationButtonHref }}">
+                    <span class="button__text">{{ contactInfos.contactInfosLocationButtonText }}</span>
+                    <i class="button__icon icon icon--arrow"></i>
+                    <figure class="button__overlay"></figure>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="contact-infos__inner contact-infos__inner--right section__inner section__inner--left"></div>
+</section>

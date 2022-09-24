@@ -1,0 +1,109 @@
+fieldLayouts:
+  e88ad07d-b69f-453b-87bf-0694be07783e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: Title
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 55e50ec9-395b-4b43-9c64-5354f7570daf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2b4a9fe1-30b9-46eb-bf48-cf76750cbc76 # Heroine Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 069333ec-1416-4496-8ded-71ad56acffc7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e286f9b7-986e-4d00-a407-41b8c313cfa7 # Heroine Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cc1e9624-73c3-4132-856d-b59cdf12be35
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f7d9c151-0020-45d7-8ebd-18da8e76afac # Heroine Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d960cbb7-c3b1-4b67-bf01-e2ef2fbcb438
+            userCondition: null
+            warning: null
+            width: 100
+        name: Heroine
+        uid: d44bd344-8c52-449b-8ecc-4d8eef5151da
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0622be8b-b30f-4d45-8e51-c0449d675572 # Meta Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 51bd5cb2-7fde-4d97-affa-e56a19afdeea
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4c1b1937-b330-4172-b6b4-fe7f3bc8ebde # Meta Page Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 47a2fb05-5496-48a5-afd7-614e9ce57687
+            userCondition: null
+            warning: null
+            width: 100
+        name: Meta
+        uid: 9f854032-c538-4de7-a1e3-0bf303c7d0e1
+        userCondition: null
+handle: retirementSolutions
+hasTitleField: false
+name: 'Retirement Solutions'
+section: 9f90e5bc-9157-4526-8dde-681edb929c58 # Retirement Solutions
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

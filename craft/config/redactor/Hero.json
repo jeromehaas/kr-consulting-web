@@ -1,0 +1,17 @@
+{
+  "buttons": ["formatting", "italic", "html"],
+  "linkNewTab": true,
+  "toolbarFixed": true,
+  "formattingAdd": {
+    "paragraph": {
+      "title": "Hero",
+      "api": "module.block.format",
+      "args": {
+        "type": "add",
+				"tag": "h1"
+      }
+    }
+
+  }
+
+}

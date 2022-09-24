@@ -1,0 +1,19 @@
+columnSuffix: cotrbovj
+contentColumnType: text
+fieldGroup: e66e9dbe-8ea7-4e6a-9d54-712031a2d2a7 # Meta
+handle: metaPageTitle
+instructions: null
+name: 'Meta Page Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

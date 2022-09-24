@@ -1,0 +1,48 @@
+.stats {
+    &__inner {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    &__wrapper {
+        max-width: 800px;
+    }
+
+    &__peaker {
+        margin-bottom: 32px;
+    }
+
+    &__heading {
+        margin-bottom: 64px;
+    }
+
+    &__counters {
+        margin-left: 160px;
+        margin-bottom: 64px;
+    }
+
+    &__button {
+        margin-left: 160px;
+    }
+
+    @media (max-width: 950px) {
+        &__counters {
+            margin-left: 80px;
+        }
+
+        &__button {
+            margin-left: 80px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        &__counters {
+            margin-left: 0;
+        }
+
+        &__button {
+            margin-left: 0;
+        }
+    }
+
+}

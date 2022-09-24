@@ -1,0 +1,19 @@
+columnSuffix: hgeukzln
+contentColumnType: text
+fieldGroup: d6fab119-06a5-434f-bab0-8836d0bebef0 # Course Intro
+handle: courseIntroQuoteText
+instructions: null
+name: 'Course Intro Quote Text '
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

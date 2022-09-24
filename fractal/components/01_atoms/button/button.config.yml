@@ -1,0 +1,5 @@
+name: Button
+status: "ready"
+context: 
+  content: Mehr erfahren
+  color: dark

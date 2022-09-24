@@ -1,0 +1,48 @@
+fieldLayouts:
+  4c9b690a-5712-4112-98fc-455727c0305d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 558dd3f0-e975-4199-aa7b-34620d3d8cb8 # Connection Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: af997616-febd-4ac4-9b83-39026472fbaf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 09b0178f-ea85-4605-9a03-d578f41e6721 # Connection Phone
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5818f686-6a99-4984-8923-32da984afd85
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7beca399-c10a-42c8-90d9-611b7fd09df4 # Connection LinkedIn
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a6029d6b-64f9-42a6-b9e2-ff288b27edb2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3702d4ed-05ab-49a5-87df-49065263af45
+        userCondition: null
+handle: connection
+name: Connection
+sortOrder: 3

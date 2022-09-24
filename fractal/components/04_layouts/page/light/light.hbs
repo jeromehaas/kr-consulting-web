@@ -1,0 +1,9 @@
+<body class="body page page--light {{#if id}} page__{{id}} {{/if}}">
+    {{> @mobile-navigation block="true" }}
+    {{> @desktop-navigation block="true" light="true" }}
+    {{#>@partial-block}}
+    {{/@partial-block}}
+    {{> @footer }}
+    {{> @message-modal }}
+  <script src="/js/main.build.js"></script>
+</body>

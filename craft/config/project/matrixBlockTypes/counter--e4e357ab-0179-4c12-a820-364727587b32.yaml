@@ -1,0 +1,79 @@
+field: 24d6a6c1-e3ba-4502-8202-9046cda01144 # Stats Counters
+fieldLayouts:
+  7184407d-94e3-4f6c-a1fb-e22f968cb2fd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b577bd63-5d61-4855-bc46-c9b942083cf8 # amount
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f5ccc64e-c04c-46d2-a736-ea06031cbbb4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f989ecb4-faa8-4859-9890-1f9f818af555 # Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: db54bcd6-a6f2-491a-9a8e-1fb19c551f60
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 88710243-e34e-408c-bce1-9388297e05e4
+        userCondition: null
+fields:
+  b577bd63-5d61-4855-bc46-c9b942083cf8: # amount
+    columnSuffix: yxpljzsq
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: amount
+    instructions: null
+    name: amount
+    searchable: false
+    settings:
+      decimals: 0
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: decimal
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  f989ecb4-faa8-4859-9890-1f9f818af555: # Label
+    columnSuffix: jiakbark
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: null
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: counter
+name: Counter
+sortOrder: 1

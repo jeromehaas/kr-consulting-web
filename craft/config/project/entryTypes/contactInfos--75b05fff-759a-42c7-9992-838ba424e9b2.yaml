@@ -1,0 +1,151 @@
+fieldLayouts:
+  c46f0c7f-ff2f-4b33-a7d2-c099ab11e3de:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d998398f-67b7-435c-9ff4-2016f5e75e0a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d9ad9415-402b-41ed-a090-ab904bfea86b # Contact Infos Teaser Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6534588a-9a13-44d3-81eb-abe481866824
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fd65c4ec-0039-4c4e-b49c-3627453a832f # Contact Infos Teaser Contact Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 02bd22d1-1653-40b7-b883-8feb937da204
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d093d66f-bf5f-47bf-bc17-7e00f590d105 # Contact Infos Teaser Contact Phone
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1c191d57-ae8f-43dc-8acd-56cd31c85488
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6b3e7a5e-7a56-49a6-80f8-fca6b548d8bb # Contact Infos Teaser Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 019f6abf-38ab-4408-9ede-f455d523463a
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 6388ff27-c184-4c62-b869-98558bba4d29 # Contact Infos Teaser Button Href
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 11f6c172-3938-48c7-9dd8-47f42b0bfe91
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 06be8ea9-6497-4d58-9cbc-4059c1c50b06 # Contact Infos Location Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 36a314ab-4021-40f4-82a8-77d95d6911c7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0a7888cb-4004-44b3-841e-522126ec3c16 # Contact Infos Location Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 188fd4e4-2a8e-4089-840b-1f4deec986e6
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 5233c6b4-1d84-492e-9c52-50a05132f5d6 # Contact Infos Location Button Href
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 17488f8a-67aa-4f34-843c-28fbbab48edb
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 4ab10882-1b74-4e5b-a038-afbd75a302f8 # Contact Infos Location Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7930a510-472e-40d8-aa6b-54e32ebf3ad8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 141d8a38-8078-42ee-967d-c9b919a6861f
+        userCondition: null
+handle: contactInfos
+hasTitleField: false
+name: 'Contact Infos'
+section: e06ef36f-23bb-444d-a831-4c566b500a47 # Contact Infos
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

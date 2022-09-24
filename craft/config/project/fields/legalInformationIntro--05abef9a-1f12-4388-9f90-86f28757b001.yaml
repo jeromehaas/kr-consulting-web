@@ -1,0 +1,19 @@
+columnSuffix: lxooibew
+contentColumnType: text
+fieldGroup: 6f9e4970-bcc2-4757-8a80-ca6ae4106ca6 # Legal Information
+handle: legalInformationIntro
+instructions: null
+name: 'Legal Information Intro'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

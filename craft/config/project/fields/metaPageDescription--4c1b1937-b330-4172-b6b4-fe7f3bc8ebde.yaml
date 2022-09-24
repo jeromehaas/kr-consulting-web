@@ -1,0 +1,19 @@
+columnSuffix: vtvvlzfg
+contentColumnType: text
+fieldGroup: e66e9dbe-8ea7-4e6a-9d54-712031a2d2a7 # Meta
+handle: metaPageDescription
+instructions: null
+name: 'Meta Page Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

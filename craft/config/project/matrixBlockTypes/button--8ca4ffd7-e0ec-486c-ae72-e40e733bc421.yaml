@@ -1,0 +1,78 @@
+field: dfc00c2f-8e40-41cf-8181-3df7d8cd37ca # Teaser Button Text
+fieldLayouts:
+  fbcee8c4-91d2-4704-9579-ca8e01f99d67:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9b6e4be8-876c-4971-95a7-d952bac89124 # text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 551d431c-4d1d-47f5-b7c8-5429cbb9d1b1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5e9517dd-12e4-432b-8d84-b04f4723109e # href
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b72a3760-4079-4ee3-bd04-f767fb1a2e5f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6fc4583d-5f1e-4ec9-870c-baa9a261bc95
+        userCondition: null
+fields:
+  5e9517dd-12e4-432b-8d84-b04f4723109e: # href
+    columnSuffix: phjwrcls
+    contentColumnType: text
+    fieldGroup: null
+    handle: href
+    instructions: null
+    name: href
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9b6e4be8-876c-4971-95a7-d952bac89124: # text
+    columnSuffix: yqnbkiqa
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: button
+name: button
+sortOrder: 1

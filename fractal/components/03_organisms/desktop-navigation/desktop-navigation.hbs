@@ -1,0 +1,17 @@
+{{#>@section id="desktop-navigation" js="false" tag="nav" }}
+    <a class="desktop-navigation__logo-link" href="#">
+        {{#if light }}
+            <img class="desktop-navigation__logo" src="/media/graphics/logos/logo-kr-consulting-dark.svg" alt="KR Consulting"/>
+        {{ else }}
+            <img class="desktop-navigation__logo" src="/media/graphics/logos/logo-kr-consulting-light.svg" alt="KR Consulting"/>
+        {{/if}}
+    </a>
+    <span class="desktop-navigation__link-wrapper">
+        <a class="desktop-navigation__link" href="#">Anlagelösungen</a>
+        <a class="desktop-navigation__link" href="#">Vorsorgelösungen</a>
+        <a class="desktop-navigation__link" href="#">Über Uns</a>
+        <a class="desktop-navigation__link" href="#">Kontakt</a>
+    </span>
+    {{> @external-link class="desktop-navigation__partnerlogin" content="Partnerlogin" }}
+{{/@section}}
+<div class="desktop-navigation__spacer"></div>

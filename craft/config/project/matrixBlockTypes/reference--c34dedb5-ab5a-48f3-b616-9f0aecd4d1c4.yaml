@@ -1,0 +1,170 @@
+field: ff056591-0e52-4d6d-91d6-5cc299d11ab6 # Testimonials Reference
+fieldLayouts:
+  4d531c9a-94bf-4d75-9204-2c94cb7cac97:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 79d9bae6-9855-4997-b283-75914ab58005 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7d2ac8f0-248c-46d1-9593-25215a4314f2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f79b0cf6-11fc-4478-b1c3-0cec66339830 # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b49e518a-60bd-499a-80f5-d1fb1dc7aca6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c7ba05f6-a7e8-4156-8e13-4b8a2e21a521 # Full Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a9b75957-2499-475c-8707-4c6384cf0c99
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 562f5c5d-c13d-420a-8b0d-ced4ff3d6d97 # Role
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b4f32dac-282f-4cb1-b282-98f6b1b800ef
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a43561f7-fb81-4b5d-85e6-a7a2c2871ca5
+        userCondition: null
+fields:
+  79d9bae6-9855-4997-b283-75914ab58005: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:75c6b6cf-12b2-45c1-a198-a12c9f0fb5a5' # Avatars
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: 1
+      minRelations: 1
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:0b60c779-bb71-4367-82ad-f7f1db120c6c' # Services
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  562f5c5d-c13d-420a-8b0d-ced4ff3d6d97: # Role
+    columnSuffix: tcuysxvq
+    contentColumnType: text
+    fieldGroup: null
+    handle: role
+    instructions: null
+    name: Role
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c7ba05f6-a7e8-4156-8e13-4b8a2e21a521: # Full Name
+    columnSuffix: rceakwuw
+    contentColumnType: text
+    fieldGroup: null
+    handle: fullName
+    instructions: null
+    name: 'Full Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f79b0cf6-11fc-4478-b1c3-0cec66339830: # Text
+    columnSuffix: gnfwbbkf
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: reference
+name: Reference
+sortOrder: 1

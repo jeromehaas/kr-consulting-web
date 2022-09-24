@@ -1,0 +1,105 @@
+.login-form {
+  // background-image: linear-gradient($blue-60, $blue-100);
+  background-size: cover;
+  position: relative;
+
+  &__inner {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+
+  &__background,
+  .background {
+    // z-index: -5;
+
+    &__image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    &__overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: $blue-gradient;
+    }
+  }
+
+  &__form,
+  .form {
+    position: relative;
+    background-color: $white;
+    border-radius: 20px;
+    opacity: 0.9;
+
+    &__dial,
+    .dial {
+      padding: 48px;
+      display: grid;
+      grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+      grid-gap: 16px;
+
+      &__button {
+        border: 1px solid $blue-40;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: $white;
+        color: $blue-100;
+        font-size: 25px;
+        transition: all 0.1s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          background-color: darken($white, 5%);
+        }
+
+        &:last-child {
+          justify-self: center;
+          grid-column: span 3;
+        }
+      }
+    }
+
+    &__dots,
+    .dots {
+      padding: 0 48px 48px 48px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      &--error .dots__item {
+        background-color: $red-100 !important;
+        border: 1px solid $red-100 !important;
+      }
+      &--success .dots__item {
+        background-color: $green-100 !important;
+        border: 1px solid $green-100 !important;
+      }
+
+      &__item {
+        border: 1px solid $blue-60;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        border-radius: 50%;
+
+        &--active {
+          background-color: $blue-60;
+        }
+      }
+    }
+  }
+}

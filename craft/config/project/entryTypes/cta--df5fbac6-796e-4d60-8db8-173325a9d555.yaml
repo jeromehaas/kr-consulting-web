@@ -1,0 +1,91 @@
+fieldLayouts:
+  e1602ba4-a91a-45a2-86e7-062909c4dca5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 31853f30-f444-428a-ba9d-742c79a4c31b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: be44ff42-29c5-445b-be33-efb43b545cd0 # CTA Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b95e958b-15ca-4d06-b4c4-215baa5d325a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b5f9dbb9-cb24-4642-a2d5-af42cd6e9761 # CTA Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b3f3334-5fa4-47cc-8d54-06dc38434151
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3e0400fb-63d8-40fc-a7ee-b7b8c58befe2 # CTA Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f5696ac3-0811-4ef1-9812-12f29c5857fc
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: fb774718-6b6d-4033-8391-c1e5225d7442 # CTA Button Href
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c6324749-25bc-4f47-b977-d6afe2a6d92c
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: fc8d17d7-d5c3-4051-adea-8f1588c8096a
+        userCondition: null
+handle: cta
+hasTitleField: true
+name: CTA
+section: 010edfe8-bf11-404d-ac0e-d609cb946713 # CTA
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

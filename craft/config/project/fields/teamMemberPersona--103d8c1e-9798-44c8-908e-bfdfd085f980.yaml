@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 476265c7-1460-4f45-bfa0-b3fc7be50365 # Team Member
+handle: teamMemberPersona
+instructions: null
+name: 'Team Member Persona'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_teammemberpersona}}'
+  maxBlocks: null
+  minBlocks: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

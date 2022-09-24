@@ -1,0 +1,31 @@
+name: Heading
+status: "wip"
+context: 
+  type: h1
+  content: Heading H1
+variants:
+- name: h1
+  context:
+    content: Heading H1
+    type: h1
+    lookLike: h1
+- name: h2
+  context:
+    content: Heading H2
+    type: h2
+    lookLike: h2
+- name: h3
+  context:
+    content: Heading H3
+    type: h3
+    lookLike: h3
+- name: h4
+  context:
+    content: Heading H4
+    type: h4
+    lookLike: h4
+- name: h5
+  context:
+    content: Heading H4
+    type: h5
+    lookLike: h5   

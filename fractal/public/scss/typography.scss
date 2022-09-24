@@ -1,0 +1,346 @@
+* {
+	font-family: "Open-Sans", Helvetica, sans-serif;
+	font-weight: 300;
+	line-height: 1.5;
+	font-size: 10px;
+	font-style: normal;
+}
+
+.heading, h1, h2, h3, h4, h5 {
+	font-family: 'Playfair-Display', serif;
+	font-weight: 600;
+}
+
+.heading--h1 {
+  	font-size: 80px;
+  	font-weight: 600;	
+	line-height: 1.2;
+}
+
+.heading--h2 {
+	font-size: 48px;
+	font-weight: 600;
+}
+	
+.heading--h3 {
+  	font-size: 32px;
+  	font-weight: 600;
+}
+
+.heading--h4 {
+  	font-size: 24px;
+  	font-weight: 600;
+}
+
+.heading--h5 {
+  	font-size: 16px;
+  	font-weight: 600;
+		font-family: 'Open-Sans';
+		text-transform: uppercase;
+		letter-spacing: 8%;
+}
+
+.heading--p {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.paragraph, p {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: "Open-Sans", Helvetica, sans-serif;
+
+	&--bold { font-weight: 600; }
+	&--small { font-size: 14px; }
+	&--big { font-size: 32px; }
+	&--extrabig { font-size: 48px; }
+	&--serif { font-family: "Playfair-Display"; }
+	strong { font-weight: inherit; }
+
+}
+
+.link, a {
+	font-family: "Open-Sans", Helvetica, sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+	text-decoration: none;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+.external-link {
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+
+
+.animated-link {
+	font-weight: 600;
+	letter-spacing: 0px;
+}
+
+.highlight {
+	font-weight: inherit;
+	font-family: inherit;
+	font-family: "Playfair-Display";
+	font-style: italic;
+}
+
+.button__text {
+	text-transform: uppercase;
+	letter-spacing: 8%;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.follower__text {
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 8%;
+	font-weight: 600;
+}
+
+.contact-shortcuts__button {
+	font-size: 16px; 
+	text-transform: uppercase;
+	letter-spacing: 8%;
+	font-weight: 600	
+}
+
+.list__item {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.input-textarea__label, 
+.input-date__label, 
+.input-checkbox__label, 
+.input-text__label {
+	font-size: 16px;
+}
+
+.input-textarea__input, 
+.input-date__input, 
+.input-text__input {
+	font-size: 16px;
+}
+
+.input-text__error-message,
+.input-date__error-message,
+.input-textarea__error-message {
+	font-size: 12px;
+}
+
+.input-date .weekdays__item,
+.input-date .dates__item {
+	font-size: 12px;
+}
+
+.input-date .date__month,
+.input-date .date__year {
+	font-size: 16px;
+}
+
+.status-message__item {
+	font-size: 16px;
+}
+
+.quote__symbol {
+	font-family: "Playfair-Display";
+	font-weight: 600;
+}
+
+.quote__author .author__name  {
+	font-weight: 600;
+}
+
+.sub-navigation__item {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.contact-card__phone, 
+.contact-card__email {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.stats__item .item__value,
+.stats__item .item__plus,
+.stats__item .item__label {
+	line-height: 1;
+}
+
+.statement__quote .content__text,
+.testimonial-slider .content__text,
+.course-intro .quote .content__text {
+	font-family: 'Playfair-Display';
+	font-size: 24px;
+	line-height: 1.5;
+}
+
+.statement__quote .author__name,
+.testimonial-slider .author__name {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.statement__quote .author__role,
+.testimonial-slider .author__role {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.desktop-navigation__link-wrapper .desktop-navigation__link {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.desktop-navigation__partnerlogin {
+	font-size: 16px;
+}
+
+.mobile-navigation__menu .menu__link {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+
+.article__heading {
+	line-height: 1.2;
+}
+
+.page-not-found__content .content__heading {
+	font-size: 240px;
+	line-height: 1;
+}
+
+
+.message-modal .disclaimer__text, 
+.message-modal .disclaimer__link {
+	font-style: italic;
+}
+
+
+.footer .address__item, 
+.footer .address__heading {
+	font-size: 16px;
+}
+
+.footer .links__item,
+.footer .links__link {
+	font-size: 16px;
+}
+
+.footer .connection__link {
+	font-size: 16px;
+}
+
+.contact-card__role {
+	font-size: 16px;
+}
+
+@media (max-width: 1400px) {
+
+.heading--h1 {
+		font-size: 60px;
+	}
+}
+
+@media (max-width: 950px) {
+
+	.heading--h1 {
+		font-size: 60px;
+	}
+
+	.heading--h2 {
+		font-size: 40px;
+	}
+
+	.heading--h3 {
+		font-size: 24px;
+	}
+
+}
+
+@media (max-width: 650px) {
+
+	.heading--h1 {
+		font-size: 40px;
+	}
+
+	.heading--h2 {
+		font-size: 40px;
+	}
+
+	.heading--h3 {
+		font-size: 32px;
+	}
+
+}
+
+@media (max-width: 450px) {
+
+	.heading--h1 {
+		font-size: 32px;
+	}
+
+	.heading--h2 {
+		font-size: 28px;
+	}
+
+	.heading--h3 {
+		font-size: 24px;
+	}
+
+	.paragraph, p {
+		font-size: 16px;
+
+		&--small { font-size: 12px; }
+		&--big { font-size: 32px; }
+		&--extrabig { font-size: 40px; }
+	}
+
+	.statement__quote .content__text,
+	.testimonial-slider .content__text,
+	.course-intro .quote .content__text {
+		font-size: 20px;
+	}
+	
+	.link, a {
+		font-size: 16px;
+	}
+
+	.list__item {
+		font-size: 16px;
+	}
+
+	.button__text {
+		font-size: 12px;
+	}
+
+	.contact-shortcuts__button {
+		font-size: 12px;
+	}
+
+}
+	
+@media (max-width: 350px) {
+
+	.heading--h1 {
+		font-size: 24px;
+	}
+
+	.heading--h2 {
+		font-size: 24px;
+	}
+		
+}
+

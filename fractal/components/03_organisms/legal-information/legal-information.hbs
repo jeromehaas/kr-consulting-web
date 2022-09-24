@@ -1,0 +1,22 @@
+{{#>@section id="legal-information" js="true" tag="section" }}
+    {{> @heading class="legal-information__heading" type="h1" content="Datenschutz" }}
+    <div class="legal-information__wrapper">
+        <div class="legal-information__sidepanel sidepanel">
+            {{> @sub-navigation class="sidepanel__sub-navigation" }}
+        </div>
+        <div class="legal-information__content content">
+            <div class="content__item item">
+                {{> @article key="urheberrecht" }}
+            </div>
+            <div class="content__item item">\
+                {{> @article key="gewaehrleistung und Haftung" }}
+            </div>
+            <div class="content__item item">\
+                {{> @article key="Verweise und Links" }}
+            </div>
+            <div class="content__item item">\
+                {{> @article key="Speicherung von Zugriffsdaten in Server-Logfiles" }}
+            </div>
+        </div>
+    </div>
+{{/@section}}

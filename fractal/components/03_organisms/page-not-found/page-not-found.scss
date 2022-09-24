@@ -1,0 +1,69 @@
+.page-not-found {
+	position: relative;
+
+	&__inner {
+		min-height: 100vh;
+
+		&--center {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+			padding: 48px;
+			min-height: 400px;
+		}
+	}
+
+	&__background,
+	.background {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		&__image {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+
+		&__overlay {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background: $blue-gradient;
+		}
+	}
+
+	&__content,
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		height: 100%;
+		bottom: 0;
+
+		&__heading {
+			text-align: center;
+			opacity: 0.3;
+		}
+
+		&__button {
+			margin-top: 64px;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+.page__about-us {
+    .team-member:not(.team-member--reversed) {
+        & .team-member__infos {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 32px;
+                height: 32px;
+                background-color: $grey-20;
+                right: 0;
+                top: 0;
+                bottom: -80px;
+                height: calc(100% + 80px);
+                width: calc(100% + 320px);
+                z-index: -5;
+            }
+        }
+
+        & .team-member__inner {
+            &--right {
+                background-color: $grey-20;
+            }
+        }
+    }
+
+    .cta {
+        background-color: $grey-20;
+    }
+
+    @media (max-width: 950px) {
+        .team-member:not(.team-member--reversed) {
+            & .team-member__infos {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 32px;
+                    height: 32px;
+                    background-color: $grey-20;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    height: calc(100% + 80px);
+                    width: 100%;
+                    z-index: -5;
+                }
+            }
+        }
+    }
+}
