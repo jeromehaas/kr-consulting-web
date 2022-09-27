@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="/css/main.min.css">
+  <link rel="stylesheet" href="/css/main.min.css?v1.0.0">
   <link rel="icon" href="/media/favicons/favicon.ico">
   <title>{% if entry.metaPageTitle %} {{ entry.metaPageTitle }} | KR Consulting  {% else %} KR Consulting {% endif %}</title>
   <meta name="description" content="{{ entry.metaPageDescription }}">
@@ -28,7 +28,7 @@
     {% block main %} {% endblock %} 
     {% include "03_organisms/footer" %}
     {% include "03_organisms/message-modal" %}
-  <script src="/js/main.build.js"></script>
+  <script src="/js/main.build.js?v1.0.0"></script>
 </body>
 
 </html>
