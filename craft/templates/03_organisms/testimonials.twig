@@ -4,14 +4,14 @@
     <div class="testimonials__inner testimonials__inner--left section__inner section__inner--right"></div>
     <div class="testimonials__inner testimonials__inner--center section__inner section__inner--center">
 
-        <img class="testimonials__symbol" src="/media/graphics/logos/logo-kr-consulting-symbol-light.svg" alt="">
+        <img class="testimonials__symbol" src="/media/graphics/logos/logo-kr-consulting-symbol-light.svg" alt="KR Consulting Logo">
         <div class="testimonial-slider js-testimonial-slider">
 
             <div class="testimonial-slider__slider slider swiper-wrapper">
 
                 {% for reference in testimonials.testimonialsReference.all() %}
                     <div class="slider__item item cell swiper-slide" href="#" data-key="1">
-                        <img class="item__avatar" src="{{ reference.image.one().url() }}" alt="reference.fullName" width="160" height="160">
+                        <img class="item__avatar" src="{{ reference.image.one().url() }}" alt="{{ reference.fullName }}" width="160" height="160">
                         <div class="item__content content">
                             <i class="content__icon icon icon--quote"></i>
                             <p class="content__text">{{ reference.text }}</p>

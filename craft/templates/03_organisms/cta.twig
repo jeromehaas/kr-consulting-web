@@ -6,7 +6,7 @@
         <div class="cta__background"></div>
         <div class="cta__content content">
             <div class="content__overlay"></div>
-            <img class="content__image" src="{{ cta.ctaImage.one().url() }}" alt="{{ cta.ctaImage.one().url() }}" />
+            <img class="content__image" src="{{ cta.ctaImage.one().url() }}" alt="{{ cta.ctaImage.one().alt }}" />
             <h2 class="heading  heading--h2   heading--white  content__heading js-heading">{{ cta.ctaHeading }}</h2> 
 			<a class="button content__button  button--white" href="{{ cta.ctaButtonHref }}" data-trigger="message-modal">
             <span class="button__text">{{ cta.ctaButtonText }}</span>
