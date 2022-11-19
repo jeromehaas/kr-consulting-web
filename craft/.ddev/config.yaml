@@ -1,6 +1,6 @@
 name: kr-consulting-web
 type: php
-docroot: web 
+docroot: web
 php_version: "8.0"
 webserver_type: nginx-fpm
 router_http_port: "80"
@@ -8,11 +8,13 @@ router_https_port: "443"
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []
-mysql_version: "8.0" 
+database:
+  type: mysql
+  version: "8.0"
 nfs_mount_enabled: false
 mutagen_enabled: false
+host_db_port: "32244"
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
 nodejs_version: "16"
-host_db_port: "32244"
