@@ -60,7 +60,7 @@ class MessageModal {
 				name: 'message',
 				element: document.querySelector('.contact-form__input-textarea--message textarea'),
 				isRequired: true,
-				validationSchema: '^.{2,500}$',
+				validationSchema: '.{2,1000}$',
 			}
 		};
 	};
